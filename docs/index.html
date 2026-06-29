@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0f0f12" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#534AB7" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="文献追踪">
+<title>文献追踪 · Paper Tracker</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root {
+    --bg: #0f0f12;
+    --bg-elev: #1a1a20;
+    --bg-card: #18181f;
+    --border: #2a2a33;
+    --text: #e8e8ec;
+    --text-dim: #9a9aa5;
+    --text-faint: #6a6a75;
+    --accent: #7F77DD;
+    --accent-soft: rgba(127, 119, 221, 0.15);
+    --new: #1D9E75;
+    --new-soft: rgba(29, 158, 117, 0.15);
+    --star: #EF9F27;
+    --star-soft: rgba(239, 159, 39, 0.15);
+    --link: #85B7EB;
+    --danger: #E24B4A;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+    --tab-h: 56px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f4f4f7;
+      --bg-elev: #ffffff;
+      --bg-card: #ffffff;
+      --border: #e4e4ea;
+      --text: #1a1a20;
+      --text-dim: #5a5a65;
+      --text-faint: #9a9aa5;
+      --accent: #534AB7;
+      --accent-soft: rgba(83, 74, 183, 0.08);
+      --new: #0F6E56;
+      --new-soft: rgba(15, 110, 86, 0.1);
+      --star: #BA7517;
+      --star-soft: rgba(186, 117, 23, 0.1);
+      --link: #185FA5;
+      --danger: #A32D2D;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom));
+  }
+
+  /* ============ 顶部栏 ============ */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-elev);
+    border-bottom: 0.5px solid var(--border);
+    padding-top: env(safe-area-inset-top);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  .header-inner {
+    padding: 12px 16px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .title-block { min-width: 0; }
+  .title {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .title-icon { width: 22px; height: 22px; flex-shrink: 0; color: var(--accent); }
+  .subtitle {
+    font-size: 12px;
+    color: var(--text-faint);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .btn-refresh {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent-soft);
+    color: var(--accent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  .btn-refresh:active { transform: scale(0.9); }
+  .btn-refresh.spinning svg { animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ============ 统计条 ============ */
+  .stats {
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .stats::-webkit-scrollbar { display: none; }
+  .stat-chip {
+    flex-shrink: 0;
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+  .stat-chip b { color: var(--text); font-weight: 600; }
+  .stat-chip.new b { color: var(--new); }
+  .stat-chip.star b { color: var(--star); }
+
+  /* ============ 筛选标签 ============ */
+  .filters {
+    display: flex;
+    gap: 6px;
+    padding: 4px 16px 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter-chip {
+    flex-shrink: 0;
+    background: transparent;
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: var(--text-dim);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .filter-chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  /* ============ 搜索框 ============ */
+  .search-wrap { padding: 0 16px 10px; }
+  .search {
+    width: 100%;
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 9px 12px 9px 34px;
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239a9aa5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='8'/><path d='m21 21-4.35-4.35'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 11px center;
+  }
+  .search:focus { border-color: var(--accent); }
+
+  /* ============ 视图切换 ============ */
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* ============ 文献列表 ============ */
+  .list { padding: 0 16px 24px; }
+  .paper {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 14px 12px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+    transition: border-color 0.15s;
+  }
+  .paper:active { border-color: var(--accent); }
+  .paper-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .paper-head-left { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .paper-cat {
+    flex-shrink: 0;
+    font-size: 11px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-weight: 500;
+  }
+  .badge-new {
+    flex-shrink: 0;
+    font-size: 10px;
+    color: var(--new);
+    background: var(--new-soft);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .btn-star {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-faint);
+    transition: all 0.15s;
+  }
+  .btn-star:active { transform: scale(0.85); }
+  .btn-star.starred { color: var(--star); }
+  .paper-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .paper-authors {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .paper-summary {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .paper-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .paper-meta { font-size: 11px; color: var(--text-faint); }
+  .paper-links { display: flex; gap: 6px; }
+  .paper-link {
+    font-size: 12px;
+    color: var(--link);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+  }
+  .paper-link:active { background: var(--accent-soft); }
+
+  /* ============ 状态空态 ============ */
+  .state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-faint);
+    font-size: 14px;
+  }
+  .state-icon { font-size: 32px; margin-bottom: 8px; opacity: 0.5; }
+
+  /* ============ 底部 Tab Bar ============ */
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(var(--tab-h) + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--bg-elev);
+    border-top: 0.5px solid var(--border);
+    display: flex;
+    z-index: 200;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  .tab {
+    flex: 1;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: var(--text-faint);
+    cursor: pointer;
+    padding: 6px 0;
+    transition: color 0.15s;
+  }
+  .tab svg { width: 22px; height: 22px; }
+  .tab-label { font-size: 10px; font-weight: 500; }
+  .tab.active { color: var(--accent); }
+  .tab-badge {
+    position: absolute;
+    top: 4px;
+    right: calc(50% - 22px);
+    min-width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: var(--new);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+  }
+
+  /* ============ 星标页专用 ============ */
+  .star-tags {
+    display: flex;
+    gap: 6px;
+    padding: 4px 16px 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex-wrap: wrap;
+  }
+  .star-tags::-webkit-scrollbar { display: none; }
+  .tag-chip {
+    flex-shrink: 0;
+    background: var(--star-soft);
+    border: 0.5px solid var(--star);
+    border-radius: 16px;
+    padding: 5px 11px;
+    font-size: 12px;
+    color: var(--star);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tag-chip.active {
+    background: var(--star);
+    color: #fff;
+  }
+  .star-card {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+  }
+  .star-card-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+  .star-tag {
+    font-size: 10px;
+    color: var(--star);
+    background: var(--star-soft);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-weight: 500;
+  }
+  .star-card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 0.5px solid var(--border);
+  }
+  .btn-small {
+    font-size: 12px;
+    padding: 5px 11px;
+    border-radius: 6px;
+    border: 0.5px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+  .btn-small:active { background: var(--accent-soft); }
+  .btn-small.danger { color: var(--danger); }
+
+  /* ============ 添加星标表单 ============ */
+  .add-bar {
+    padding: 10px 16px;
+    display: flex;
+    gap: 8px;
+  }
+  .btn-add {
+    flex: 1;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn-add:active { opacity: 0.85; }
+
+  /* ============ 模态框 ============ */
+  .modal-mask {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 300;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .modal-mask.show { display: flex; }
+  .modal {
+    background: var(--bg-elev);
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 16px calc(20px + env(safe-area-inset-bottom));
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+    animation: slideUp 0.25s ease;
+  }
+  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .modal-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .field { margin-bottom: 14px; }
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 5px;
+  }
+  .field input, .field textarea {
+    width: 100%;
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    font-family: inherit;
+    resize: vertical;
+  }
+  .field input:focus, .field textarea:focus { border-color: var(--accent); }
+  .field textarea { min-height: 70px; }
+  .field-hint { font-size: 11px; color: var(--text-faint); margin-top: 4px; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 18px; }
+  .btn-modal {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .btn-cancel { background: var(--bg-card); color: var(--text-dim); border: 0.5px solid var(--border); }
+  .btn-confirm { background: var(--accent); color: #fff; }
+  .btn-modal:active { opacity: 0.85; }
+
+  /* ============ 安装提示 ============ */
+  .install-tip {
+    position: fixed;
+    bottom: calc(var(--tab-h) + 16px + env(safe-area-inset-bottom));
+    left: 16px;
+    right: 16px;
+    background: var(--bg-elev);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    gap: 10px;
+    z-index: 250;
+  }
+  .install-tip.show { display: flex; }
+  .install-tip-text { flex: 1; font-size: 13px; color: var(--text-dim); }
+  .install-tip-text b { color: var(--text); }
+  .install-close {
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="title-block">
+      <div class="title">
+        <svg class="title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span id="pageTitle">今日推送</span>
+      </div>
+      <div class="subtitle" id="subtitle">加载中…</div>
+    </div>
+    <button class="btn-refresh" id="btnRefresh" aria-label="刷新">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+        <path d="M21 3v5h-5"/>
+        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+        <path d="M8 16H3v5"/>
+      </svg>
+    </button>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="filters" id="filters"></div>
+  <div class="search-wrap" id="searchWrap">
+    <input class="search" id="search" type="search" placeholder="搜索标题、作者、摘要…">
+  </div>
+</header>
+
+<!-- 视图1：今日推送 -->
+<main class="view active" id="view-today">
+  <div class="list" id="list-today"></div>
+</main>
+
+<!-- 视图2：文献库 -->
+<main class="view" id="view-library">
+  <div class="list" id="list-library"></div>
+</main>
+
+<!-- 视图3：星标文献 -->
+<main class="view" id="view-stars">
+  <div class="add-bar">
+    <button class="btn-add" id="btnAddStar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12h14"/>
+      </svg>
+      手动添加文献
+    </button>
+  </div>
+  <div class="star-tags" id="starTags"></div>
+  <div class="list" id="list-stars"></div>
+</main>
+
+<!-- 底部 Tab Bar -->
+<nav class="tabbar">
+  <button class="tab active" data-tab="today">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 2v4M16 2v4M3 10h18"/>
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+    </svg>
+    <span class="tab-label">今日推送</span>
+  </button>
+  <button class="tab" data-tab="library">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+    <span class="tab-label">文献库</span>
+  </button>
+  <button class="tab" data-tab="stars">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </svg>
+    <span class="tab-label">星标文献</span>
+  </button>
+</nav>
+
+<!-- 添加/编辑星标模态框 -->
+<div class="modal-mask" id="modalMask">
+  <div class="modal">
+    <div class="modal-title" id="modalTitle">添加星标文献</div>
+    <div class="field">
+      <label>标题 *</label>
+      <input type="text" id="fTitle" placeholder="论文标题">
+    </div>
+    <div class="field">
+      <label>作者</label>
+      <input type="text" id="fAuthors" placeholder="用逗号分隔，如：张三, 李四">
+    </div>
+    <div class="field">
+      <label>摘要 / 笔记</label>
+      <textarea id="fSummary" placeholder="论文摘要或你的笔记"></textarea>
+    </div>
+    <div class="field">
+      <label>链接</label>
+      <input type="url" id="fUrl" placeholder="https://arxiv.org/abs/...">
+    </div>
+    <div class="field">
+      <label>标签</label>
+      <input type="text" id="fTags" placeholder="用逗号分隔，如：重要, 待读, 电池">
+      <div class="field-hint">标签用于在星标页分类筛选</div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-modal btn-cancel" id="btnCancel">取消</button>
+      <button class="btn-modal btn-confirm" id="btnConfirm">保存</button>
+    </div>
+  </div>
+</div>
+
+<div class="install-tip" id="installTip">
+  <div class="install-tip-text">
+    <b>添加到主屏幕</b><br>像 App 一样使用，离线也能看
+  </div>
+  <button class="install-close" id="installClose" aria-label="关闭">×</button>
+</div>
+
+<script>
+const NEW_DAYS = 3;
+const TODAY = new Date().toISOString().slice(0, 10);
+const STARS_KEY = "paper-tracker-stars";
+const TAB_TITLES = { today: "今日推送", library: "文献库", stars: "星标文献" };
+
+let ALL_DATA = null;
+let activeTab = "today";
+let activeFilter = "全部";
+let activeStarTag = "全部";
+let searchTerm = "";
+let editingStarId = null;
+
+const $ = (id) => document.getElementById(id);
+
+// ============ 数据加载 ============
+async function loadData() {
+  try {
+    const resp = await fetch("./data/papers.json?_=" + Date.now());
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    ALL_DATA = await resp.json();
+    renderAll();
+  } catch (e) {
+    $("list-today").innerHTML = '<div class="state"><div class="state-icon">📭</div>暂无数据<br><span style="font-size:12px;color:var(--text-faint)">等待首次抓取或本地运行脚本</span></div>';
+    $("list-library").innerHTML = '<div class="state"><div class="state-icon">📭</div>暂无数据</div>';
+    $("subtitle").textContent = "暂无数据";
+  }
+}
+
+// ============ 星标数据（localStorage） ============
+function getStars() {
+  try { return JSON.parse(localStorage.getItem(STARS_KEY) || "[]"); }
+  catch { return []; }
+}
+function saveStars(arr) {
+  localStorage.setItem(STARS_KEY, JSON.stringify(arr));
+}
+function isStarred(paperId) {
+  return getStars().some(s => s.paper_id === paperId);
+}
+function toggleStar(paper) {
+  const stars = getStars();
+  const idx = stars.findIndex(s => s.paper_id === paper.id);
+  if (idx >= 0) {
+    stars.splice(idx, 1);
+  } else {
+    stars.push({
+      id: "star_" + Date.now(),
+      paper_id: paper.id,
+      title: paper.title,
+      authors: (paper.authors || []).join(", "),
+      summary: paper.summary || "",
+      url: paper.arxiv_url || paper.pdf_url || "",
+      tags: [],
+      added_at: new Date().toISOString().slice(0, 10),
+      from_library: true
+    });
+  }
+  saveStars(stars);
+}
+
+// ============ 渲染主入口 ============
+function renderAll() {
+  if (!ALL_DATA) return;
+  const upd = new Date(ALL_DATA.last_updated);
+  $("subtitle").textContent = "更新于 " + upd.toLocaleString("zh-CN", {month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"});
+  renderStats();
+  renderFilters();
+  renderToday();
+  renderLibrary();
+  renderStars();
+}
+
+// ============ 统计条 ============
+function renderStats() {
+  const todayPapers = (ALL_DATA.papers || []).filter(p => p.fetch_date === TODAY);
+  const starCount = getStars().length;
+  $("stats").innerHTML = `
+    <div class="stat-chip">共 <b>${ALL_DATA.total_papers}</b> 篇</div>
+    <div class="stat-chip new">今日 <b>+${todayPapers.length}</b></div>
+    <div class="stat-chip star">星标 <b>${starCount}</b></div>
+  `;
+}
+
+// ============ 筛选标签 ============
+function renderFilters() {
+  const cats = ["全部", ...(ALL_DATA.categories || [])];
+  if (activeTab === "stars") {
+    // 星标页显示标签筛选
+    const stars = getStars();
+    const allTags = [...new Set(stars.flatMap(s => s.tags || []))];
+    const tags = ["全部", ...allTags];
+    $("filters").innerHTML = tags.map(t =>
+      `<button class="filter-chip ${t === activeStarTag ? "active" : ""}" data-tag="${t}">${t}</button>`
+    ).join("");
+    document.querySelectorAll(".filter-chip").forEach(el => {
+      el.addEventListener("click", () => {
+        activeStarTag = el.dataset.tag;
+        renderFilters();
+        renderStars();
+      });
+    });
+  } else {
+    $("filters").innerHTML = cats.map(c =>
+      `<button class="filter-chip ${c === activeFilter ? "active" : ""}" data-cat="${c}">${c}</button>`
+    ).join("");
+    document.querySelectorAll(".filter-chip").forEach(el => {
+      el.addEventListener("click", () => {
+        activeFilter = el.dataset.cat;
+        renderFilters();
+        if (activeTab === "today") renderToday();
+        else renderLibrary();
+      });
+    });
+  }
+}
+
+// ============ 视图1：今日推送 ============
+function renderToday() {
+  const todayPapers = (ALL_DATA.papers || []).filter(p => p.fetch_date === TODAY);
+  let papers = todayPapers;
+  if (activeFilter !== "全部") papers = papers.filter(p => p.category === activeFilter);
+  if (searchTerm) {
+    const q = searchTerm.toLowerCase();
+    papers = papers.filter(p =>
+      (p.title || "").toLowerCase().includes(q) ||
+      (p.summary || "").toLowerCase().includes(q) ||
+      (p.authors || []).some(a => a.toLowerCase().includes(q))
+    );
+  }
+  if (papers.length === 0) {
+    $("list-today").innerHTML = '<div class="state"><div class="state-icon">📭</div>今日暂无新文献</div>';
+    return;
+  }
+  $("list-today").innerHTML = papers.map(p => paperCard(p, true)).join("");
+  bindStarButtons();
+}
+
+// ============ 视图2：文献库 ============
+function renderLibrary() {
+  let papers = ALL_DATA.papers || [];
+  if (activeFilter !== "全部") papers = papers.filter(p => p.category === activeFilter);
+  if (searchTerm) {
+    const q = searchTerm.toLowerCase();
+    papers = papers.filter(p =>
+      (p.title || "").toLowerCase().includes(q) ||
+      (p.summary || "").toLowerCase().includes(q) ||
+      (p.authors || []).some(a => a.toLowerCase().includes(q))
+    );
+  }
+  if (papers.length === 0) {
+    $("list-library").innerHTML = '<div class="state"><div class="state-icon">🔍</div>没有匹配的文献</div>';
+    return;
+  }
+  $("list-library").innerHTML = papers.map(p => paperCard(p, false)).join("");
+  bindStarButtons();
+}
+
+// ============ 文献卡片 ============
+function paperCard(p, showNewBadge) {
+  const pubDate = new Date(p.published);
+  const daysAgo = Math.floor((Date.now() - pubDate.getTime()) / 86400000);
+  const isNew = daysAgo <= NEW_DAYS;
+  const starred = isStarred(p.id);
+  const dateStr = pubDate.toLocaleDateString("zh-CN", {year:"numeric",month:"short",day:"numeric"});
+  const authors = (p.authors || []).slice(0, 3).join(", ") + (p.authors && p.authors.length > 3 ? " 等" : "");
+  return `
+    <article class="paper">
+      <div class="paper-head">
+        <div class="paper-head-left">
+          <span class="paper-cat">${p.category || ""}</span>
+          ${showNewBadge && isNew ? '<span class="badge-new">NEW</span>' : ""}
+        </div>
+        <button class="btn-star ${starred ? "starred" : ""}" data-paper-id="${p.id}" aria-label="星标">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="${starred ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </button>
+      </div>
+      <div class="paper-title">${escapeHtml(p.title)}</div>
+      <div class="paper-authors">${escapeHtml(authors)}</div>
+      <div class="paper-summary">${escapeHtml(p.summary)}</div>
+      <div class="paper-foot">
+        <span class="paper-meta">${dateStr} · ${p.id}</span>
+        <div class="paper-links">
+          ${p.arxiv_url ? `<a class="paper-link" href="${p.arxiv_url}" target="_blank" rel="noopener">摘要</a>` : ""}
+          ${p.pdf_url ? `<a class="paper-link" href="${p.pdf_url}" target="_blank" rel="noopener">PDF</a>` : ""}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function bindStarButtons() {
+  document.querySelectorAll(".btn-star").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const pid = btn.dataset.paperId;
+      const paper = (ALL_DATA.papers || []).find(p => p.id === pid);
+      if (paper) {
+        toggleStar(paper);
+        renderStats();
+        if (activeTab === "today") renderToday();
+        else if (activeTab === "library") renderLibrary();
+        renderStars();
+      }
+    });
+  });
+}
+
+// ============ 视图3：星标文献 ============
+function renderStars() {
+  let stars = getStars();
+  if (activeStarTag !== "全部") {
+    stars = stars.filter(s => (s.tags || []).includes(activeStarTag));
+  }
+  if (searchTerm) {
+    const q = searchTerm.toLowerCase();
+    stars = stars.filter(s =>
+      (s.title || "").toLowerCase().includes(q) ||
+      (s.summary || "").toLowerCase().includes(q) ||
+      (s.authors || "").toLowerCase().includes(q) ||
+      (s.tags || []).some(t => t.toLowerCase().includes(q))
+    );
+  }
+  if (stars.length === 0) {
+    $("list-stars").innerHTML = '<div class="state"><div class="state-icon">⭐</div>还没有星标文献<br><span style="font-size:12px;color:var(--text-faint)">点击「手动添加」或文献库中的星标按钮</span></div>';
+    return;
+  }
+  $("list-stars").innerHTML = stars.map(s => starCard(s)).join("");
+  document.querySelectorAll(".btn-edit-star").forEach(btn => {
+    btn.addEventListener("click", () => openEditModal(btn.dataset.id));
+  });
+  document.querySelectorAll(".btn-del-star").forEach(btn => {
+    btn.addEventListener("click", () => deleteStar(btn.dataset.id));
+  });
+}
+
+function starCard(s) {
+  const tagsHtml = (s.tags || []).map(t => `<span class="star-tag">${escapeHtml(t)}</span>`).join("");
+  const addedStr = s.added_at ? new Date(s.added_at).toLocaleDateString("zh-CN", {year:"numeric",month:"short",day:"numeric"}) : "";
+  return `
+    <article class="star-card">
+      ${tagsHtml ? `<div class="star-card-tags">${tagsHtml}</div>` : ""}
+      <div class="paper-title">${escapeHtml(s.title)}</div>
+      ${s.authors ? `<div class="paper-authors">${escapeHtml(s.authors)}</div>` : ""}
+      ${s.summary ? `<div class="paper-summary">${escapeHtml(s.summary)}</div>` : ""}
+      <div class="paper-foot">
+        <span class="paper-meta">${addedStr}${s.from_library ? " · 来自文献库" : ""}</span>
+        ${s.url ? `<a class="paper-link" href="${s.url}" target="_blank" rel="noopener">查看</a>` : ""}
+      </div>
+      <div class="star-card-actions">
+        <button class="btn-small btn-edit-star" data-id="${s.id}">编辑标签</button>
+        <button class="btn-small danger btn-del-star" data-id="${s.id}">删除</button>
+      </div>
+    </article>
+  `;
+}
+
+function deleteStar(id) {
+  if (!confirm("确定删除这条星标文献？")) return;
+  saveStars(getStars().filter(s => s.id !== id));
+  renderStats();
+  renderFilters();
+  renderStars();
+  if (activeTab === "today") renderToday();
+  else if (activeTab === "library") renderLibrary();
+}
+
+// ============ 模态框 ============
+function openAddModal() {
+  editingStarId = null;
+  $("modalTitle").textContent = "添加星标文献";
+  $("fTitle").value = "";
+  $("fAuthors").value = "";
+  $("fSummary").value = "";
+  $("fUrl").value = "";
+  $("fTags").value = "";
+  $("modalMask").classList.add("show");
+  setTimeout(() => $("fTitle").focus(), 100);
+}
+
+function openEditModal(id) {
+  const s = getStars().find(x => x.id === id);
+  if (!s) return;
+  editingStarId = id;
+  $("modalTitle").textContent = "编辑星标文献";
+  $("fTitle").value = s.title || "";
+  $("fAuthors").value = s.authors || "";
+  $("fSummary").value = s.summary || "";
+  $("fUrl").value = s.url || "";
+  $("fTags").value = (s.tags || []).join(", ");
+  $("modalMask").classList.add("show");
+}
+
+function closeModal() {
+  $("modalMask").classList.remove("show");
+  editingStarId = null;
+}
+
+function saveModal() {
+  const title = $("fTitle").value.trim();
+  if (!title) { alert("请填写标题"); return; }
+  const data = {
+    title,
+    authors: $("fAuthors").value.trim(),
+    summary: $("fSummary").value.trim(),
+    url: $("fUrl").value.trim(),
+    tags: $("fTags").value.split(",").map(t => t.trim()).filter(Boolean)
+  };
+  const stars = getStars();
+  if (editingStarId) {
+    const idx = stars.findIndex(s => s.id === editingStarId);
+    if (idx >= 0) {
+      stars[idx] = { ...stars[idx], ...data };
+    }
+  } else {
+    stars.push({
+      id: "star_" + Date.now(),
+      paper_id: null,
+      ...data,
+      added_at: new Date().toISOString().slice(0, 10),
+      from_library: false
+    });
+  }
+  saveStars(stars);
+  closeModal();
+  renderStats();
+  renderFilters();
+  renderStars();
+}
+
+// ============ Tab 切换 ============
+function switchTab(tab) {
+  activeTab = tab;
+  activeFilter = "全部";
+  activeStarTag = "全部";
+  searchTerm = "";
+  $("search").value = "";
+
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
+  document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+  $("view-" + tab).classList.add("active");
+
+  $("pageTitle").textContent = TAB_TITLES[tab];
+
+  // 搜索框：今日推送和文献库显示，星标页也显示
+  $("searchWrap").style.display = "block";
+
+  // 统计条：星标页隐藏（信息重复）
+  $("stats").style.display = tab === "stars" ? "none" : "flex";
+
+  renderFilters();
+  if (tab === "today") renderToday();
+  else if (tab === "library") renderLibrary();
+  else renderStars();
+}
+
+// ============ 事件绑定 ============
+document.querySelectorAll(".tab").forEach(t => {
+  t.addEventListener("click", () => switchTab(t.dataset.tab));
+});
+
+$("btnRefresh").addEventListener("click", async () => {
+  const btn = $("btnRefresh");
+  btn.classList.add("spinning");
+  await loadData();
+  setTimeout(() => btn.classList.remove("spinning"), 500);
+});
+
+$("search").addEventListener("input", (e) => {
+  searchTerm = e.target.value.trim();
+  if (activeTab === "today") renderToday();
+  else if (activeTab === "library") renderLibrary();
+  else renderStars();
+});
+
+$("btnAddStar").addEventListener("click", openAddModal);
+$("btnCancel").addEventListener("click", closeModal);
+$("btnConfirm").addEventListener("click", saveModal);
+$("modalMask").addEventListener("click", (e) => {
+  if (e.target === $("modalMask")) closeModal();
+});
+
+// ============ PWA 安装提示 ============
+const iosStandalone = window.navigator.standalone === true;
+const isStandalone = window.matchMedia("(display-mode: standalone)").matches || iosStandalone;
+const dismissed = localStorage.getItem("install-dismissed") === "1";
+if (!isStandalone && !dismissed) {
+  setTimeout(() => $("installTip").classList.add("show"), 3000);
+}
+$("installClose").addEventListener("click", () => {
+  $("installTip").classList.remove("show");
+  localStorage.setItem("install-dismissed", "1");
+});
+
+// ============ Service Worker ============
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js").catch(() => {});
+}
+
+// ============ 启动 ============
+loadData();
+</script>
+
+</body>
+</html>
