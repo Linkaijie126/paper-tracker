@@ -1,5 +1,5 @@
 // Service Worker - PWA 离线缓存
-const CACHE_NAME = "paper-tracker-v2";
+const CACHE_NAME = "paper-tracker-v3";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg", "./data/papers.json"];
 
 self.addEventListener("install", (event) => {
