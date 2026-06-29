@@ -26,6 +26,8 @@ jobs:
 
       - name: Fetch papers from arXiv
         run: python scripts/fetch_papers.py
+        env:
+          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
 
       - name: Commit and push
         run: |

@@ -262,12 +262,28 @@
   .paper-summary {
     font-size: 13px;
     color: var(--text-dim);
-    line-height: 1.55;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    line-height: 1.6;
     margin-bottom: 10px;
+  }
+  .paper-ai-summary {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.55;
+    background: var(--new-soft);
+    border-left: 3px solid var(--new);
+    border-radius: 0 6px 6px 0;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+  }
+  .paper-ai-summary-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--new);
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .paper-foot {
     display: flex;
@@ -664,6 +680,17 @@ function escapeHtml(s) {
     .replace(/'/g, "&#039;");
 }
 
+// ============ HTML 转义（防 XSS） ============
+function escapeHtml(s) {
+  if (!s) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 // HTML 转义，防止 XSS（标题/作者/摘要可能含特殊字符）
 function escapeHtml(str) {
   if (!str) return "";
@@ -724,8 +751,12 @@ function toggleStar(paper) {
 // ============ 渲染主入口 ============
 function renderAll() {
   if (!ALL_DATA) return;
-  const upd = new Date(ALL_DATA.last_updated);
-  $("subtitle").textContent = "更新于 " + upd.toLocaleString("zh-CN", {month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"});
+  if (ALL_DATA.last_updated) {
+    const upd = new Date(ALL_DATA.last_updated);
+    $("subtitle").textContent = "更新于 " + upd.toLocaleString("zh-CN", {month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"});
+  } else {
+    $("subtitle").textContent = "等待首次抓取…";
+  }
   renderStats();
   renderFilters();
   renderToday();
@@ -841,6 +872,7 @@ function paperCard(p, showNewBadge) {
       </div>
       <div class="paper-title">${escapeHtml(p.title)}</div>
       <div class="paper-authors">${escapeHtml(authors)}</div>
+      ${p.ai_summary ? `<div class="paper-ai-summary"><div class="paper-ai-summary-label">✦ AI 总结</div>${escapeHtml(p.ai_summary)}</div>` : ""}
       <div class="paper-summary">${escapeHtml(p.summary)}</div>
       <div class="paper-foot">
         <span class="paper-meta">${dateStr} · ${p.id}</span>
@@ -905,6 +937,7 @@ function starCard(s) {
       ${tagsHtml ? `<div class="star-card-tags">${tagsHtml}</div>` : ""}
       <div class="paper-title">${escapeHtml(s.title)}</div>
       ${s.authors ? `<div class="paper-authors">${escapeHtml(s.authors)}</div>` : ""}
+      ${s.ai_summary ? `<div class="paper-ai-summary"><div class="paper-ai-summary-label">✦ AI 总结</div>${escapeHtml(s.ai_summary)}</div>` : ""}
       ${s.summary ? `<div class="paper-summary">${escapeHtml(s.summary)}</div>` : ""}
       <div class="paper-foot">
         <span class="paper-meta">${addedStr}${s.from_library ? " · 来自文献库" : ""}</span>

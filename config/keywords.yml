@@ -82,4 +82,5 @@ categories:
 fetch:
   max_results_per_query: 50   # 每个分类最多抓取条数
   keep_history: 500           # 历史保留最大条数
+  days_back: 14               # 仅抓取最近 N 天发布的文献（避免拉取历史文献）
   days_mark_new: 3            # 多少天内的文献标记为"新"

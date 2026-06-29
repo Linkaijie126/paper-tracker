@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 文献抓取脚本
-- 从 arXiv API 抓取最新论文
+- 从 arXiv API 抓取最近 N 天的论文（日期过滤，避免拉取历史文献）
 - 按关键词与分类过滤
 - 增量去重，保留历史
+- 调用 Agnes AI 为每篇新文献生成中文一句话总结
 - 输出 docs/data/papers.json 供前端读取
 
 由 GitHub Actions 每天定时运行，也可本地手动执行。
@@ -13,20 +14,22 @@ import urllib.request
 import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import sys
 import time
+import os
 import yaml
 from pathlib import Path
 
-# 路径配置（脚本位于 scripts/，项目根在上一级）
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "keywords.yml"
 OUTPUT_PATH = ROOT / "docs" / "data" / "papers.json"
 HISTORY_PATH = ROOT / "docs" / "data" / "history.json"
 
 ARXIV_API = "http://export.arxiv.org/api/query"
+AGNES_API = "https://apihub.agnes-ai.com/v1/chat/completions"
+AGNES_MODEL = "agnes-2.0-flash"
 
 
 def load_config():
@@ -34,10 +37,20 @@ def load_config():
         return yaml.safe_load(f)
 
 
+def build_date_range(days_back):
+    """构造 arXiv API 的 submittedDate 范围查询字符串。
+    arXiv 语法: submittedDate:[YYYYMMDDhhmm TO YYYYMMDDhhmm]
+    """
+    now = datetime.utcnow()
+    start = now - timedelta(days=days_back)
+    start_str = start.strftime("%Y%m%d") + "0000"
+    end_str = now.strftime("%Y%m%d") + "2359"
+    return f"submittedDate:[{start_str} TO {end_str}]"
+
+
 def fetch_arxiv(query, max_results=50, retries=3):
     """调用 arXiv API，返回解析后的论文列表。
     arXiv 要求每 3 秒最多 1 次请求，否则返回 429。
-    本函数内置 3 秒间隔 + 指数退避重试。
     """
     params = {
         "search_query": query,
@@ -56,13 +69,11 @@ def fetch_arxiv(query, max_results=50, retries=3):
             )
             with urllib.request.urlopen(req, timeout=30) as resp:
                 data = resp.read().decode("utf-8")
-            # 成功后等 3 秒，避免下一个请求触发 429
             time.sleep(3)
             return parse_arxiv_response(data)
         except urllib.error.HTTPError as e:
             last_err = e
             if e.code == 429:
-                # 限流，指数退避：5s, 10s, 20s
                 wait = 5 * (2 ** attempt)
                 print(f"  [限流] 429，{wait}s 后重试 ({attempt+1}/{retries})")
                 time.sleep(wait)
@@ -70,7 +81,6 @@ def fetch_arxiv(query, max_results=50, retries=3):
             raise
         except Exception as e:
             last_err = e
-            # 网络错误也重试一次
             if attempt < retries - 1:
                 print(f"  [网络错误] {e}，3s 后重试")
                 time.sleep(3)
@@ -80,7 +90,6 @@ def fetch_arxiv(query, max_results=50, retries=3):
 
 
 def parse_arxiv_response(xml_text):
-    """解析 arXiv Atom XML 响应"""
     ns = {
         "atom": "http://www.w3.org/2005/Atom",
         "arxiv": "http://arxiv.org/schemas/atom",
@@ -92,13 +101,12 @@ def parse_arxiv_response(xml_text):
         arxiv_url = entry.find("atom:id", ns).text
         arxiv_id = arxiv_url.split("/abs/")[-1]
 
-        # 跳过 arXiv 公告条目
         if "arxiv/api" in arxiv_id:
             continue
 
         title = entry.find("atom:title", ns).text.strip().replace("\n", " ")
         summary = entry.find("atom:summary", ns).text.strip().replace("\n", " ")
-        summary = " ".join(summary.split())  # 折叠多余空白
+        summary = " ".join(summary.split())
         published = entry.find("atom:published", ns).text
         updated = entry.find("atom:updated", ns).text
 
@@ -107,18 +115,15 @@ def parse_arxiv_response(xml_text):
             name = author.find("atom:name", ns).text
             authors.append(name)
 
-        # PDF 链接
         pdf_url = ""
         for link in entry.findall("atom:link", ns):
             if link.get("title") == "pdf":
                 pdf_url = link.get("href")
                 break
 
-        # DOI
         doi_elem = entry.find("arxiv:doi", ns)
         doi = doi_elem.text if doi_elem is not None else ""
 
-        # 主分类
         primary_elem = entry.find("arxiv:primary_category", ns)
         primary_category = (
             primary_elem.get("term") if primary_elem is not None else ""
@@ -142,8 +147,52 @@ def parse_arxiv_response(xml_text):
     return papers
 
 
+def generate_ai_summary(title, summary, api_key):
+    """调用 Agnes AI 生成中文一句话总结。
+    失败时返回空字符串，不影响整体流程。
+    """
+    if not api_key:
+        return ""
+
+    # 摘要过长则截断，避免超出 token 限制
+    trunc_summary = summary[:1500] if len(summary) > 1500 else summary
+
+    prompt = (
+        f"请用中文一句话（30字以内）总结这篇论文的核心贡献，直接给出总结，不要前缀：\n\n"
+        f"标题：{title}\n\n摘要：{trunc_summary}"
+    )
+
+    payload = {
+        "model": AGNES_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 120,
+        "temperature": 0.3,
+    }
+
+    try:
+        req = urllib.request.Request(
+            AGNES_API,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {api_key}",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        content = (
+            data.get("choices", [{}])[0]
+            .get("message", {})
+            .get("content", "")
+            .strip()
+        )
+        return content
+    except Exception as e:
+        print(f"    [AI总结失败] {e}")
+        return ""
+
+
 def load_history():
-    """加载历史抓取记录，用于增量去重"""
     if HISTORY_PATH.exists():
         with open(HISTORY_PATH, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -164,10 +213,28 @@ def main():
     history = load_history()
     seen_ids = set(history["seen_ids"])
 
+    # 历史文献中已有 AI 总结的，复用 id 集合，避免重复调用
+    existing_summaries = {
+        p["id"]: p.get("ai_summary", "")
+        for p in history["papers"]
+        if p.get("ai_summary")
+    }
+
     new_papers = []
     today_str = now.strftime("%Y-%m-%d")
     max_per_query = config.get("fetch", {}).get("max_results_per_query", 50)
     keep_history = config.get("fetch", {}).get("keep_history", 500)
+    days_back = config.get("fetch", {}).get("days_back", 14)
+
+    # AI 总结配置：从环境变量读取 key
+    agnes_key = os.environ.get("AGNES_API_KEY", "")
+    if agnes_key:
+        print(f"[AI总结] 已启用 Agnes AI 总结 (model={AGNES_MODEL})")
+    else:
+        print("[AI总结] 未设置 AGNES_API_KEY 环境变量，跳过 AI 总结")
+
+    date_range = build_date_range(days_back)
+    print(f"[日期过滤] 仅抓取最近 {days_back} 天的文献 ({date_range})")
 
     for category in config["categories"]:
         cat_name = category["name"]
@@ -176,8 +243,6 @@ def main():
 
         print(f"\n--- 分类: {cat_name} ---")
 
-        # 构造查询：关键词 OR + 分类过滤
-        # arXiv API 不支持引号短语搜索，需把每个短语拆成单词用 AND 连接
         def build_phrase_query(phrase):
             words = phrase.split()
             if len(words) == 1:
@@ -187,9 +252,9 @@ def main():
         kw_query = " OR ".join(build_phrase_query(kw) for kw in keywords)
         if arxiv_cats:
             cat_query = " OR ".join(f"cat:{c}" for c in arxiv_cats)
-            query = f"({kw_query}) AND ({cat_query})"
+            query = f"({kw_query}) AND ({cat_query}) AND ({date_range})"
         else:
-            query = kw_query
+            query = f"({kw_query}) AND ({date_range})"
 
         try:
             papers = fetch_arxiv(query, max_results=max_per_query)
@@ -202,10 +267,22 @@ def main():
         for p in papers:
             if p["id"] in seen_ids:
                 continue
-            # 标记分类与抓取日期
             p["category"] = cat_name
             p["fetch_date"] = today_str
             p["source"] = "arxiv"
+
+            # AI 总结：优先复用已有的，否则调用 API
+            if p["id"] in existing_summaries:
+                p["ai_summary"] = existing_summaries[p["id"]]
+            elif agnes_key:
+                print(f"    [AI] 生成总结: {p['id']}")
+                p["ai_summary"] = generate_ai_summary(
+                    p["title"], p["summary"], agnes_key
+                )
+                time.sleep(1)  # 限流，避免 API 过载
+            else:
+                p["ai_summary"] = ""
+
             new_papers.append(p)
             seen_ids.add(p["id"])
             cat_new += 1
@@ -217,7 +294,6 @@ def main():
     history["papers"] = (new_papers + history["papers"])[:keep_history]
     save_history(history)
 
-    # 输出 papers.json 供前端读取
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     output = {
         "last_updated": now.isoformat(),
