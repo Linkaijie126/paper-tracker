@@ -177,7 +177,14 @@ def main():
         print(f"\n--- 分类: {cat_name} ---")
 
         # 构造查询：关键词 OR + 分类过滤
-        kw_query = " OR ".join(f"all:{kw}" for kw in keywords)
+        # arXiv API 不支持引号短语搜索，需把每个短语拆成单词用 AND 连接
+        def build_phrase_query(phrase):
+            words = phrase.split()
+            if len(words) == 1:
+                return f"all:{words[0]}"
+            return "(" + " AND ".join(f"all:{w}" for w in words) + ")"
+
+        kw_query = " OR ".join(build_phrase_query(kw) for kw in keywords)
         if arxiv_cats:
             cat_query = " OR ".join(f"cat:{c}" for c in arxiv_cats)
             query = f"({kw_query}) AND ({cat_query})"
