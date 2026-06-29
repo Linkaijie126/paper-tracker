@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地测试产物（这些会被 Actions 重新生成并提交）
+# 如需本地测试请注释掉下一行
+docs/data/history.json
+
+# 系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
