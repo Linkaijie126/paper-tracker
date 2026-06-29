@@ -1,0 +1,85 @@
+# ============================================
+# 文献追踪关键词配置
+# 修改后推送到 GitHub，下次定时任务自动生效
+# ============================================
+
+# 每个分类包含：名称、关键词列表、arXiv 分类过滤
+# 关键词之间是 OR 关系（命中任一即收录）
+# arXiv 分类参考：https://arxiv.org/category_taxonomy
+#   cond-mat.mtrl-sci  凝聚态·材料科学
+#   cond-mat.mes-hall   凝聚态·介观与霍尔效应
+#   cond-mat.str-el     凝聚态·强关联电子
+#   physics.chem-ph     物理·化学物理
+#   physics.ins-det     物理·仪器与探测器
+#   materials-science   材料科学（综合）
+
+categories:
+  - name: 离子插层
+    keywords:
+      - "graphene lithium intercalation"
+      - "MoS2 lithium intercalation"
+      - "electrochemical ion intercalation"
+      - "lithium intercalation mechanism"
+      - "graphite intercalation compound"
+      - "stage transition intercalation"
+    arxiv_categories:
+      - cond-mat.mtrl-sci
+      - cond-mat.mes-hall
+      - physics.chem-ph
+
+  - name: 二维材料热导
+    keywords:
+      - "thermal conductivity graphene intercalation"
+      - "thermal transport 2D material"
+      - "phonon transport graphene"
+      - "reduced graphene oxide thermal"
+      - "intercalation thermal conductivity"
+      - "RGO thermal"
+    arxiv_categories:
+      - cond-mat.mtrl-sci
+      - cond-mat.mes-hall
+
+  - name: 材料制备
+    keywords:
+      - "reduced graphene oxide film"
+      - "spin coating graphene oxide"
+      - "RGO thin film"
+      - "spin-coated graphene oxide"
+      - "graphene oxide fabrication"
+      - "GO film reduction"
+    arxiv_categories:
+      - cond-mat.mtrl-sci
+      - physics.chem-ph
+      - materials-science
+
+  - name: 纳米力学
+    keywords:
+      - "van der Waals interlayer coupling"
+      - "2D material mechanical"
+      - "nanomechanics van der Waals"
+      - "interlayer interaction layered material"
+      - "vdW interlayer mechanics"
+      - "elastic properties 2D material"
+    arxiv_categories:
+      - cond-mat.mtrl-sci
+      - cond-mat.mes-hall
+
+  - name: 原子力显微镜与表征
+    keywords:
+      - "atomic force microscopy nanoindentation"
+      - "AFM contact resonance"
+      - "PeakForce QNM 2D material"
+      - "AFM mechanical characterization"
+      - "conductive AFM 2D material"
+      - "magnetic force microscopy 2D"
+      - "nanoscale electrical microscopy"
+    arxiv_categories:
+      - cond-mat.mtrl-sci
+      - cond-mat.mes-hall
+      - physics.ins-det
+
+# 抓取设置
+fetch:
+  max_results_per_query: 50   # 每个分类最多抓取条数
+  keep_history: 500           # 历史保留最大条数
+  days_mark_new: 3            # 多少天内的文献标记为"新"
