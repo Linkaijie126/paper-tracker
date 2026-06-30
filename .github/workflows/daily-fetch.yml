@@ -2,8 +2,8 @@ name: Daily Paper Fetch
 
 on:
   schedule:
-    # 每天 UTC 00:00 = 北京时间 08:00 执行
-    - cron: "0 0 * * *"
+    # UTC 02:30 = 北京时间 10:30（避开整点高峰，提高触发率）
+    - cron: "30 2 * * *"
   workflow_dispatch: # 支持在 GitHub 网页手动触发
 
 permissions:
