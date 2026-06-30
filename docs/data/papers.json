@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T06:10:39.367767",
+  "last_updated": "2026-06-30T06:38:31.575715",
   "total_papers": 15,
   "new_today": 15,
   "categories": [
@@ -10,6 +10,43 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "2606.29729v1",
+      "title": "Atomically Thin Amorphous Carbon with an Ultralow Dielectric Constant",
+      "summary": "Two-dimensional (2D) materials exhibit excellent properties at monolayer thickness and are viable replacements for various microelectronic components as scaling gradually approaches the atomic limit. Despite significant advancements in the ongoing 2D revolution of integrated circuits, one crucial building block, namely a 2D ultralow-k (ULK) dielectric, remains unreported. The challenge lies in achieving a dielectric constant less than 3, as traditional low-k dielectrics are inherently unstable at the 2D limit due to their amorphous or porous nature. The realisation of ultrathin dielectrics with low-k is also needed to address current bottlenecks in integrated circuits scaling. Specifically, low-k materials are necessary to minimise parasitic capacitances as the distance between conductive elements shrinks below 10 nm. Moreover, advanced architectures like gate-all-around field effect transistors (GAA FET) require even lower dielectric constants (k<2) at sub-3nm thickness. Here, we show that layer-by-layer grown multilayer amorphous carbon (ML-AC), as thin as 0.8 nm, is a mechanically robust 2D ULK dielectric with k of 1.35 and dielectric strength of 28-31 MV cm-1. The lack of any long-range order, its intrinsic 2D nature, sp2 carbon character and low density are all essential for minimising dielectric permittivity. Moreover, ML-AC overcomes the vulnerability of existing dielectrics to ion diffusion degradation with a record metal ion diffusion time to failure (TTF) of 10^10 s for even a single layer. Therefore, otherwise necessary additional layers occupying up to 3 nm can be eliminated, which is especially significant as metal line widths approach 10 nm. Combined with its low-temperature, direct and conformal growth even on a dielectric, these critical features enable substantial improvements in silicon-based semiconductor electronics and ensure compatibility with future 2D electronics.",
+      "authors": [
+        "Chee-Tat Toh",
+        "Artem K. Grebenko",
+        "Ugur Karadeniz",
+        "Usha Bhat",
+        "Ya He",
+        "Hongji Zhang",
+        "Denis V. Vyalikh",
+        "Anna Makarova",
+        "Alexander Fedorov",
+        "Alena A. Alekseeva",
+        "Kostya Iakoubovskii",
+        "Lu Shi",
+        "Andrei Starkov",
+        "Chuan Chu Tee",
+        "Lucas M. Sassi",
+        "Michel Bosman",
+        "Naoto Kamiuchi",
+        "Yuta Sato",
+        "Kazutomo Suenaga",
+        "Barbaros Oezyilmaz"
+      ],
+      "published": "2026-06-29T03:11:15Z",
+      "updated": "2026-06-29T03:11:15Z",
+      "pdf_url": "https://arxiv.org/pdf/2606.29729v1",
+      "arxiv_url": "http://arxiv.org/abs/2606.29729v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "category": "纳米力学",
+      "fetch_date": "2026-06-30",
+      "source": "arxiv",
+      "ai_summary": "首创0.8nm厚非晶碳介电层，实现超低介电常数与高稳定性。"
+    },
     {
       "id": "2606.25235v1",
       "title": "Defect Engineered 2D MoS2 Materials for ML-enabled Neurotransmitter SERS Detection",
@@ -30,9 +67,9 @@
       "doi": "",
       "primary_category": "cond-mat.mes-hall",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "缺陷工程MoS2结合机器学习实现神经递质高灵敏、高选择性SERS检测。"
+      "ai_summary": "缺陷工程MoS2结合机器学习实现多巴胺等神经递质的高灵敏SERS检测。"
     },
     {
       "id": "2606.22234v1",
@@ -52,9 +89,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": ""
+      "ai_summary": "通过微调MACE势模型，实现了扭曲二维材料结构与振动性质的高精度模拟。"
     },
     {
       "id": "2606.22152v1",
@@ -75,9 +112,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "提出相场与深度学习混合框架，高效预测三元合金微观结构演化。"
+      "ai_summary": "结合相场模型与深度学习，高效预测三元合金微观结构演化。"
     },
     {
       "id": "2606.20996v1",
@@ -105,9 +142,9 @@
       "doi": "",
       "primary_category": "cond-mat.mes-hall",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "首次观测并控制hBN中硼空位中心的自发声子发射及量子关联。"
+      "ai_summary": ""
     },
     {
       "id": "2606.20159v1",
@@ -133,9 +170,9 @@
       "doi": "",
       "primary_category": "cond-mat.mes-hall",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "在双层CrSBr中实现电场驱动磁翻转及紧密束缚层间激子。"
+      "ai_summary": ""
     },
     {
       "id": "2606.19780v1",
@@ -153,9 +190,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": ""
+      "ai_summary": "揭示砷烯层间耦合随厚度演化及半导体到半金属相变机制。"
     },
     {
       "id": "2606.19740v1",
@@ -181,9 +218,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "揭示二维CsCr3Sb5单层中增强的电子关联及应变调控的阿尔特磁性。"
+      "ai_summary": "揭示二维CsCr3Sb5单层中增强电子关联及应变可调的交替磁基态。"
     },
     {
       "id": "2606.18477v1",
@@ -206,9 +243,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "揭示水合控制层间扭转形成莫尔玻璃，为编程层状材料提供新机制。"
+      "ai_summary": "揭示水合控制扭曲形成莫尔玻璃，为层状材料编程提供新机制。"
     },
     {
       "id": "2606.18401v1",
@@ -225,9 +262,9 @@
       "doi": "",
       "primary_category": "cond-mat.mes-hall",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "揭示二维材料中激子负扩散源于与等离子体集体振荡的非平衡耦合。"
+      "ai_summary": "提出二维半导体激子负扩散机制，揭示其与等离子体集体振荡的耦合。"
     },
     {
       "id": "2606.17502v1",
@@ -245,9 +282,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "纳米力学",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "揭示滑移铁电中电子-离子混合极化机制及独特相变行为。"
+      "ai_summary": "揭示超润滑范德华异质结中混合电子-离子铁电性及其独特相变机制。"
     },
     {
       "id": "2606.27891v1",
@@ -266,9 +303,9 @@
       "doi": "",
       "primary_category": "physics.optics",
       "category": "原子力显微镜与表征",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "提出基于事件电子衍射方法，实现纳米机械谐振器非线性动力学的时空映射。"
+      "ai_summary": "提出事件基电子衍射技术，实现纳米机械谐振器非线性动力学的时空映射。"
     },
     {
       "id": "2606.27830v1",
@@ -288,9 +325,9 @@
       "doi": "10.1088/1361-648X/ae76a6",
       "primary_category": "cond-mat.mes-hall",
       "category": "原子力显微镜与表征",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "综述ESR-STM理论机制、自旋操控及核自旋耦合应用。"
+      "ai_summary": "综述ESR-STM理论机制、自旋操控及多量子比特应用进展。"
     },
     {
       "id": "2606.21254v1",
@@ -316,9 +353,9 @@
       "doi": "10.1021/acsnano.6c00559",
       "primary_category": "cond-mat.mes-hall",
       "category": "原子力显微镜与表征",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
-      "ai_summary": "发现反铁磁Co掺杂Fe3GaTe2中存在拓扑霍尔效应及磁畴结构。"
+      "ai_summary": "证实反铁磁Co掺杂Fe3GaTe2中存在拓扑霍尔效应及场致手性自旋织构。"
     },
     {
       "id": "2606.19142v1",
@@ -339,37 +376,9 @@
       "doi": "",
       "primary_category": "cond-mat.mtrl-sci",
       "category": "原子力显微镜与表征",
-      "fetch_date": "2026-06-29",
+      "fetch_date": "2026-06-30",
       "source": "arxiv",
       "ai_summary": "实现MnSe两相可控生长并揭示其磁性与光学特性。"
-    },
-    {
-      "id": "2606.16410v2",
-      "title": "Direct Nanoscale Pyroelectric Characterization of a CuInP${}_2$S${}_6$ van der Waals Nanogenerator",
-      "summary": "Pyroelectric energy conversion offers a route for harvesting time-dependent thermalfluctuations that are abundant in natural and technological environments. Twodimensional ferroelectrics are particularly attractive for this purpose because reduced dimensionality enables ultrathin, mechanically compliant device architectures. Here, we demonstrate direct nanoscale pyroelectric characterization of an out-of-plane van der Waals nanogenerator based on CuInP2S6 (CIPS) encapsulated between few-layer graphene electrodes. A scanning thermal microscopy (SThM) probe is employed as a localized nanoscale heat source while the electrically generated response is measured in situ through the device electrodes. Harmonic detection isolates the pyroelectric signal from parasitic first-harmonic electromechanical contributions, while finite-element thermal modeling combined with probe calibration enables direct determination of the local pyroelectric coefficient from the measured electrical response. Beyond quantitative characterization, the spatially resolved measurements directly identify electrically inactive regions associated with device defects, revealing local performance-limiting features that remain hidden in conventional spatially averaged pyroelectric measurements. The presented approach establishes a versatile platform for quantitative nanoscale pyroelectric characterization and the optimization of van der Waals pyroelectric devices.",
-      "authors": [
-        "Valentin Fonck",
-        "Roop K. Mech",
-        "Mohammadali Razeghi",
-        "Stuart Finch",
-        "Aljoscha Söll",
-        "Phillip Dobson",
-        "Jonathan R. Weaver",
-        "Zdenek Sofer",
-        "Oleg Kolosov",
-        "Jean Spièce",
-        "Pascal Gehring"
-      ],
-      "published": "2026-06-15T08:49:15Z",
-      "updated": "2026-06-22T11:36:47Z",
-      "pdf_url": "https://arxiv.org/pdf/2606.16410v2",
-      "arxiv_url": "http://arxiv.org/abs/2606.16410v2",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "category": "原子力显微镜与表征",
-      "fetch_date": "2026-06-29",
-      "source": "arxiv",
-      "ai_summary": "提出CIPS纳米发电机直接纳米尺度热释电表征方法。"
     }
   ]
 }
