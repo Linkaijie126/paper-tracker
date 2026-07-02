@@ -173,7 +173,7 @@ def fetch_openalex(keywords, days_back, max_results=25, retries=3, api_key=""):
         "filter": f"from_publication_date:{from_date},type:article",
         "per-page": max_results,
         "sort": "publication_date:desc",
-        "select": "id,title,publication_date,doi,abstract_inverted_index,authorships,primary_location,url",
+        "select": "id,title,publication_date,doi,abstract_inverted_index,authorships,primary_location",
         "mailto": OPENALEX_MAILTO,
     }
     if api_key:
@@ -251,8 +251,9 @@ def parse_openalex_response(data):
         source_info = (primary_loc.get("source") or {}) if primary_loc else {}
         journal = source_info.get("display_name", "") if source_info else ""
 
-        # URL：优先 doi 链接，否则 OpenAlex url
-        url = w.get("url") or (f"https://doi.org/{doi}" if doi else "")
+        # URL：优先用 primary_location 的 landing_page_url，否则 doi 链接
+        landing = (primary_loc.get("landing_page_url") or "") if primary_loc else ""
+        url = landing or (f"https://doi.org/{doi}" if doi else f"https://openalex.org/{oax_id}")
 
         papers.append({
             "id": "openalex_" + oax_id,
