@@ -35,5 +35,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/
           git commit -m "chore: daily paper fetch $(date -u +%Y-%m-%d)" || echo "No new papers today"
-          git pull --rebase origin main || true
+          # rebase 到远程最新；数据文件冲突时优先用刚生成的版本(-X theirs)
+          # workflow 只修改 docs/data/，代码文件不会冲突
+          git pull --rebase -X theirs origin main || git rebase --abort
           git push
