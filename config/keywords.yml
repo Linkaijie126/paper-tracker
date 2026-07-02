@@ -16,67 +16,81 @@
 categories:
   - name: 离子插层
     keywords:
-      - "graphene lithium intercalation"
-      - "MoS2 lithium intercalation"
-      - "electrochemical ion intercalation"
-      - "lithium intercalation mechanism"
-      - "graphite intercalation compound"
-      - "stage transition intercalation"
+      # 单词/双词组合，命中率高
+      - "ion intercalation"
+      - "lithium intercalation"
+      - "intercalated"
+      - "ion insertion"
+      - "electrochemical intercalation"
+      - "graphite intercalation"
+      - "stage transition"
+      - "cation intercalation"
     arxiv_categories:
       - cond-mat.mtrl-sci
       - cond-mat.mes-hall
+      - cond-mat.str-el
       - physics.chem-ph
 
   - name: 二维材料热导
     keywords:
-      - "thermal conductivity graphene intercalation"
-      - "thermal transport 2D material"
-      - "phonon transport graphene"
-      - "reduced graphene oxide thermal"
-      - "intercalation thermal conductivity"
-      - "RGO thermal"
+      # 热导/热输运 + 2D/层状/vdW
+      - "thermal conductivity layered"
+      - "thermal transport layered"
+      - "phonon transport"
+      - "thermal conductivity van der Waals"
+      - "thermoelectric van der Waals"
+      - "thermal conductivity 2D"
+      - "heat transport layered"
+      - "intercalation thermal"
     arxiv_categories:
       - cond-mat.mtrl-sci
       - cond-mat.mes-hall
 
   - name: 材料制备
     keywords:
-      - "reduced graphene oxide film"
-      - "spin coating graphene oxide"
+      # RGO/GO 薄膜制备
+      - "reduced graphene oxide"
+      - "graphene oxide film"
+      - "spin coating"
       - "RGO thin film"
-      - "spin-coated graphene oxide"
       - "graphene oxide fabrication"
-      - "GO film reduction"
+      - "GO film"
+      - "spin-coated"
     arxiv_categories:
       - cond-mat.mtrl-sci
       - physics.chem-ph
       - materials-science
+      - cond-mat.mes-hall
 
   - name: 纳米力学
     keywords:
-      - "van der Waals interlayer coupling"
+      - "van der Waals interlayer"
+      - "interlayer coupling"
+      - "interlayer interaction"
       - "2D material mechanical"
-      - "nanomechanics van der Waals"
-      - "interlayer interaction layered material"
-      - "vdW interlayer mechanics"
-      - "elastic properties 2D material"
+      - "nanomechanics"
+      - "vdW interlayer"
+      - "elastic properties layered"
+      - "interlayer mechanics"
     arxiv_categories:
       - cond-mat.mtrl-sci
       - cond-mat.mes-hall
 
   - name: 原子力显微镜与表征
     keywords:
-      - "atomic force microscopy nanoindentation"
-      - "AFM contact resonance"
-      - "PeakForce QNM 2D material"
-      - "AFM mechanical characterization"
-      - "conductive AFM 2D material"
-      - "magnetic force microscopy 2D"
-      - "nanoscale electrical microscopy"
+      - "atomic force microscopy"
+      - "AFM nanoindentation"
+      - "contact resonance"
+      - "PeakForce QNM"
+      - "conductive AFM"
+      - "magnetic force microscopy"
+      - "nanoscale characterization"
+      - "AFM mechanical"
     arxiv_categories:
       - cond-mat.mtrl-sci
       - cond-mat.mes-hall
       - physics.ins-det
+      - cond-mat.str-el
 
 # 抓取设置
 fetch:
