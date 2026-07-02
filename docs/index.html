@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-<meta name="theme-color" content="#0f0f12" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#534AB7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#DEE4E9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#DEE4E9" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="文献追踪">
@@ -14,42 +14,43 @@
 <link rel="apple-touch-icon" href="icon.svg">
 <style>
   :root {
-    --bg: #0f0f12;
-    --bg-elev: #1a1a20;
-    --bg-card: #18181f;
-    --border: #2a2a33;
-    --text: #e8e8ec;
-    --text-dim: #9a9aa5;
-    --text-faint: #6a6a75;
-    --accent: #7F77DD;
-    --accent-soft: rgba(127, 119, 221, 0.15);
-    --new: #1D9E75;
-    --new-soft: rgba(29, 158, 117, 0.15);
-    --star: #EF9F27;
-    --star-soft: rgba(239, 159, 39, 0.15);
-    --link: #85B7EB;
-    --danger: #E24B4A;
-    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+    --bg: #DEE4E9;              /* 浅灰背景 */
+    --bg-elev: #FFFFFF;         /* 抬升背景（卡片/顶部） */
+    --bg-card: #FFFFFF;         /* 卡片背景 */
+    --border: rgba(149, 206, 232, 0.4);  /* 浅蓝边框 */
+    --text: #0E0E0E;            /* 黑色主文字 */
+    --text-dim: #5A6A72;        /* 深灰次要文字 */
+    --text-faint: #8A9AA5;      /* 浅灰提示文字 */
+    --accent: #47A0C9;          /* 蓝色强调 */
+    --accent-soft: rgba(71, 160, 201, 0.12);  /* 蓝色浅底 */
+    --new: #47A0C9;             /* 蓝色 NEW 标签 */
+    --new-soft: rgba(71, 160, 201, 0.12);
+    --star: #DF8CAD;            /* 粉色星标 */
+    --star-soft: rgba(223, 140, 173, 0.12);
+    --link: #47A0C9;            /* 蓝色链接 */
+    --danger: #DF8CAD;          /* 粉色删除 */
+    --shadow: 0 2px 8px rgba(71, 160, 201, 0.12);
     --tab-h: 56px;
   }
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #f4f4f7;
-      --bg-elev: #ffffff;
-      --bg-card: #ffffff;
-      --border: #e4e4ea;
-      --text: #1a1a20;
-      --text-dim: #5a5a65;
-      --text-faint: #9a9aa5;
-      --accent: #534AB7;
-      --accent-soft: rgba(83, 74, 183, 0.08);
-      --new: #0F6E56;
-      --new-soft: rgba(15, 110, 86, 0.1);
-      --star: #BA7517;
-      --star-soft: rgba(186, 117, 23, 0.1);
-      --link: #185FA5;
-      --danger: #A32D2D;
-      --shadow: 0 1px 3px rgba(0,0,0,0.06);
+      /* 强制使用浅色主题，保持图片配色 */
+      --bg: #DEE4E9;
+      --bg-elev: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --border: rgba(149, 206, 232, 0.4);
+      --text: #0E0E0E;
+      --text-dim: #5A6A72;
+      --text-faint: #8A9AA5;
+      --accent: #47A0C9;
+      --accent-soft: rgba(71, 160, 201, 0.12);
+      --new: #47A0C9;
+      --new-soft: rgba(71, 160, 201, 0.12);
+      --star: #DF8CAD;
+      --star-soft: rgba(223, 140, 173, 0.12);
+      --link: #47A0C9;
+      --danger: #DF8CAD;
+      --shadow: 0 2px 8px rgba(71, 160, 201, 0.12);
     }
   }
 
@@ -226,11 +227,11 @@
     font-weight: 600;
     letter-spacing: 0.3px;
   }
-  .paper-src-arxiv { color: var(--accent); background: var(--accent-soft); }
-  .paper-src-openalex { color: var(--link); background: rgba(133,183,235,0.15); }
+  .paper-src-arxiv { color: #47A0C9; background: rgba(71, 160, 201, 0.12); }
+  .paper-src-openalex { color: #DF8CAD; background: rgba(223, 140, 173, 0.15); }
   .paper-journal {
     font-size: 11px;
-    color: var(--link);
+    color: var(--accent);
     font-style: italic;
     margin-bottom: 6px;
   }
