@@ -14,7 +14,7 @@ import urllib.request
 import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import json
 import sys
 import time
@@ -333,8 +333,14 @@ def save_history(history):
 
 
 def main():
-    now = datetime.now()
-    print(f"=== 文献抓取开始 {now.isoformat()} ===")
+    # 统一用 UTC 时间戳，写入 JSON 时带 Z 后缀，前端 new Date() 能正确转本地时区
+    now_utc = datetime.now(timezone.utc)
+    # 北京时间（UTC+8）用于 fetch_date，保证"今日"与用户认知一致
+    beijing_tz = timezone(timedelta(hours=8))
+    now_beijing = now_utc.astimezone(beijing_tz)
+    # last_updated 带 UTC 标记，前端会自动转北京时间显示
+    last_updated_str = now_utc.strftime("%Y-%m-%dT%H:%M:%S.") + f"{now_utc.microsecond:06d}" + "Z"
+    print(f"=== 文献抓取开始 {last_updated_str} (北京 {now_beijing.isoformat()}) ===")
 
     config = load_config()
     history = load_history()
@@ -348,7 +354,7 @@ def main():
     }
 
     new_papers = []
-    today_str = now.strftime("%Y-%m-%d")
+    today_str = now_beijing.strftime("%Y-%m-%d")  # 用北京日期作为 fetch_date
     max_per_query = config.get("fetch", {}).get("max_results_per_query", 50)
     keep_history = config.get("fetch", {}).get("keep_history", 500)
     days_back = config.get("fetch", {}).get("days_back", 14)
@@ -447,7 +453,7 @@ def main():
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     output = {
-        "last_updated": now.isoformat(),
+        "last_updated": last_updated_str,
         "total_papers": len(history["papers"]),
         "new_today": len(new_papers),
         "categories": [c["name"] for c in config["categories"]],
