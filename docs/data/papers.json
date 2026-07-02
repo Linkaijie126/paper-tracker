@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-01T06:52:03.060746",
-  "total_papers": 15,
-  "new_today": 0,
+  "last_updated": "2026-07-02T06:22:59.688107",
+  "total_papers": 16,
+  "new_today": 1,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,27 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "2607.00901v1",
+      "title": "Two-dimensional vertically polarized Hg3AsSe4I monolayer for efficient photocatalytic water-splitting: promoting carrier separation by intrinsic electric field and Rashba effect",
+      "summary": "Efficient separation of photo-excited electron-hole pairs is essential for developing the high performance photocatalysts towards light-driven water-splitting applications. To this end, pho tocatalytic performances of two-dimensional (2D) semiconducting ferroelectric (FE) materials with out-of-plane polarizations have been extensively explored. However, out-of-plane polarizations in 2D FE materials are susceptible to the critical thickness limitation and can be easily compensated by surface adsorbates. On the other hand, 2D vertically polarized materials with stable and ir reversible out-of-plane polarizations may overcome the critical thickness limitation, enabling the practical advantage for spatial separation of photo-excited electron-hole pairs during the photo catalytic reactions. In the current work, 2D vertically polarized Hg3AsSe4I, an experimentally synthesized van der Waals (vdW) layered material, has been systematically investigated as a high performance 2D photocatalyst. Owing to its semiconducting band gap suitable for visible-light absorption, high carrier mobility, and desirable band edge alignment ideally matching water reduc tion and oxidation potentials, Hg3AsSe4I monolayer fulfills both optical and electronic prerequisites for photocatalytic water-splitting reactions. Besides the stable vertical polarization able to persist in Hg3AsSe4I monolayer, the dual mechanism for efficient separation of photo-excited carriers has also been demonstrated. Rashba spin-orbit coupling (SOC) of large strength emerges within 2D Hg3AsSe4I, splitting the band edges into spin-resolved band branches with unique spin-momentum locking characters.........",
+      "authors": [
+        "Xinfeng Chen",
+        "Wenchao Shan",
+        "Fengfeng Ye",
+        "Gaoyang Gou"
+      ],
+      "published": "2026-07-01T13:04:00Z",
+      "updated": "2026-07-01T13:04:00Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.00901v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.00901v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-02",
+      "source": "arxiv",
+      "ai_summary": "Hg3AsSe4I单层凭借内建电场和Rashba效应实现高效光催化分解水。"
+    },
     {
       "id": "2606.29729v1",
       "title": "Atomically Thin Amorphous Carbon with an Ultralow Dielectric Constant",
