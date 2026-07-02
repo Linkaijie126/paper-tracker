@@ -280,6 +280,24 @@
     color: var(--text-dim);
     line-height: 1.6;
     margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
+    transition: -webkit-line-clamp 0s;
+  }
+  .paper-summary.expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+  }
+  .paper-summary-toggle {
+    font-size: 12px;
+    color: var(--accent);
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+    user-select: none;
   }
   .paper-ai-summary {
     font-size: 13px;
@@ -895,7 +913,7 @@ function paperCard(p, showNewBadge) {
       <div class="paper-authors">${escapeHtml(authors)}</div>
       ${p.journal ? `<div class="paper-journal">${escapeHtml(p.journal)}</div>` : ""}
       ${p.ai_summary ? `<div class="paper-ai-summary"><div class="paper-ai-summary-label">✦ AI 总结</div>${escapeHtml(p.ai_summary)}</div>` : ""}
-      <div class="paper-summary">${escapeHtml(p.summary)}</div>
+      ${p.summary ? `<div class="paper-summary" onclick="this.classList.toggle('expanded')">${escapeHtml(p.summary)}</div><span class="paper-summary-toggle" onclick="var s=this.previousElementSibling;s.classList.toggle('expanded');this.textContent=s.classList.contains('expanded')?'收起摘要 ▲':'展开摘要 ▼'">展开摘要 ▼</span>` : ""}
       <div class="paper-foot">
         <span class="paper-meta">${dateStr}${sourceId ? " · " + escapeHtml(sourceId) : ""}</span>
         <div class="paper-links">
