@@ -160,12 +160,11 @@ def parse_arxiv_response(xml_text):
 
 # ============ OpenAlex 数据源（覆盖期刊论文）============
 
-def fetch_openalex(keywords, days_back, max_results=25, retries=3):
+def fetch_openalex(keywords, days_back, max_results=25, retries=3, api_key=""):
     """调用 OpenAlex API 搜索标题+摘要含关键词的近期论文。
     OpenAlex 覆盖 2.5 亿+作品，含 Science/Nature/期刊。
-    用 mailto 进入 polite pool，限流更宽松。
+    有 api_key 时限流更宽松（10万/天），否则用 mailto 进 polite pool。
     """
-    # OpenAlex 的 search 参数：空格分隔的词会做全文搜索
     query_str = " ".join(keywords)
     from_date = build_openalex_date_filter(days_back)
 
@@ -177,6 +176,8 @@ def fetch_openalex(keywords, days_back, max_results=25, retries=3):
         "select": "id,title,publication_date,doi,abstract_inverted_index,authorships,primary_location,url",
         "mailto": OPENALEX_MAILTO,
     }
+    if api_key:
+        params["api_key"] = api_key
     url = OPENALEX_API + "?" + urllib.parse.urlencode(params)
 
     last_err = None
@@ -366,6 +367,13 @@ def main():
     else:
         print("[AI总结] 未设置 AGNES_API_KEY 环境变量，跳过 AI 总结")
 
+    # OpenAlex API key（有 key 限流更宽松，无 key 用 polite pool）
+    openalex_key = os.environ.get("OPENALEX_API_KEY", "")
+    if openalex_key:
+        print("[OpenAlex] 已配置 API key，限流 10万/天")
+    else:
+        print("[OpenAlex] 未配置 API key，使用 polite pool（限流较严）")
+
     date_range = build_date_range(days_back)
     print(f"[日期过滤] 仅抓取最近 {days_back} 天的文献")
 
@@ -400,7 +408,7 @@ def main():
         # ===== 数据源2: OpenAlex（期刊论文）=====
         # 用分类的所有关键词组合搜索
         try:
-            openalex_papers = fetch_openalex(keywords, days_back, max_results=25)
+            openalex_papers = fetch_openalex(keywords, days_back, max_results=25, api_key=openalex_key)
             print(f"  [OpenAlex] 返回 {len(openalex_papers)} 篇")
         except Exception as e:
             print(f"  [OpenAlex错误] {e}")
