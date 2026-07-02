@@ -16,14 +16,11 @@
 categories:
   - name: 离子插层
     keywords:
-      # 单词/双词组合，命中率高
-      - "ion intercalation"
-      - "lithium intercalation"
+      # 围绕 intercalation，不限定材料
+      - "intercalation"
       - "intercalated"
       - "ion insertion"
       - "electrochemical intercalation"
-      - "graphite intercalation"
-      - "stage transition"
       - "cation intercalation"
     arxiv_categories:
       - cond-mat.mtrl-sci
