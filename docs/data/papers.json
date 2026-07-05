@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-04T05:59:14.865572Z",
-  "total_papers": 131,
-  "new_today": 5,
+  "last_updated": "2026-07-05T06:24:09.129743Z",
+  "total_papers": 133,
+  "new_today": 2,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,54 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7167051763",
+      "title": "Tailoring Layered Double Hydroxide-Based Coatings for Multifunctional Catalysis: Insights into Composition, Architecture, and Reactivity",
+      "summary": "Layered double hydroxides (LDHs) have attracted growing interest as multifunctional materials due to their tunable composition, layered architecture, and versatile surface and interlayer chemistry. In addition to their use as bulk catalysts, LDHs are increasingly explored as functional and catalytic coatings, where immobilization on solid substrates enables enhanced stability, reusability, and control over interfacial reactivity. This review examines how composition, architecture, and reactivity relationships in LDHs can be leveraged to design multifunctional LDH-based coatings able to support catalytic processes. Key design strategies based on cation composition, interlayer anions, defect engineering, and hierarchical architectures are discussed in the context of surface-deposited systems. Synthetic approaches relevant to coatings, including in situ growth, post-synthetic modification, and calcination–reconstruction routes, are summarized alongside mechanistic insights into acid–base, redox, and synergistic multi-site catalysis. Finally, applications in catalytic coatings, and environmentally relevant processes are highlighted, with emphasis on structure–activity correlations, coating durability, and resistance to leaching. This review provides a framework for the rational development of multifunctional LDH coatings for catalytic and energy-related applications.",
+      "authors": [
+        "Oana Dragos",
+        "Nicoleta Cornei",
+        "Carmen Mîţă",
+        "H. Chiriac",
+        "Dumitru-Daniel Herea",
+        "Nicoleta Lupu"
+      ],
+      "published": "2026-07-02T00:00:00Z",
+      "updated": "2026-07-02T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.3390/coatings16070793",
+      "primary_category": "Coatings",
+      "journal": "Coatings",
+      "url": "https://doi.org/10.3390/coatings16070793",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-07-05",
+      "ai_summary": "综述了LDH基涂层的设计策略、合成方法及催化应用。"
+    },
+    {
+      "id": "openalex_W7167044769",
+      "title": "Carbon based functional materials enable multifunctional flexible strain sensors for wearable and implantable applications",
+      "summary": "Flexible strain sensors are essential components for wearable electronics, implantable biointerfaces, and soft human-machine systems. As application scenarios expand from epidermal monitoring toward long-term in vivo operation, increasingly stringent requirements are imposed on multifunctionality, mechanical compliance, signal stability, and biointegration. Carbon-based functional materials, owing to their tunable electrical properties, structural versatility, and favorable electromechanical compatibility, have emerged as a central materials platform for next-generation flexible strain sensors. This review presents a comprehensive, mechanism-oriented overview of carbon-enabled flexible strain sensing, encompassing piezoresistive, capacitive, and piezoelectric transduction modes. This review systematically examine how carbon material dimensionality including low-dimensional nanofillers, two-dimensional sheets, and three-dimensional porous, governing sensitivity, durability, and long-term device reliability. Particular emphasis is placed on contrasting the fundamentally different design requirements of wearable and implantable systems, including sensitivity-stability trade-offs, tissue-level mechanical matching, and operational robustness in complex biological environments. Distinct from prior material- or device-centric reviews, this review establishes a unified framework linking carbon architectures, sensing mechanisms, and application contexts, thereby clarifying critical bottlenecks and design principles for advancing multifunctional, biointegrated strain sensors toward practical and translational use.",
+      "authors": [
+        "Siqi Wang",
+        "Xuemeng Li",
+        "Enci Xie",
+        "Shuo Gao"
+      ],
+      "published": "2026-07-02T00:00:00Z",
+      "updated": "2026-07-02T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1186/s11671-026-04734-z",
+      "primary_category": "Discover Nano",
+      "journal": "Discover Nano",
+      "url": "https://doi.org/10.1186/s11671-026-04734-z",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-07-05",
+      "ai_summary": "本文综述碳基材料在柔性应变传感器中的机制与应用。"
+    },
     {
       "id": "openalex_W7166870635",
       "title": "Rethinking Performance Degradation in MXene Lithium-Ion Batteries through Coupled Electrochemical Evolution",
