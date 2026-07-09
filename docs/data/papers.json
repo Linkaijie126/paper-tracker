@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-08T05:36:32.085891Z",
-  "total_papers": 165,
-  "new_today": 10,
+  "last_updated": "2026-07-09T06:26:57.243633Z",
+  "total_papers": 176,
+  "new_today": 11,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,240 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7167570619",
+      "title": "What do we know about cathodic corrosion of platinum and gold electrodes?",
+      "summary": "",
+      "authors": [
+        "Mark Aarts",
+        "Marc T. M. Koper"
+      ],
+      "published": "2026-07-01T00:00:00Z",
+      "updated": "2026-07-01T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.coelec.2026.101904",
+      "primary_category": "Current Opinion in Electrochemistry",
+      "journal": "Current Opinion in Electrochemistry",
+      "url": "https://doi.org/10.1016/j.coelec.2026.101904",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-07-09",
+      "ai_summary": ""
+    },
+    {
+      "id": "2607.07559v1",
+      "title": "Tunnel-rate controlled local heat distribution in mesoscopic circuits",
+      "summary": "Solid-state quantum technologies, including qubits and quantum metrology circuits, demand milli-Kelvin operation to preserve fragile quantum states from classical noise. While the negligible electron-phonon coupling is the major impediment, reaching 50 mK electron temperature is further suffered by the high electrical resistance and sub-micron-scale dimensions of typical devices, limiting conventional heat dissipation. Though the phonons are effectively frozen, thermoelectric techniques could offer a viable path for heat management.This work explores thermally driven electrical transport in a gated quantum dot (QD) on a GaAs-AlGaAs two-dimensional electron gas (2DEG), to control heat flow between the source and drain reservoirs.By exploiting the QD's discrete energy spectrum and tuneable tunnel rates, a precise control over the polarity and magnitude of the resulting thermoelectric current is demonstrated. A temperature difference of 650 mK is maintained across the QD, a separation of 400 nm, by tuning the tunnel-rates. An experimental gate pulsing method is also introduced to directly measure the electron temperature differences across the QD, bypassing the need for any theoretical fits. The results presented here show that tuneable tunnel barriers can be used for local heat control, and could lead to advanced quantum refrigerators that work efficiently in mesoscopic circuits.",
+      "authors": [
+        "Parvathy Gireesan",
+        "Umang Soni",
+        "Harikrishnan Sundaresan",
+        "Giorgio Biasiol",
+        "Madhu Thalakulam"
+      ],
+      "published": "2026-07-08T15:52:45Z",
+      "updated": "2026-07-08T15:52:45Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07559v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07559v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "二维材料热导",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "利用量子点隧穿率调控实现介观电路局部热分布控制。"
+    },
+    {
+      "id": "2607.07087v1",
+      "title": "Phonon scattering mechanisms in WTe$_2$ observed by ultrafast coherent phonon spectroscopy",
+      "summary": "Revealing the mechanisms of phonon scattering is crucial for understanding material properties such as transport characteristics and optical responses. It can be discussed by measuring the temperature dependence of the phonon energy and lifetime. To gain insight into these mechanisms in Weyl semimetal T$_d$-WTe$_2$, we investigated coherent phonons using time-resolved pump-probe spectroscopy in a wide temperature range from 4.6 to 300 K. The temperature dependence of the frequency and decay rate of the two high-frequency optical modes was described by the conventional anharmonic phonon-phonon scattering model. In contrast, the low-frequency mode at 2.4 THz exhibited anomalous behavior, which can be interpreted as the contribution of phonon-electron scattering.",
+      "authors": [
+        "Mizuki Akei",
+        "Yu Mizukoshi",
+        "Muneaki Hase"
+      ],
+      "published": "2026-07-08T07:20:20Z",
+      "updated": "2026-07-08T07:20:20Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07087v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07087v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "二维材料热导",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "揭示WTe2中声子散射机制，发现低频模式异常源于声子-电子散射。"
+    },
+    {
+      "id": "2607.07590v1",
+      "title": "Unveiling the Spin-Valley Structure of Dipolar Exciton Ladders in R-stacked WSe$_2$/WS$_2$ Moiré Heterobilayers",
+      "summary": "Localized interlayer excitons in moiré heterobilayers can form dipolar exciton ladders, yet their internal spin-valley structure remains unresolved. Here, we use helicity-resolved magneto-photoluminescence to identify the microscopic origin of the ladder in R-stacked WSe$_2$/WS$_2$ at charge neutrality and one-electron filling of the moiré lattice. At charge neutrality, the first two emission peaks correspond to a spin-triplet interlayer exciton and a triplet-triplet two-exciton state separated by 38 meV, reflecting the on-site dipolar interaction. The opposite Zeeman response of the apparent third rung of the ladder rules out its assignment as a spin-conserving three-exciton state and instead identifies it as a triplet-singlet two-exciton configuration with a 22 meV offset set by the WS$_2$ conduction-band spin splitting. At one-electron filling, the correlated electronic background gives rise to charged one- and two-exciton states and intervalley/intravalley two-exciton configurations, while reducing the effective exciton-exciton interaction. Our results establish a spin-valley-resolved picture of dipolar exciton ladders beyond simple occupation-number physics in moiré heterobilayers.",
+      "authors": [
+        "Byeong Wook Cho",
+        "Tatyana V. Ivanova",
+        "Zhe Li",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Brian D. Gerardot",
+        "Mauro Brotons-Gisbert"
+      ],
+      "published": "2026-07-08T16:12:37Z",
+      "updated": "2026-07-08T16:12:37Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07590v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07590v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "揭示R堆叠WSe2/WS2中偶极激子梯度的自旋谷结构。"
+    },
+    {
+      "id": "2607.06995v1",
+      "title": "Surface-Reconstruction-Driven Insulating Behavior in Metallic Charge-Density-Wave 1T-TaSe$_{2}$",
+      "summary": "Bulk 1T-TaSe$_2$ is metallic, yet its surface consistently exhibits an insulating gap -- a dichotomy long attributed to a surface Mott insulator driven by enhanced electron correlations. Here, using density functional theory calculations, we show that this insulating surface instead originates from a charge-density-wave (CDW) stacking reconstruction. Whereas the bulk stabilizes a single-layer CDW stacking that supports metallic transport, the surface energetically favors a bilayer stacking, in which interlayer hybridization of Ta $5d_{z^2}$ orbitals opens a $\\sim$0.4 eV gap -- a band insulator requiring no on-site Coulomb repulsion. This reconstruction is the thermodynamic ground state for slab thicknesses from two to eight layers, and the calculated surface density of states quantitatively reproduces scanning tunneling spectra for both insulating and metallic domains. Our results establish CDW surface reconstruction, rather than Mott physics, as the mechanism governing the surface electronic structure of 1T-TaSe$_2$ and provide a unified explanation for the experimentally observed coexistence of metallic and insulating domains.",
+      "authors": [
+        "Sung-Hoon Lee",
+        "Doohee Cho"
+      ],
+      "published": "2026-07-08T04:38:21Z",
+      "updated": "2026-07-08T04:38:21Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.06995v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.06995v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "揭示1T-TaSe2表面绝缘性源于CDW堆叠重构而非莫特物理。"
+    },
+    {
+      "id": "2607.07428v1",
+      "title": "Growth of (111)-textured SrTiO3 thin films on Pt(111)/Al2O3(1-102) substrates by rf magnetron sputter deposition",
+      "summary": "SrTiO3 thin films, 20-30nm, with high quality crystal structure and low roughness can be used as growth templates for complex oxides or as the dielectric materials for capacitor structures. In this work, stoichiometric STO thin films were grown by radio frequency magnetron sputtering on Pt (111) templates grown on rAl2O3 substrates, and the effects of growth parameters as well as the underlying Pt templates structural properties on the quality of STO films were studied. A comparison between room temp grown Pt and Pt grown at elevated temps showed that the latter lead to highly ordered Pt and STO films with quasi 2D surface roughness. Xray diffraction showed that the STO thin films had (111) and (222) crystal orientation. A rocking curve full width at half maximum value of 0.2° was achieved, indicating that the STO films are high-quality. The STO films have a roughness less than 1 nm, as measured using atomic force microscopy, comparable to the underlying Pt templates roughness.",
+      "authors": [
+        "Ekaterina Taylor",
+        "Ethan R. Cronk",
+        "Kalani Perera",
+        "Nuri W. Emanetoglu",
+        "Nicholas S. Bingham"
+      ],
+      "published": "2026-07-08T13:58:01Z",
+      "updated": "2026-07-08T13:58:01Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07428v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07428v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "通过优化Pt模板制备高质量(111)取向、低粗糙度的SrTiO3薄膜。"
+    },
+    {
+      "id": "2607.07363v1",
+      "title": "Force-Isosurface Simulations Probe the Limits of High-Resolution AFM on Three-Dimensional Molecules",
+      "summary": "High-resolution atomic force microscopy has transformed molecular imaging by revealing intramolecular structure directly in real space. A major remaining challenge is to extend this capability from largely planar molecules to non-planar molecular systems, where the most important structural information may be distributed across different heights above the surface. Here we use probe-particle-model simulations to predict the constant-force contours expected above molecules with increasing structural complexity. By extracting force isosurfaces from simulated three-dimensional force fields, we compare the molecular information retained in constant-height and constant-force images. For tilted benzene and pyrrole, constant-force images preserve the molecular framework across a range of adsorption angles and allow the molecular orientation to be recovered quantitatively. For larger non-planar and three-dimensional systems, simulations identify characteristic force-isosurface contrast associated with adsorption geometry, lower-lying molecular structure and curved molecular surfaces. These results provide target contrasts for force isosurfaces that could be extracted from three-dimensional force-mapping experiments, evaluating the molecular information retained by ideal force-isosurface imaging across progressively non-planar systems.",
+      "authors": [
+        "Edward J Dunn",
+        "Robert J Young",
+        "Samuel P Jarvis"
+      ],
+      "published": "2026-07-08T12:57:00Z",
+      "updated": "2026-07-08T12:57:00Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07363v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07363v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": ""
+    },
+    {
+      "id": "2607.07228v1",
+      "title": "Rayleigh Bound States in the Continuum",
+      "summary": "We predict a class of bound states in the continuum (BICs) in non-subwavelength periodic metasurfaces -- Rayleigh BICs -- that emerge precisely at Rayleigh anomalies, where diffraction channels open. In contrast to conventional symmetry-protected and accidental BICs, which are typically engineered in the subwavelength regime with only a few radiation channels, Rayleigh BICs remain nonradiating far beyond this limit, even when multiple diffraction channels are open. Their formation originates from the interplay between collective lattice resonances, Rayleigh anomalies, and anapole states of the constituent metaatoms. We show that Rayleigh BICs are characterized by an unusual cubic scaling of the quality factor in reciprocal space, ($Q \\propto 1/k^3$), an asymptotic behavior that is not characteristic of either symmetry-protected or accidental BICs. Our results establish a constructive route for engineering nonradiating states in metasurfaces beyond the subwavelength regime.",
+      "authors": [
+        "Ilya Karavaev",
+        "Mingzhao Song",
+        "Andrey Bogdanov"
+      ],
+      "published": "2026-07-08T10:12:03Z",
+      "updated": "2026-07-08T10:12:03Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.07228v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.07228v1",
+      "doi": "",
+      "primary_category": "physics.optics",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "预测了瑞利异常处的瑞利束缚态在连续体中，拓展了亚波长外的非辐射态工程。"
+    },
+    {
+      "id": "2607.06812v1",
+      "title": "Driven square lattice of quantum dots in a magnetic field coupled to a cylindrical FIR-photon cavity",
+      "summary": "We present a comprehensive computational study of driven quantum dot arrays in a square lattice configuration, subject to an external magnetic field and coupled to a cylindrical far-infrared photon cavity. The driving is introduced through a harmonic modulation of the full electron-photon interaction, therefore including both paramagnetic and diamagnetic contributions. The electron-electron Coulomb interactions are treated within density functional theory, while the electron-photon coupling is modeled using a many-body configuration interaction approach at each iteration of the density functional. By exploiting the unique properties of the cylindrical TE$_{011}$ cavity mode, we demonstrate selective enhancement of diamagnetic two-photon transitions. Our results reveal that the effectiveness of harmonic modulation of the electron-photon interaction is strongly dependent on both the driving frequency and the electron occupation number per dot. When the driving frequency approaches twice the cavity photon frequency, the system exhibits resonant behavior characterized by efficient photon pumping, occupation of higher-order photon replicas, and activation of collective radial Coulomb breathing modes. These findings establish a controllable mechanism for manipulating photon states in coupled quantum dot-cavity systems and provide insights into the interplay among harmonic modulation, photonic excitations, magnetic confinement, and many-body electron correlations in dimensionally reduced nanostructures.",
+      "authors": [
+        "Vidar Gudmundsson",
+        "Vram Mughnetsyan",
+        "Hsi-Sheng Goan",
+        "Jeng-Da Chai",
+        "Nzar Rauf Abdullah",
+        "Chi-Shung Tang",
+        "Wen-Hsuan Kuan",
+        "Valeriu Moldoveanu",
+        "Andrei Manolescu"
+      ],
+      "published": "2026-07-07T21:20:33Z",
+      "updated": "2026-07-07T21:20:33Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.06812v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.06812v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "揭示驱动频率与电子占据数对腔耦合量子点阵列光子态调控的影响。"
+    },
+    {
+      "id": "2607.06716v1",
+      "title": "Mesoscopic routers and single-pole double-throw switches for electronic heat",
+      "summary": "The unavoidable dissipation of heat in electronic nanostructures is a crucial problem, specially when their operation requires low temperatures. It demands finding devices able to control and redirect the excess heat, ideally without perturbing the electrostatic environment. We propose three-terminal junctions working either as thermal routers or as thermal single-pole double-throw switches controlled by a single external knob. Two models are discussed based on resonant tunneling energy filters and different couplings to the heat source: (i) Phase-coherent contact via a scanning tip modulates the relative amount of the two output currents via position-dependent quantum interference; (ii) Coupling via a gate voltage tunable filter selectively switches one of the currents in the presence of dephasing. In the later case, we find that the heat flow using ideal filtering is bounded by fourth the open conductor current.",
+      "authors": [
+        "José Balduque",
+        "Rafael Sánchez"
+      ],
+      "published": "2026-07-07T18:31:57Z",
+      "updated": "2026-07-07T18:31:57Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.06716v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.06716v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "提出基于共振隧滤的介观热路由器与单刀双掷开关。"
+    },
+    {
+      "id": "2607.06670v1",
+      "title": "Localized Thermometry via Dayem Bridges Integrated on Superconducting Qubit Chips",
+      "summary": "Accurate knowledge of the on-chip temperature is essential for understanding and optimizing the performance of superconducting qubits, yet direct thermometry at millikelvin temperatures remains challenging. While qubits themselves are sensitive to the temperature of their environment, other factors may affect the qubits` effective temperature, and using them as thermometers with any accuracy requires specialized measurement protocols and qubit designs, limiting their practicality for routine diagnostics and adding complex infrastructure to any hardware testing apparatus. Here we demonstrate a complementary on-chip thermometry method based on superconducting Dayem bridges that are integrated on the same chip as transmon qubits. By extracting the critical current of the Dayem bridge from I-V measurements, we obtain a local, quantitative measure of the chip temperature without the need for microwave calibration or qubit-specific control sequences. To demonstrate the utility of the Dayem bridges as thermometers, we fabricate them in-situ with qubits on the same chip, calibrate the Dayem bridge critical current as a function of temperature, and characterize its resolution and stability at cryogenic temperatures. We additionally perform simultaneous measurements of the Dayem bridge thermometer and qubit excited-state population, and show agreement over the relevant temperature range, validating the method against established qubit thermometry. Furthermore, we correlate the independently measured chip temperature with qubit energy relaxation and dephasing times, demonstrating the utility of this approach for diagnosing temperature-dependent decoherence mechanisms. These results establish integrated Dayem bridges as a simple, non-invasive, and scalable tool for cryogenic hardware development, and on chip thermometry in superconducting quantum circuits.",
+      "authors": [
+        "Ella O. Lachman",
+        "Dave P. Pappas",
+        "Jayss Marshall",
+        "Josh Y. Mutus"
+      ],
+      "published": "2026-07-07T18:00:04Z",
+      "updated": "2026-07-07T18:00:04Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.06670v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.06670v1",
+      "doi": "",
+      "primary_category": "quant-ph",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-09",
+      "ai_summary": "提出基于Dayem桥的片上局部测温法，无需微波校准即可定量测量超导量子芯片温度。"
+    },
     {
       "id": "2607.06159v1",
       "title": "Layer-selective chirality switch in bilayer graphene intercalated by Janus monolayers",
