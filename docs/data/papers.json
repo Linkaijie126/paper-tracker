@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-17T05:26:56.678609Z",
-  "total_papers": 255,
-  "new_today": 10,
+  "last_updated": "2026-07-18T05:09:22.176307Z",
+  "total_papers": 257,
+  "new_today": 2,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,56 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7169181728",
+      "title": "Facile synthesis of spinel nickel-zinc ferrite nanoparticles and their dual functionality for supercapacitor and oxygen evolution reaction applications",
+      "summary": "Spinel nickel-zinc ferrite (ZNF) nanoparticles were successfully synthesised via a facile coprecipitation method, and their performance as an electrode material for a supercapacitor was evaluated. The physicochemical characterisation revealed that the ZNF nanoparticle exhibits a crystallite size of 43.2 nm and a spherical morphology (average particle size of ⁓23 ± 0.5 nm). The nitrogen adsorption–desorption isotherm revealed a mesoporous texture with a high specific surface area of 78.4 m 2 g −1 , providing abundant electroactive sites for ion transport. The electrochemical study revealed the coexistence of electric double-layer and pseudocapacitive charge-storage mechanisms. The ZNF electrode achieved a specific capacitance of 273 F g −1 at a current density of 2 A g −1 . The ZNF electrode demonstrates excellent cyclic stability after 6000 cycles. On the other hand, studies of the electrocatalytic oxygen evolution reaction (OER) revealed that the ZNF electrocatalyst exhibits appreciable OER activity, requiring an overpotential of 421 mV to reach a current density of 10 mA cm −2 . Besides, the electrocatalyst exhibits a Tafel slope of ⁓114 mV dec −1 , indicating favourable reaction kinetics governed by surface-adsorbed intermediates. The moderate electrochemical performance of ZNF nanoparticles is attributed to the high surface area, mesoporous framework, cation redistribution, and modified electronic interactions within the spinel ferrite framework.",
+      "authors": [
+        "Mustapha Balarabe Idris",
+        "Makhosazana Masuku",
+        "Harrison I. Atagana",
+        "Thabo T.I. Nkambule",
+        "Bhekie B. Mamba",
+        "Xolile Fuku",
+        "Ntuthuko W. Hlongwa"
+      ],
+      "published": "2026-07-16T00:00:00Z",
+      "updated": "2026-07-16T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.nxener.2026.100801",
+      "primary_category": "Next Energy",
+      "journal": "Next Energy",
+      "url": "https://doi.org/10.1016/j.nxener.2026.100801",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-07-18",
+      "ai_summary": "制备尖晶石镍锌铁氧体，兼具高比电容与优异析氧催化性能。"
+    },
+    {
+      "id": "openalex_W7168275249",
+      "title": "Plant-mediated iron oxide nanomaterials and their nanocomposites for environmental remediation: A review on recent advances, mechanistic insights, and future perspectives",
+      "summary": "Iron oxide nanoparticles (IONPs) have emerged as promising materials for environmental remediation, yet conventional synthesis routes often rely on hazardous chemicals and energy-intensive processes. Plant-mediated synthesis offers a sustainable alternative by utilizing phytochemical-rich extracts as natural reducing, chelating, capping, and stabilizing agents under mild reaction conditions. This review examines recent advances in the green synthesis of IONPs and their nanocomposites using diverse plant parts, including leaves, stems, roots, flowers, fruits, and plant gums, with a particular focus on environmental remediation applications. Mechanistic insights into iron-ion complexation, reduction, nucleation, growth, and passivation of IONPs formation are systematically discussed. The reviewed studies demonstrated that polyphenols are the predominant phytochemical constituents governing nanoparticle formation, size regulation, surface functionalization, and colloidal stability. Most plant-mediated IONPs exhibited spherical morphologies and particle sizes below 50 nm, reflecting the effective control exerted by plant-derived biomolecules over nanoparticle growth. Furthermore, incorporation of IONPs into hybrid nanocomposites substantially enhances surface functionality, adsorption sites, magnetic recoverability, and charge-carrier separation efficiency. As a result, these materials exhibit excellent performance in removing heavy metals, dyes, pharmaceuticals, and pesticides via adsorption and photocatalytic processes, with pollutant removal efficiencies frequently exceeding 90% and photocatalytic degradation efficiencies commonly exceeding 80%. This review further assesses current limitations in phytochemical variability, standardization, scalability, toxicity, techno-economic feasibility, and other constraints. This work delineates the significance of plant-mediated synthesized IONPs and their nanocomposites as high-performance, regenerable, and environmentally sustainable materials for advanced wastewater treatment applications.",
+      "authors": [
+        "Melkamu Birlie Genet",
+        "Addis Lemessa Jembere",
+        "Nikoletta Kovács",
+        "Gábor Maász",
+        "Etelka Tombácz"
+      ],
+      "published": "2026-07-14T00:00:00Z",
+      "updated": "2026-07-14T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.jece.2026.124084",
+      "primary_category": "Journal of environmental chemical engineering",
+      "journal": "Journal of environmental chemical engineering",
+      "url": "https://doi.org/10.1016/j.jece.2026.124084",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-07-18",
+      "ai_summary": "综述植物介导合成铁氧化物纳米材料及其在环境修复中的应用与机制。"
+    },
     {
       "id": "openalex_W7168266779",
       "title": "Enhanced charge-density-wave order and suppressed superconductivity in intercalated bulk NbSe2",
