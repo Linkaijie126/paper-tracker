@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-18T05:09:22.176307Z",
-  "total_papers": 257,
+  "last_updated": "2026-07-19T05:36:48.227799Z",
+  "total_papers": 259,
   "new_today": 2,
   "categories": [
     "离子插层",
@@ -10,6 +10,61 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7169534686",
+      "title": "Innovation of Electrolyte and Electrode Materials and Interface Construction Strategies in Sodium-Ion Batteries",
+      "summary": "Sodium-ion batteries (SIBs) are promising for large-scale energy storage owing to the abundant sodium resources, low cost, and lithium-ion battery (LIB)-analogous working principles, yet their commercialization is hindered by low energy density, insufficient cycling stability and safety concerns, which are essentially attributed to the inadequate optimization of electrolytes, electrode materials and their interfacial behaviors. This paper presents a systematic review of the latest research advances in SIBs from three core perspectives: electrolyte system optimization, electrode material design, and electrode/electrolyte interface engineering. For electrolytes, we elaborate on the optimization strategies of liquid organic, solid-state and aqueous electrolytes; for electrode materials, we summarize the research progress and modification methods of both cathode and anode materials; for interface regulation, we clarify the formation mechanisms, characterization techniques and construction strategies of the electrode/electrolyte interface. By quantitatively comparing the advantages and limitations of different technical approaches, we further propose the prioritized future research directions for SIBs in electrolyte innovation, electrode material design and interface optimization. This work aims to provide theoretical guidance and technical references for the development of high-performance SIBs by systematically sorting out the technical routes of electrolyte–electrode-interface synergy and defining the research focus of subsequent optimization.",
+      "authors": [
+        "Fating Zhang",
+        "S P Chen",
+        "Kun Wang",
+        "Kun Wang",
+        "Jilong Song",
+        "Kai Wang",
+        "Kai Wang"
+      ],
+      "published": "2026-07-16T00:00:00Z",
+      "updated": "2026-07-16T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.3390/coatings16070851",
+      "primary_category": "Coatings",
+      "journal": "Coatings",
+      "url": "https://doi.org/10.3390/coatings16070851",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-07-19",
+      "ai_summary": "系统综述钠离子电池电解质、电极材料及界面优化策略与未来方向。"
+    },
+    {
+      "id": "openalex_W7168772069",
+      "title": "Electrocatalytic Detection of Biological Substances Using Hybrid Nanocomposites for Clinical Applications",
+      "summary": "Electrocatalytic detection of biological substances using hybrid nanocomposites represents a promising frontier in electrochemical biosensors for clinical applications. This review article presents a comprehensive overview of recent advances in the development and application different electrodes modified with hybrid nanostructures—materials that combine synergistic properties of inorganic components (such as metallic nanoparticles, metal oxides, graphene, carbon nanotubes) and organic or biomolecular components—for the sensitive, selective, and rapid detection of clinically relevant biomarkers, such as glucose, dopamine, uric acid, DNA, cancer antigens, and other metabolites or pathogens.",
+      "authors": [
+        "Camila C. Silva",
+        "Carlos W. Mendonça",
+        "Laura C. Lieb",
+        "Taís M. S. Abreu",
+        "Octávio P. L. de Souza",
+        "Cavour M. Neto",
+        "Willian V. L. Belino",
+        "Francisco W. L. Silva",
+        "Lucas  V. de Faria",
+        "Fernando H. Cincotto"
+      ],
+      "published": "2026-07-16T00:00:00Z",
+      "updated": "2026-07-16T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1007/s11244-026-02327-9",
+      "primary_category": "Topics in Catalysis",
+      "journal": "Topics in Catalysis",
+      "url": "https://doi.org/10.1007/s11244-026-02327-9",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-07-19",
+      "ai_summary": "综述了用于临床生物标志物电化学检测的杂化纳米复合材料电极的最新进展。"
+    },
     {
       "id": "openalex_W7169181728",
       "title": "Facile synthesis of spinel nickel-zinc ferrite nanoparticles and their dual functionality for supercapacitor and oxygen evolution reaction applications",
