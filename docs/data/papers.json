@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-21T05:35:44.020774Z",
-  "total_papers": 282,
-  "new_today": 11,
+  "last_updated": "2026-07-22T05:34:17.776374Z",
+  "total_papers": 290,
+  "new_today": 8,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,177 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7168164194",
+      "title": "Enhanced capacitance of reduced graphene oxide prepared via an electrochemical approach",
+      "summary": "ABSTRACT The reduction of graphene oxide (GO) is essential for maximizing its energy storage performance. Although numerous studies have reported the fabrication of electrochemically reduced graphene oxide (ERGO), achieving a high specific capacitance remains a critical challenge. In this study, the parameters of electrolyte concentration and temperature were systematically investigated to elucidate their influence on the removal of oxygen-containing functional groups and the subsequent enhancement of electrochemical performance. To gain a comprehensive understanding of these mechanisms, the morphologies, surface characteristics, oxygen-to-carbon (O/C) atomic ratios, and electrical properties of the prepared ERGO materials were meticulously analyzed. The optimized ERGO film, reduced at 60°C in a saturated NaNO 3 solution, exhibited the highest specific capacitance; however, prolonged durability tests revealed a definitive trade-off between the enhanced initial capacity and long-term cycling stability. Overall, this study offers a practical optimization strategy for the electrochemical reduction of GO, while emphasizing the critical necessity of balancing initial electrochemical metrics with long-term cyclability for the strategic development of high-performance supercapacitors.",
+      "authors": [
+        "Chan‐Yong Jung",
+        "Dongchul Choi",
+        "Hwakyeung Jeong",
+        "Young‐Sang Youn",
+        "Tae‐Hong Park",
+        "Chi‐Woo Lee",
+        "Sang-Eun Bae"
+      ],
+      "published": "2026-07-13T00:00:00Z",
+      "updated": "2026-07-13T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.electacta.2026.149532",
+      "primary_category": "Electrochimica Acta",
+      "journal": "Electrochimica Acta",
+      "url": "https://doi.org/10.1016/j.electacta.2026.149532",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-07-22",
+      "ai_summary": ""
+    },
+    {
+      "id": "2607.19123v1",
+      "title": "Thermal and electrical conductivity of a refractory high-entropy alloy after high-pressure torsion: Electron versus phonon contributions",
+      "summary": "The equiatomic refractory high-entropy alloy TiZrHfNbTa was processed by high-pressure torsion (HPT) to investigate the effect of nanostructuring and defect engineering on thermal and electrical transport properties. Severe plastic deformation (SPD) via the HPT treatment induces substantial accumulation of dislocations, grain refinement to the nanometer level (average: 40 nm), and partial transformation from the BCC phase to the omega phase. While hardness increases to a steady state with processing, the specific heat capacity exhibits a non-monotonic behavior: it decreases at low strains due to the suppression of low-frequency vibrational modes by dislocations, then partially recovers at high strains due to anharmonic vibrations at newly formed high-angle grain boundaries. Thermal conductivity decreases at low strains but shows a slight recovery at high strains, whereas electrical conductivity decreases monotonically to a steady state without recovery. Analysis using the Wiedemann-Franz law reveals that the electronic contribution dominates thermal transport, while the phononic contribution (limited by the scattering of phonons on defects) is only 11 to 23%, depending on the degree of straining. The contrasting evolution of thermal and electrical conductivity is ascribed to the transition from dislocation-dominated vibrations at low strains to grain boundary-dominated vibrations at high strains, which affects phonons and electrons with different efficiencies.",
+      "authors": [
+        "Jacqueline Hidalgo-Jimenez",
+        "Payam Edalati",
+        "Md Amirul Islam",
+        "Makoto Arita",
+        "Bidyut Baran Saha",
+        "Kaveh Edalati"
+      ],
+      "published": "2026-07-21T14:10:42Z",
+      "updated": "2026-07-21T14:10:42Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.19123v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.19123v1",
+      "doi": "10.1016/j.jpcs.2026.114013",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "二维材料热导",
+      "fetch_date": "2026-07-22",
+      "ai_summary": "揭示难熔高熵合金热传导以电子为主，声子贡献仅占11-23%。"
+    },
+    {
+      "id": "2607.18963v1",
+      "title": "Stereochemical Vacuum Gap Explains Out-of-Plane Thermal Insulation in MXenes",
+      "summary": "Two-dimensional MXenes are promising materials for thermal management and spectral camouflage, combining low out-of-plane thermal conductivity with low infrared emissivity and mechanical robustness. Yet the near-order-of-magnitude spread in experimental out-of-plane thermal conductivity measurements (0.14-0.8 W/mK) and the systematic overestimation by simulations point to a fundamental gap in our understanding of heat transport in these materials. Here, we argue these differences originate in the overlooked role of heterogeneous surface terminations. Using Non-Equilibrium Molecular Dynamics simulations of Ti3C2Tx, we show that this discrepancy arises from a stereochemically induced vacuum gap between adjacent layers, formed when surface terminations of different sizes coexist. Even minor deviations from homogeneous terminations drastically suppress out-of-plane thermal conductivity, bringing simulated values into quantitative agreement with experiment. We also show that thermal conductivity scales strongly with the atomic density, and that introducing bulky surface terminations, including residual water, reduces the thermal conductivity to 0.3 W/mK, an order of magnitude below homogeneous termination values and below the minimum thermal conductivity limit predicted for disordered solids. Thus, we propose a chemistry-driven route to engineer thermal transport in MXenes.",
+      "authors": [
+        "O. Mateos-Lopez",
+        "J. G. Vilhena",
+        "Isaac Armstrong",
+        "Hendrik Heinz",
+        "Miguel Muñoz Rojo",
+        "Juan Carlos Cuevas"
+      ],
+      "published": "2026-07-21T10:54:50Z",
+      "updated": "2026-07-21T10:54:50Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.18963v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.18963v1",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "二维材料热导",
+      "fetch_date": "2026-07-22",
+      "ai_summary": "揭示立体化学真空间隙解释MXenes面外热绝缘机制。"
+    },
+    {
+      "id": "2607.18895v1",
+      "title": "Multiscale ensemble Monte Carlo of transport and gas sensing in monolayer MoS$_2$",
+      "summary": "Two-dimensional semiconductors, such as monolayer MoS$_2$, combine a technologically useful band gap with an all-surface geometry, making them attractive both as field-effect-transistor channels and as chemically sensitive devices. Predictive device design requires a transport model that is (i) physically grounded rather than empirical, (ii) validated against experiments, and (iii) able to span the scales from electron-phonon coupling to terminal current and sensor response. We present a self-consistent ensemble Monte Carlo (EMC) framework for monolayer MoS$_2$ built on the ViennaEMC solver, comprising a Boltzmann-transport kernel with a full intrinsic and extrinsic scattering stack (deformation-potential acoustic and intervalley phonons, polar-optical Fröhlich and piezoelectric coupling, remote substrate phonons, screened charged-impurity and surface-roughness scattering), degenerate free-carrier statistics, and a self-consistent Poisson coupling. The intrinsic transport parameters are verified against first-principles density-functional perturbation theory (DFPT), and seven quantities (lattice constant, conduction-band effective mass, band gap, Born effective charges, the longitudinal-optical phonon energy, and both in-plane sound velocities) agree with the reference parametrization. In a multiscale coupling, the EMC velocity-field characteristic feeds a one-dimensional velocity-saturation channel model, which captures the velocity-saturated field dependence and reproduces the measured transfer characteristics of a CVD monolayer device in air and vacuum. Finally, an ambient/adsorbate extension reproduces the measured conductivity response to oxygen partial pressure and the concentration dependence of NO$_2$ and NH$_3$ sensing measured in several independent devices.",
+      "authors": [
+        "Lado Filipovic"
+      ],
+      "published": "2026-07-21T09:28:03Z",
+      "updated": "2026-07-21T09:28:03Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.18895v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.18895v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "二维材料热导",
+      "fetch_date": "2026-07-22",
+      "ai_summary": ""
+    },
+    {
+      "id": "2607.19308v1",
+      "title": "A unified tight-binding description of the electronic structure and Ising protection of superconductivity in misfit layered compounds",
+      "summary": "Misfit layered compounds (MLCs) offer a unique bulk platform for realizing exotic quantum states typically associated with two-dimensional transition-metal dichalcogenides (TMDs), most notably Ising-protected superconductivity. Yet a theoretical description capturing their electronic structure beyond the simplistic picture of electronically isolated TMD layers has been lacking. Here, we develop a unified tight-binding model for metal dichalcogenide-based MLCs, parameterized by extensive density-functional theory (DFT) calculations across multiple structural configurations and chemical compositions. We show that the intervening tetragonal layers play an active role beyond charge reservoirs: they mediate a significant interlayer spin-orbit coupling entirely absent in the standard rigid-band picture. This emergent interlayer spin-orbit coupling is essential for reproducing the DFT band structure of bulk MLCs and, when incorporated into Bogoliubov--de Gennes calculations, provides a microscopic mechanism for the Ising protection of superconductivity by strongly enhancing the in-plane critical field. Our framework establishes MLCs as a distinct class of three-dimensional materials with intrinsically coupled layers and emergent spin-orbit phenomena.",
+      "authors": [
+        "G. A. Bobkov",
+        "I. A. Shvets",
+        "I. V. Bobkova"
+      ],
+      "published": "2026-07-21T17:23:45Z",
+      "updated": "2026-07-21T17:23:45Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.19308v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.19308v1",
+      "doi": "",
+      "primary_category": "cond-mat.supr-con",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-22",
+      "ai_summary": ""
+    },
+    {
+      "id": "2607.18733v1",
+      "title": "Charge transfer mediated anomalous photoluminescence enhancement in monolayer MoS2 graphene heterostructure via polystyrene assisted wet transfer",
+      "summary": "Van der Waals MoS2 graphene heterostructures are compelling candidates for high performance electronic and optoelectronic device applications. However, the interlayer charge transfer typically quenches the photoluminescence of monolayer MoS2, limiting the use of these heterostructures in light emitting applications. In this work, we report an anomalous photoluminescence enhancement in n-type monolayer MoS2 by integrating it with monolayer graphene via polystyrene assisted wet transfer process. Photoluminescence spectroscopy reveals a dominant trion to exciton conversion in the heterostructure. Kelvin probe force microscopy shows a 600 meV increase in the work function of MoS2 upon heterostructure formation. This work function shift, together with the higher work function of graphene, signifies electron transfer from MoS2 to graphene. Shifts in the graphene G and 2D Raman modes further corroborate the interlayer charge transfer. Hydroxyl and epoxy functionalization of graphene following heterostructure formation is evidenced by X ray photoelectron spectroscopy. DFT based Bader charge analysis quantifies the role of these functional groups in facilitating interlayer charge transfer. Collectively, our findings establish polystyrene assisted wet transfer as a practical interface engineering strategy for enhancing excitonic emission in MoS2 graphene heterostructures, thereby advancing their potential for scalable optoelectronic devices.",
+      "authors": [
+        "Anagha Gopinath",
+        "Arpan De",
+        "Dipak Maity",
+        "Jyoti Mohanty"
+      ],
+      "published": "2026-07-21T05:46:19Z",
+      "updated": "2026-07-21T05:46:19Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.18733v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.18733v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-22",
+      "ai_summary": "提出聚苯乙烯辅助湿法转移策略，通过电荷转移实现单层MoS2光致发光增强。"
+    },
+    {
+      "id": "2607.15514v2",
+      "title": "Two-Dimensional Hexagonal BX3 (X = P, As) Monolayers as High-Capacity, Fast-Charging Anode Platforms for Lithium- and Sodium-Ion Batteries",
+      "summary": "The rapid advancement of alkali-metal ion batteries demands robust anode platforms combining high specific capacities with rapid charge-discharge kinetics. Using first-principles density functional theory (DFT), we systematically evaluate two-dimensional (2D) hexagonal BX3 (X = P, As) monolayers as high-performance dual-use anodes for lithium-ion (LIBs) and sodium-ion batteries (SIBs). Both metallic host architectures display strong thermodynamic affinities for Li+ and Na+ adsorption, favoring the hollow H3 site through synergistic ionic charge transfer and orbital hybridization. Climbing image nudged elastic band (CI-NEB) calculations reveal low direct H3 -> H3 diffusion barriers: 0.40 eV (BP3) and 0.26 eV (BAs3) for Li+, and 0.26 eV (BP3) and 0.19 eV (BAs3) for Na+, confirming exceptional high-rate kinetics. Thermodynamic convex hulls establish maximum stable lithiation at Li3BX3, yielding low average operating potentials of 0.39 V (BP3) and 0.35 V (BAs3) alongside theoretical specific capacities of 775 mAh/g and 341 mAh/g, respectively, with BP3 doubling commercial graphite (372 mAh/g). For SIBs, multi-layer sodiation expands storage up to Na15BP3 and Na12BAs3, delivering ultrahigh capacities of 3875 mAh/g (BP3) and 1365 mAh/g (BAs3) at low voltages of 0.18 V and 0.15 V. Crucially, projected density of states (PDOS) analyses confirm that both frameworks preserve intrinsic metallic conductivity throughout all charging stages. These combined properties establish 2D BX3 monolayers as outstanding, structurally resilient anode candidates for next-generation LIB and SIB energy storage technologies.",
+      "authors": [
+        "Jakkapat Seeyangnok",
+        "Joongjai Panpranot",
+        "Udomsilp Pinsook"
+      ],
+      "published": "2026-07-16T23:58:32Z",
+      "updated": "2026-07-21T00:18:19Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.15514v2",
+      "arxiv_url": "http://arxiv.org/abs/2607.15514v2",
+      "doi": "",
+      "primary_category": "cond-mat.mtrl-sci",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-07-22",
+      "ai_summary": "二维六方BX3单层兼具高容量、快充及导电性，是理想的锂/钠离子电池负极材料。"
+    },
+    {
+      "id": "2607.18386v1",
+      "title": "Fragile Topology is Unstable Under Translation Refinement",
+      "summary": "Fragile topological phases become trivial upon the addition of suitable trivial bands, distinguishing them from stable topological phases. Nevertheless, various response phenomena and material realizations have been proposed for fragile phases. At the same time, many of these phenomena can also occur in atomic insulators, leaving open the question of what properties are specific to fragile phases. Enlarging the unit cell offers a natural perspective on this question. Band folding increases the number of bands in a manner analogous to adding trivial bands. In this work, we establish a systematic framework for determining the stability of fragile topology under unit-cell enlargement. We first establish a systematic criterion for trivialization under enlargements compatible with space-group symmetry, grounded in a physical electron-positron picture and formulated through a Hilbert-basis analysis of momentum-space symmetry data. We then show that, for all two-dimensional wallpaper groups, with or without spin-orbit coupling and/or time-reversal symmetry, every symmetry-indicated fragile phase is adiabatically connected to an atomic insulator in a suitable finite supercell and can therefore be trivialized by an arbitrarily small symmetry-preserving perturbation. Our results reveal that fragile topology has only finite stability under translation-symmetry refinement. This highlights that the fate of a fragile phase can depend on translation-symmetry-breaking perturbations, such as charge-density-wave ordering, and suggests that physical signatures insensitive to translation refinement are unlikely to uniquely characterize fragile topology.",
+      "authors": [
+        "Yoonseok Hwang",
+        "Saavanth Velury",
+        "Taylor L. Hughes"
+      ],
+      "published": "2026-07-20T18:00:02Z",
+      "updated": "2026-07-20T18:00:02Z",
+      "pdf_url": "https://arxiv.org/pdf/2607.18386v1",
+      "arxiv_url": "http://arxiv.org/abs/2607.18386v1",
+      "doi": "",
+      "primary_category": "cond-mat.mes-hall",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-07-22",
+      "ai_summary": ""
+    },
     {
       "id": "2607.18214v1",
       "title": "Position-dependent tight-binding model for Li impurities in monolayer and bilayer graphene",
