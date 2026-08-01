@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-31T05:50:05.824828Z",
-  "total_papers": 386,
-  "new_today": 21,
+  "last_updated": "2026-08-01T05:40:44.088328Z",
+  "total_papers": 389,
+  "new_today": 3,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,85 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7171854646",
+      "title": "Beyond inorganic cathodes: organic and open-framework electrode materials for aqueous manganese-ion batteries",
+      "summary": "Manganese-ion batteries (MIBs) have emerged as compelling candidates for grid-scale energy storage systems, offering superior safety, cost-effectiveness, and competitive electrochemical properties compared to conventional lithium-ion batteries. Despite their potential, the practical deployment of MIBs is significantly hindered by the severe structural degradation of traditional inorganic cathode materials. This degradation is primarily attributed to the strong electrostatic interactions between Mn2+ ions and the associated structural distortion. This review systematically elucidates the strategic design principles and electrode materials for manganese-based systems, positioning organic cathode materials as transformative alternatives to overcome these persistent limitations. Specifically, we evaluate the performance of various organic cathode materials, including conjugated carbonyl compounds and quinone derivatives, with an emphasis on materials that provide low-strain pathways through precise molecular-level engineering. Furthermore, we discuss the pivotal roles of conducting polymers and open-framework Prussian Blue analogs in ensuring stable power output and rapid ion diffusion. Particular focus is placed on high-entropy stabilization strategies, which serve as a key mechanism for enhancing long-term cycling stability. Additionally, this review covers graphite-based dual-ion systems that effectively transcend the operational voltage limitations of conventional MIBs. Finally, we identify critical technical bottlenecks, including active material dissolution, interfacial resistance, and the hydrogen evolution reaction at the Mn metal anode, while providing strategic insights for future research directions.",
+      "authors": [
+        "Hyeongseok Lee",
+        "Jiwoong Yang",
+        "Jeonghun Kim",
+        "Munseok S. Chae"
+      ],
+      "published": "2026-07-30T00:00:00Z",
+      "updated": "2026-07-30T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.20517/energymater.2026.95",
+      "primary_category": "Energy Materials",
+      "journal": "Energy Materials",
+      "url": "https://doi.org/10.20517/energymater.2026.95",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-01",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7171656351",
+      "title": "Nonmonotonic Screening and Solvation Dynamics of the Electrical Double Layer in Concentrated Lithium Salt Electrolytes",
+      "summary": "Abstract Understanding the electrical double layer in lithium-ion battery electrolytes is fundamental to improving interfacial processes that govern battery performance and lifetime. However, the microstructure and dynamics of the electrical double layer in highly concentrated lithium salt solutions remain elusive. Herein, combining electrochemical analyses, in situ gap-enhanced Raman spectroscopy and molecular dynamics simulations, we reveal nonmonotonic variation of electrostatic screening with concentration and different exchange kinetics of anions and solvent molecules in the solvation sheath of lithium ions. We find that increasing solvation entropy favors the formation of an anion-rich solvation environment in highly concentrated electrolytes, accelerating Li + –anion exchange relative to Li + –solvent exchange. This dynamic coordination behavior enables Li + to reorganize its solvation structure more readily during intercalation and deintercalation, thereby improving the kinetics and reversibility of these processes. Overall, this work provides thermodynamic and kinetic insights for the electrolyte design of advanced lithium-ion battery systems.",
+      "authors": [
+        "Xiaoting Yin",
+        "Feng Wang",
+        "Zengming Zhang",
+        "Ru-Yu Zhou",
+        "Zhaobin Chen",
+        "Tairui Wu",
+        "Li Zhang",
+        "Jun Huang",
+        "De‐Yin Wu",
+        "Jun Cheng"
+      ],
+      "published": "2026-07-29T00:00:00Z",
+      "updated": "2026-07-29T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1038/s41467-026-75999-2",
+      "primary_category": "Nature Communications",
+      "journal": "Nature Communications",
+      "url": "https://doi.org/10.1038/s41467-026-75999-2",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-01",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7171630550",
+      "title": "Avalanche-like intercalation and intraparticle correlations in graphite",
+      "summary": "Abstract Although graphite is the most widely used negative electrode material in lithium-ion batteries 1 , its lithium insertion processes and associated dynamics, particularly those of the dilute stages, remain poorly understood. A fundamental understanding of how symmetry-breaking phase transitions occur continuously under operating conditions is lacking. Here, using operando optical microscopy, we provide a unified picture of ion intercalation dynamics during the dilute stages of graphite intercalation, showing that the graphitic particles undergo rapid, localized deintercalation–intercalation step events, leading to deintercalation–intercalation of micrometre-sized regions within seconds. These are reminiscent of a phase-transition phenomenon, ‘avalanches’, which occurs in disordered materials, involving step changes in the order parameter due to jumps between multiple metastable states 2,3 . Using a modified random field Ising model, the avalanches are related to static disorder, which disrupts intercalation dynamics. The model can also account for the apparently continuous transitions between stages and the experimental avalanche statistics. Finally, we develop a methodology to spatio-temporally analyse the sequences of avalanche events, revealing considerable heterogeneous connectivity. Our work highlights the role of local and static disorder in explaining unexpected phase-transition behaviour and provides new tools and concepts for studying layered battery materials.",
+      "authors": [
+        "Jiho Han",
+        "George Phillips",
+        "Alice J. Merryweather",
+        "Juhwan Lim",
+        "Christoph Schnedermann",
+        "Robert L. Jack",
+        "Clare P. Grey",
+        "Akshay Rao"
+      ],
+      "published": "2026-07-29T00:00:00Z",
+      "updated": "2026-07-29T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1038/s41586-026-10862-4",
+      "primary_category": "Nature",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/s41586-026-10862-4",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-01",
+      "ai_summary": ""
+    },
     {
       "id": "2607.28427v1",
       "title": "Hydration-Controlled Layer Stacking in (NH$_3$)$_2$Cu$_5$(SeO$_3$)$_2$(OH)$_6$(H$_2$O)$_{2+x}$ ($x$ = 0, 1, and 3)",
