@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-01T05:40:44.088328Z",
-  "total_papers": 389,
+  "last_updated": "2026-08-02T05:41:20.562943Z",
+  "total_papers": 392,
   "new_today": 3,
   "categories": [
     "离子插层",
@@ -10,6 +10,72 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7171800528",
+      "title": "Acid-activated chitosan-modified Iranian bentonite for adsorption of Cu(II) and Zn(II) from water; A green and sustainable water treatment approach",
+      "summary": "This study evaluates the adsorption performance of an Iranian bentonite modified through two routes: activation with HNO3 followed by calcination at 500 °C yielding NWF adsorbent and activation with HCl followed by chitosan intercalation to obtain HWF adsorbent. Batch experiments assessed Cu2+ and Zn2+ removal from aqueous solutions under varying pH, contact time (5-45 min), sorbent dosage (10-150 mg), initial concentration (20-200 mg/L), and temperatures (20-45°C). Atomic Absorption Spectroscopy was used to evaluate heavy metal concentrations. Nonlinear isotherm fitting showed that the Langmuir model described the data well with high mass normalized capacities under the low-dose condition. Freundlich fits indicated favorable adsorption on heterogeneous surfaces. Kinetics followed the pseudo-second-order model (R² = 0.996-0.998), could be described by chemisorption and in case of NWF, faster uptake (higher k2) achieved. Optimal adsorption performance occurred at a pH of approximately 6-7, achieving equilibrium capacities (qe) as high as 99.0 mg/g and blank tests at pH ≥ 8 minimized contributions from metal hydroxide precipitation. Thermodynamic analysis has been carried out to confirm spontaneous and endothermic adsorption in temptatures ranged from 20-45°C. X-ray Diffraction, Fourier Transform Infrared Spectroscopy and Scanning Electron Microscopy corroborated successful modification and enhanced site accessibility. The results of this study showed that acid-activated and chitosan-modified bentonites are low-cost, effective, and sustainable sorbents for Cu2+ and Zn2+ removal from water, with practical relevance to wastewater treatment.",
+      "authors": [
+        "Sam Daftari",
+        "Mojgan Salavati",
+        "M Mortazavi Chamchali"
+      ],
+      "published": "2026-07-30T00:00:00Z",
+      "updated": "2026-07-30T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1371/journal.pone.0344207",
+      "primary_category": "PLoS ONE",
+      "journal": "PLoS ONE",
+      "url": "https://doi.org/10.1371/journal.pone.0344207",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-02",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7171773090",
+      "title": "Machine learning-accelerated inverse design of energy materials: A critical review of graph neural networks, physics-informed models, and generative AI for batteries, perovskite solar cells, and electrocatalysts",
+      "summary": "The global urgency to transition away from fossil fuels has placed extraordinary pressure on materials scientists to deliver breakthroughs in energy storage, solar energy conversion, and electrocatalysis — and to deliver them faster than the conventional trial-and-error research cycle allows. This review examines, critically and in depth, how machine learning is reshaping that cycle for three pivotal material families: lithium-ion and solid-state battery electrodes and electrolytes, halide perovskite solar absorbers, and transition-metal electrocatalysts for the hydrogen and oxygen evolution reactions. We pay particular attention to three classes of algorithm that have proven most consequential: graph neural networks (GNNs), which learn directly from the topology and chemistry of crystal structures; physics-informed neural networks and symmetry-constrained architectures, which embed conservation laws and quantum-mechanical constraints into the learning process; and generative models — variational autoencoders, generative adversarial networks, and diffusion-based frameworks — which can propose novel structures with pre-specified target properties. We trace the intellectual evolution of these methods, benchmark their performance on standardized datasets, and situate them within the broader context of active-learning workflows where computational prediction and experimental feedback operate in a closed loop. The evidence confirms substantial progress: GNN-based property predictors now routinely approach density functional theory accuracy at a tiny fraction of the computational expense, and conditional generative frameworks are beginning to propose experimentally synthesizable candidates that fall outside previously known chemical families. We are equally candid about what remains unresolved: the synthesis reality gap, systematic biases in training databases, poorly calibrated uncertainty estimates, and the still-limited ability to extract physically interpretable insight from deep architectures. The review closes with concrete recommendations for how the field should evolve — algorithmically, experimentally, and in terms of data infrastructure — if machine learning-guided inverse design is to deliver materials that meaningfully advance the clean energy transition.",
+      "authors": [
+        "Ignatius Echezona Ekengwu",
+        "Bonaventure Onyeka Ekengwu"
+      ],
+      "published": "2026-07-30T00:00:00Z",
+      "updated": "2026-07-30T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.nxmate.2026.102969",
+      "primary_category": "Next Materials",
+      "journal": "Next Materials",
+      "url": "https://doi.org/10.1016/j.nxmate.2026.102969",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-02",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7171524042",
+      "title": "Diatom Biosilica: Extraction Techniques and Applications in Energy Storage and Conversion Devices",
+      "summary": "The shift toward sustainable energy technologies requires materials with high performance and environmental compatibility. Traditional electrode and storage materials made of synthetic silica are usually constrained by high manufacturing costs and energy-intensive processing, raising questions about environmental sustainability. Biosilica from diatoms presents a unique alternative with hierarchically porous architectures, high surface area, mechanical stability, and chemically tunable surfaces, which may provide promising sustainable material source. This review critically evaluates the biological origin of diatoms, recent advances in extraction, and purification techniques for biosilica, including chemical, thermal, plasma-assisted, hydrothermal liquefaction, and hybrid approaches, and the physicochemical characteristics of biosilica. This review also investigates diatom biosilica as a functional material for energy conversion and storage. Emerging strategies involving hybridization with carbon nanomaterials, metal oxides, and conductive polymers are discussed in the context of structure-function relationships. Furthermore, we explore the challenges associated with scalability, morphology control, interface engineering, and integration into flexible and wearable systems. Finally, we outline future directions in biosilica research, emphasizing bioengineering approaches and application-driven material design. By bridging microbiology, materials science, energy technology, and diatom biosilica offers a uniquely sustainable and tunable nanomaterial for next-generation energy and environmental systems.",
+      "authors": [
+        "Amit Kumar",
+        "Sumit Dhali",
+        "Hitendra K. Malik",
+        "Anushree Malik"
+      ],
+      "published": "2026-07-28T00:00:00Z",
+      "updated": "2026-07-28T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/cssc.70903",
+      "primary_category": "ChemSusChem",
+      "journal": "ChemSusChem",
+      "url": "https://doi.org/10.1002/cssc.70903",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-02",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7171854646",
       "title": "Beyond inorganic cathodes: organic and open-framework electrode materials for aqueous manganese-ion batteries",
