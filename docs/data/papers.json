@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-14T04:22:27.186593Z",
+  "last_updated": "2026-08-15T03:12:41.674426Z",
   "total_papers": 500,
-  "new_today": 8,
+  "new_today": 1,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,33 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7140807602",
+      "title": "Caging Polyhalide Anions in Polycyclodextrin for Long‐Lasting Aqueous Zinc‐Iodine Batteries",
+      "summary": "ABSTRACT Confining polyiodide species at the cathode is pivotal to the stability and long life of aqueous zinc‐iodine batteries (AZIBs). Current approaches using porous inorganic materials to physically trap polyiodide species or organic additives to electrostatically bind them remain ineffective due to size mismatches or weak ionic interactions. Here, we introduce a host‐guest strategy to cage polyhalides while enabling their transport between niches within a cross‐linked polycyclodextrin (polyCD) network. Experimental and computational results indicate that the polymer derived from β‐CD exhibits a moderate binding affinity to polyhalide anions, attributable to its appropriate inner diameter and hydrophobic cavity. For our poly(β‐CD)/KI 3 cathode, the addition of Br − results in more effective binding to I + and inhibition of its hydrolysis compared to Cl − . As such, AZIBs with poly(β‐CD)/KI 3 can achieve 2e storage at 205 mAh/g or 4e storage at 365 mAh/g. The specific inclusion chemistry between polyhalide anions and poly(β‐CD) enables batteries to operate for more than 60,000 cycles, with a capacity fade of 0.0001%–0.0003% per cycle for 2e and 4e storage, respectively. This work offers a new approach to mitigate polyhalide shuttling by using polymers derived from inexpensive, biodegradable oligosaccharides, thereby enabling sustainable, long‐lasting AZIBs.",
+      "authors": [
+        "Shangxu Jiang",
+        "Zhipeng Pei",
+        "Yanlin Shi",
+        "Kai Zhang",
+        "Justin M. Chalker",
+        "Sara J Fraser-Miller",
+        "Michelle L. Coote",
+        "Zhongfan Jia"
+      ],
+      "published": "2026-08-13T00:00:00Z",
+      "updated": "2026-08-13T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/ange.6010682",
+      "primary_category": "Angewandte Chemie",
+      "journal": "Angewandte Chemie",
+      "url": "https://doi.org/10.1002/ange.6010682",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-15",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7202279009",
       "title": "Advances in sustainable purification of natural clays: Methods, characterizations, challenges, applications and perspectives: A review",
@@ -12294,25 +12321,6 @@
       "fetch_date": "2026-07-02",
       "source": "arxiv",
       "ai_summary": "实现悬浮带电纳米颗粒荷质比高精度测量，精度达10^-5。"
-    },
-    {
-      "id": "2606.27121v3",
-      "title": "Magnetoresistance in chiral systems driven by inter-band spin-orbit coupling",
-      "summary": "Chiral-induced spin selectivity (CISS), in which electrons transmitted through nonmagnetic chiral materials exhibit strong spin-dependent transport, has attracted growing interest for spintronic applications. However, a quantitative understanding of CISS remains elusive, partly because most previous studies rely on single-band models. In this work, we theoretically investigate multi-band effects on magnetoresistance (MR)-CISS, which is typically observed in experiments using magnetic conductive atomic force microscopy. To evaluate the spin polarization in MR-CISS, we simulate the nonequilibrium steady-state current using the Gorini-Kossakowski-Sudarshan-Lindblad master equation. We find that spin polarization exceeding 25% can be achieved for realistic inter-band spin-orbit coupling strengths in the presence of on-site Coulomb interactions. These findings highlight the crucial role of inter-band spin-orbit coupling in the mechanism of CISS.",
-      "authors": [
-        "Misa Nozaki",
-        "Takatoshi Fujita"
-      ],
-      "published": "2026-06-25T14:58:45Z",
-      "updated": "2026-06-29T07:47:01Z",
-      "pdf_url": "https://arxiv.org/pdf/2606.27121v3",
-      "arxiv_url": "http://arxiv.org/abs/2606.27121v3",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "category": "原子力显微镜与表征",
-      "fetch_date": "2026-07-02",
-      "source": "arxiv",
-      "ai_summary": "揭示带间自旋轨道耦合对手性诱导自旋选择性磁电阻的关键作用。"
     }
   ]
 }
