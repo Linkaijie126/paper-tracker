@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-20T03:24:48.747211Z",
+  "last_updated": "2026-08-21T03:29:49.337189Z",
   "total_papers": 500,
-  "new_today": 11,
+  "new_today": 4,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,92 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "2608.20109v1",
+      "title": "Josephson transport in YBa${}_{2}$Cu${}_{3}$O${}_{7}$ weak links created by focused-helium-ion-beam irradiation: Analysis based on diffusive-SNS-junction model",
+      "summary": "Fabrication of YBCO weak links by focused helium ion beam irradiation is a promising approach for realizing high-temperature superconducting Josephson junction devices. Although empirical dose-characteristic relationships have been established, the underlying transport mechanisms remain unclear. In this study, we perform a detailed investigation of the transport properties of YBCO weak links fabricated using a helium ion microscope (HIM) and provide a unified phenomenological description of the observed behavior based on the theory of SNS junctions with a diffusive metallic interlayer. We demonstrate that the temperature dependence of the critical current $I_{\\mathrm{c}}$ and the $I_{\\mathrm{c}}R_{\\mathrm{n}}$ product are well described by diffusive SNS junction models over a wide temperature range. Analyses show that the observed dose dependences of $I_{\\mathrm{c}}$ and $I_{\\mathrm{c}}R_{\\mathrm{n}}$ cannot be explained solely by variations in the effective Thouless energy $E_{\\mathrm{T}}$. The discrepancy suggests reduced interface transparency and a reduction in the density of states, leading to a decrease in the effective number of conducting channels contributing to transport. This interpretation is also consistent with the observed exponential increase in $R_{\\mathrm{n}}$ with irradiation dose. These results provide a diffusion-based framework for understanding Josephson transport and guiding junction design in helium-ion-irradiated YBCO weak links.",
+      "authors": [
+        "Tetsuro Misawa",
+        "Shigeyuki Ishida",
+        "Hiroshi Eisaki",
+        "Yukinori Morita",
+        "Shinichi Ogawa",
+        "Chiharu Urano"
+      ],
+      "published": "2026-08-20T14:39:45Z",
+      "updated": "2026-08-20T14:39:45Z",
+      "pdf_url": "https://arxiv.org/pdf/2608.20109v1",
+      "arxiv_url": "http://arxiv.org/abs/2608.20109v1",
+      "doi": "",
+      "primary_category": "cond-mat.supr-con",
+      "source": "arxiv",
+      "category": "纳米力学",
+      "fetch_date": "2026-08-21",
+      "ai_summary": ""
+    },
+    {
+      "id": "2608.20323v1",
+      "title": "Spin-torque microwave detectors of positive rectangular pulse signals",
+      "summary": "We analyze the performance of a spin-torque microwave detector (STMD) driven by positive rectangular current pulses $I(t)$ of various amplitudes $I_0$, durations $τ$, and repetition periods $T$ and reveal two distinct regimes of STMD operation. In the first (linear) regime, the time-averaged voltage across the detector, $U_{\\rm dc}$, changes linearly with the pulse amplitude $I_0$ and depends on the ratio $τ/T$: $U_{\\rm dc} \\sim I_0 (τ/T)$. This regime is observed for a wide range of pulse amplitudes $I_0$ in the case of in-plane (IP) magnetization dynamics and for rather small pulse amplitudes $I_0 \\le I_{\\rm th}$ in an STMD with out-of-plane (OOP) magnetization dynamics. The other (nonlinear) regime is characterized by voltage jumps and drops and is observed only in a structure with OOP magnetization dynamics for input pulses with short repetition periods and large amplitudes $I_0 \\ge I_{\\rm th}$. We believe that the linear regime of STMD operation can be used to unambiguously detect input pulse parameters, which could be important for the development and optimization of spintronic devices capable of detecting and processing non-harmonic (e.g., digital) microwave signals.",
+      "authors": [
+        "V. Prokopenko",
+        "O. Shtanko",
+        "I. Sotnyk",
+        "O. Prokopenko"
+      ],
+      "published": "2026-08-20T17:58:28Z",
+      "updated": "2026-08-20T17:58:28Z",
+      "pdf_url": "https://arxiv.org/pdf/2608.20323v1",
+      "arxiv_url": "http://arxiv.org/abs/2608.20323v1",
+      "doi": "",
+      "primary_category": "physics.app-ph",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-08-21",
+      "ai_summary": ""
+    },
+    {
+      "id": "2608.20014v1",
+      "title": "Nanoscale silicon sensor - guided new insights into early metabolic response of Escherichia coli to ampicillin",
+      "summary": "Antibiotic killing is often attributed to inhibition of specific cellular targets, yet metabolic processes can strongly influence drug efficacy. However, the relationship between metabolic responses and antibiotic lethality remains incompletely understood. Here, we employed silicon nanowire field-effect transistor (SiNWFET) sensors to monitor real-time metabolic responses of Escherichia coli to ampicillin (AMP). AMP treatment induced a biphasic extracellular pH signature, characterized by rapid acidification followed by alkalization. Metabolomic analyses revealed that the initial acidification resulted from organic acid secretion, whereas the subsequent alkalization was associated with altered amino acid metabolism and formate flux. Using metabolic and respiratory mutants, we found that these extracellular signatures reflected pathway-specific metabolic rewiring that predicted bacterial killing. AMP lethality strongly correlated with ATP dynamics and formate secretion: strains exhibiting larger AMP-induced ATP increases and greater formate secretion showed enhanced susceptibility. In contrast to literature, changes in NADH and NADPH levels did not support redox stress as the primary bacterial-killing mechanism. Together, our findings identify formate metabolism as a key pathway underlying the elevated ATP levels associated with AMP bactericidal activity. These results demonstrate that SiNWFET sensors provide a versatile label-free tool for probing antibiotic mechanisms, rapidly assessing bacterial susceptibility, and potentially guiding antimicrobial therapy development.",
+      "authors": [
+        "Yingtao Yu",
+        "Victoria Nolan",
+        "Zheqiang Xu",
+        "Allison Jones",
+        "George Alhoush",
+        "Zhen Zhang",
+        "Sanna Koskiniemi"
+      ],
+      "published": "2026-08-20T13:27:06Z",
+      "updated": "2026-08-20T13:27:06Z",
+      "pdf_url": "https://arxiv.org/pdf/2608.20014v1",
+      "arxiv_url": "http://arxiv.org/abs/2608.20014v1",
+      "doi": "",
+      "primary_category": "physics.ins-det",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-08-21",
+      "ai_summary": ""
+    },
+    {
+      "id": "2608.19343v1",
+      "title": "Self-calibrating thermal interferometry of vortex parity in a two-dimensional chiral superconductor",
+      "summary": "A chiral superconductor carries chiral Majorana modes along its boundary, and the integer that counts them fixes everything that follows, yet that integer has never been measured together with a local parity observable on one object. Proximitized one-dimensional wires read fermion parity rapidly but diagnose bulk topology through a separate protocol. Here we show that a reconfigurable domain wall between regions of opposite Chern number in an intrinsic two-dimensional chiral superconductor performs both functions. Opened to its contacts the wall is a ballistic channel whose quantized thermal conductance counts its Majorana modes; closed, the same wall is a Fabry--Pérot resonator whose spectrum shifts by half a level spacing when the parity of the enclosed vortices changes, giving a two-level heat conductance. We derive the exact transmission, the elastic heat full counting statistics, and a theorem showing that linear-response heat scattering of a fixed quadratic problem resolves vortex parity but not the fusion channel of well-separated cores. An outside vortex hybridized with the wall is an intrinsic false positive; temperature, geometry and a finite-bias mean--noise test separates it. Rhombohedral-graphene parameters place submicron loops in the resolved regime at millikelvin temperatures, where chiral-domain reconfiguration and noise thermometry are both established.",
+      "authors": [
+        "Kumar Ghosh"
+      ],
+      "published": "2026-08-19T18:06:07Z",
+      "updated": "2026-08-19T18:06:07Z",
+      "pdf_url": "https://arxiv.org/pdf/2608.19343v1",
+      "arxiv_url": "http://arxiv.org/abs/2608.19343v1",
+      "doi": "",
+      "primary_category": "cond-mat.supr-con",
+      "source": "arxiv",
+      "category": "原子力显微镜与表征",
+      "fetch_date": "2026-08-21",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7203673015",
       "title": "Tailoring the *OH-mediated manganese deposition chemistry via fluorine-doped carbon for reversible aqueous zinc batteries",
@@ -12302,109 +12388,6 @@
       "category": "离子插层",
       "fetch_date": "2026-07-02",
       "ai_summary": "开发富偶极分子水凝胶电解质，实现低温低浓度双离子电池。"
-    },
-    {
-      "id": "openalex_W7165203142",
-      "title": "Fine-tuning alkyl chain length in copper(II) complexes: effects on DNA binding and catalytic cleavage",
-      "summary": "Abstract Metal complexes are well known for their DNA cleavage activity. Copper is a metal that stands out for this purpose because it is able to perform cleavage through oxidative mechanisms using the Haber–Weiss cycle. We report two unprecedented copper(II) complexes ( 2 and 3 ) with long-chain ligands and compare the results with those of a previously reported complex ( 1 ), which we use as a reference in our studies. They were all properly characterized using a set of physicochemical methods, including elemental analysis, electron paramagnetic resonance, spectroscopic and electrochemical analysis. Density functional theory (DFT) modeling revealed a pseudo-octahedral environment where the ligands are trans to each other. The interaction of 1 , 2 , and 3 with salmon sperm DNA was monitored spectrophotometrically, and the binding constants (K b ) were 4.24 × 10 4 L mol −1 , 1.92 × 10 4 L mol −1 , and 1.15 × 10 4 L mol −1 , respectively. The interactions were supported by docking studies conducted with the CCDC GOLD® docking suite. Finally, all complexes exhibited DNA binding and cleavage properties, but 2 stood out as the most active one ( 2 , k obs = 0.88 ± 0.09 h −1 &gt; 1 , k obs = 0.54 ± 0.06 h −1 &gt; 3 , k obs = 0.50 ± 0.03 h −1 ). These results support the idea that fine-tuning the length of the alkyl chain can enhance DNA-targeting activity and contribute to the development of efficient strategies for catalytic cleavage of nucleic acids.",
-      "authors": [
-        "M. I. Santos",
-        "Matheus S. S. Paqui",
-        "Giliandro Farias",
-        "Edinara Luiz",
-        "Ronny R. Ribeiro",
-        "Terenzi Hf",
-        "Fernando R. Xavier"
-      ],
-      "published": "2026-06-18T00:00:00Z",
-      "updated": "2026-06-18T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1007/s10534-026-00840-8",
-      "primary_category": "BioMetals",
-      "journal": "BioMetals",
-      "url": "https://doi.org/10.1007/s10534-026-00840-8",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "发现铜配合物烷基链长影响DNA结合与切割，优化链长可增强活性。"
-    },
-    {
-      "id": "openalex_W7165130224",
-      "title": "Influence of weakly coordinating solvents on electrolyte properties and supercapacitor performance. A combined experimental and computational study",
-      "summary": "Weakly coordinating solvents can be used as solvents to promote the reduction in insertion energy of alkaline cations into the graphite anode of supercapacitors, thereby speeding up charging at low temperatures. We investigate the thermophysical properties of sodium-based electrolytes (NaPF 6 and NaTFSI) composed of propylene carbonate (PC) and the weakly coordinating solvent cyclopentyl methyl ether (CPME). The solvent characteristics related to the charge-storage process in supercapacitors are also examined through a combination of electrochemical and computational analyses. The addition of CPME to the electrolytes decreases the viscosity, thus increasing the diffusion coefficients of ions, but decreases their ionic conductivities due to an increase in ion-pair formation, particularly in the presence of NaPF 6 . According to the electrochemical findings, the latter salt exhibits the worst supercapacitor performance among the electrolytes investigated. For the NaTFSI-PC:CPME electrolyte, there is evidence of a Faradaic process, probably due to the solid-state redox insertion/intercalation process occurring in the small number of graphitic domains of the activated carbon electrode. The occurrence of electrolyte degradation was also investigated. The highest specific power and energy were verified for the NaTFSI-PC electrolyte. The Ragone plot calculated from Molecular Dynamics simulations shows excellent agreement with the experimental counterparts. Upon charging the electrodes, CPME leaves the pores, whereas PC follows the flux of . The addition of CPME in the electrolytes increases the contribution of the counter-ion adsorption charging mechanism, which is almost exclusive in NaPF 6 -PC:CPME. Inside the positive porous electrodes, there is a high degree of ionic pairs or aggregates.",
-      "authors": [
-        "Fernando Vaccarelli",
-        "Raíssa Venâncio",
-        "Antonio  H. C. Lopes",
-        "Isabel A. Silva",
-        "João Pedro Aguiar dos Santos",
-        "Leonardo M. Da Silva",
-        "Hudson Zanin",
-        "Leonardo J. A. Siqueira"
-      ],
-      "published": "2026-06-18T00:00:00Z",
-      "updated": "2026-06-18T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1016/j.electacta.2026.149346",
-      "primary_category": "Electrochimica Acta",
-      "journal": "Electrochimica Acta",
-      "url": "https://doi.org/10.1016/j.electacta.2026.149346",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "研究弱配位溶剂对钠基电解质及超级电容器性能的影响。"
-    },
-    {
-      "id": "openalex_W7165113958",
-      "title": "Sub-femtosecond figure-of-merit millimeter-wave switches via solution-processed MoS2 for 6G radio-frequency front-ends",
-      "summary": "Next-generation 6G communication requires radio-frequency components capable of operating above 100 GHz with low loss, high isolation, and zero static power—requirements that challenge complementary metal-oxide-semiconductor (CMOS) and microelectromechanical systems (MEMS) technologies. Here, we report transfer-free, large-area millimeter-wave (mmWave) switches based on solution-processed MoS2. While solution-processed 2D materials are often viewed as inferior to their crystalline counterparts due to high defect densities, we demonstrate that their edge-rich morphology is, in fact, a performance enabler. These edge defects act as intrinsic templates that confine Cu-filament pathways, enabling rapid (76 ns) and low-energy switching (1.57 nJ) with > 2000 cycles and uniform zero static-power operation, as corroborated by Kelvin probe force microscopy, conductive atomic force microscopy and low-temperature studies. The resulting switches achieve an low insertion loss ( < 0.1 dB) and high isolation ( > 35 dB) at 67 GHz. Notably, they exhibit a switching figure-of-merit (RON·COFF) of ~ 0.8 fs (fco ~ 187 THz), surpassing previously reported 2D switches. Importantly, by adopting an inverse-state operational scheme in a SHUNT architecture, we mitigate self-switching and achieve improved power handling (P0.1dB > 10 dBm) and linearity (IIP3 > 42.1 dBm). Finally, we demonstrate the platform’s circuit-level viability by integrating the switches into a true-time-delay and hybrid-coupled phase shifters targeting 30 GHz mmWave applications. Here, the authors report millimeter-wave switches based on large-area solution-processed MoS2 films, showing that sulfur-vacancy-rich edges of the 2D nanosheets facilitate low-energy resistive switching, enabling a switching figure-of-merit of ~0.8 fs, insertion losses <0.1 dB and isolation >35 dB at 67 GHz.",
-      "authors": [
-        "Changwoo Pyo",
-        "Seong-Jin Park",
-        "Seungchan Lee",
-        "D. B. Lee",
-        "Juho Son",
-        "Joohoon Kang",
-        "Deji Akinwande",
-        "Myungsoo Kim"
-      ],
-      "published": "2026-06-18T00:00:00Z",
-      "updated": "2026-06-18T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1038/s41467-026-74534-7",
-      "primary_category": "Nature Communications",
-      "journal": "Nature Communications",
-      "url": "https://doi.org/10.1038/s41467-026-74534-7",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "提出溶液法MoS2毫米波开关，实现亚飞秒优值，助力6G射频前端。"
-    },
-    {
-      "id": "openalex_W7166563644",
-      "title": "Plasmonic graphene oxide aptasensor empowered for ultra‑sensitive and rapid detection of aflatoxin M1 in dairy product",
-      "summary": "Aflatoxins are toxic metabolites and potent carcinogens that pose a threat to both humans and animals even at trace levels. In this study, we developed a robust plasmonic graphene oxide-based aptasensor for rapid and specific detection of Aflatoxin M1(AFM1) in dairy products. The Graphene Oxide-Chitosan (GOCS) nanocomposite was applied onto an Au thin layer (gold chip) and functionalized with aptamers. The Finite-Difference Time-Domain (FDTD) technique was employed to simulate the evanescent field and surface plasmon resonance (SPR) behavior of the sensor, enabling optimization of its performance. Additionally, X-ray Diffraction (XRD) and Field Emission Scanning Electron Microscopy (FE-SEM) analyses were conducted to examine the structure of GOCS/Au and the properties of the SPR sensor. The aptasensor successfully detected AFM1 in milk with a detection limit of 0.005 ng/mL and a linear range from 0.005 to 50 ng/mL. Given both the sensor's linear range and its low detection limit, it readily meets and surpasses the regulatory requirements of the European Union and the United States for permissible AFM1 levels in milk. The performance of the sensor was validated under various pH conditions and further compared to the High-Performance Liquid Chromatography (HPLC) method in the presence of other mycotoxins. The results demonstrated the high sensitivity and selectivity of the sensor, highlighting its strong potential for reliable AFM1 detection in diverse food samples.",
-      "authors": [
-        "Hassan Nasiri",
-        "Karim Abbasian",
-        "Gholamreza Kiani",
-        "Azadeh Nilghaz"
-      ],
-      "published": "2026-06-29T00:00:00Z",
-      "updated": "2026-06-29T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1038/s41598-026-60164-y",
-      "primary_category": "Scientific Reports",
-      "journal": "Scientific Reports",
-      "url": "https://doi.org/10.1038/s41598-026-60164-y",
-      "source": "openalex",
-      "category": "材料制备",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "开发基于等离子体氧化石墨烯的适配体传感器，实现乳制品中黄曲霉毒素M1超灵敏快速检测。"
     }
   ]
 }
