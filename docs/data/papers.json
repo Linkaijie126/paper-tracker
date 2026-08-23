@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22T03:21:08.188433Z",
+  "last_updated": "2026-08-23T03:29:37.200830Z",
   "total_papers": 500,
-  "new_today": 5,
+  "new_today": 3,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,83 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7203833806",
+      "title": "Unified structural and interfacial stabilization of Ni-rich NCM811 via surface-enriched fluorination",
+      "summary": "Abstract Fluorine incorporation offers a powerful route to stabilize Ni-rich layered cathodes, yet its atomic-scale impact on structural evolution, interfacial chemistry, and electrode–electrode cross-talk has remained poorly understood. Here, we demonstrate that a controlled XeF 2 solid–gas fluorination process creates a fluorine-enriched near-surface region in LiNi 0.8 Co 0.1 Mn 0.1 O 2 , modifying both structural evolution and electrolyte interactions. Fluorination reduces c-axis contraction, moderates structural changes associated with the H2 → H3 transition, and improves Li + transport kinetics. Spectroscopic analysis reveals that the modified surface promotes preferential DMC adsorption via O···TM/Li coordination on the (104) facet, suppressing EC-driven electrolyte decomposition and suppressing CEI overgrowth. Operando FT-IR and XPS further indicate reduced cathode–anode cross-talk and mitigated phosphorus-containing species formation on the graphite anode. As a result, the optimized fluorinated cathode exhibits improved rate capability and enhanced long-term full-cell stability. These findings demonstrate the surface-enriched fluorination simultaneously regulates structural evolution and interfacial chemistry, providing a practical strategy for improving the durability of high-energy Ni-rich cathodes.",
+      "authors": [
+        "Nobuyuki Zettsu",
+        "Attila Táborosi",
+        "Daniela M. Josepetti",
+        "Youn Charles-Blin",
+        "Takumi Kondo",
+        "Kensuke Tsunoda",
+        "Kenjiro HARA",
+        "Hiromasa Shiiba",
+        "S. Narumi",
+        "Tien Quang Nguyen"
+      ],
+      "published": "2026-08-20T00:00:00Z",
+      "updated": "2026-08-20T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1038/s43246-026-01330-7",
+      "primary_category": "Communications Materials",
+      "journal": "Communications Materials",
+      "url": "https://doi.org/10.1038/s43246-026-01330-7",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-23",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7203833832",
+      "title": "Can batteries be fully sustainable?",
+      "summary": "Abstract Concerns over the environmental impact, supply chain vulnerability, and long-term availability of conventional lithium-ion battery (LIB) materials have intensified interest in sustainable alternatives. This review defines a fully sustainable battery as one in which all components are derived from renewable materials and produced through eco-friendly processes across their entire lifecycle, consistent with the ISO 14044:2006 LCA framework. The current state of partially sustainable batteries is evaluated against this definition through a critical review of recent advances in biomass-derived carbon anodes, organic cathode materials, biopolymer gel electrolytes, cellulose-based separators, bio-derived binders, and carbonaceous current collectors across lithium-ion, sodium-ion (SIB), and aqueous zinc-ion (ZIB) battery chemistries. Key findings include the cost and carbon footprint competitiveness of biomass-derived hard carbon anodes with synthetic graphite ($1.72 kg −1 vs $4.97 kg −1 ; 3.2 vs 25.1 kg CO₂-eq kg −1 ), the ionic conductivity competitiveness of biopolymer gel electrolytes with conventional liquid electrolytes (up to 11 mS cm −1 ), and the consistent superiority of cellulose-based separators over commercial polypropylene in thermal stability, electrolyte wettability, and biodegradability. This review makes an original contribution by identifying four challenges that prevent the integration of these components into a fully sustainable battery. The costs, sustainability, and lifecycle assessments of LIBs, SIBs, and ZIBs are comparatively evaluated using available LCA data, and prospects for sustainable battery recycling are assessed. Based on this analysis, five research directions are proposed, with SIBs and aqueous ZIBs identified as the most viable configurations for fully sustainable batteries given their compatibility with bio-derived materials and lower lifecycle environmental impact.",
+      "authors": [
+        "Oluwasegun Emmanuel Ojodun",
+        "Jianwei Ren"
+      ],
+      "published": "2026-08-20T00:00:00Z",
+      "updated": "2026-08-20T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1007/s42823-026-01126-2",
+      "primary_category": "Carbon letters",
+      "journal": "Carbon letters",
+      "url": "https://doi.org/10.1007/s42823-026-01126-2",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-23",
+      "ai_summary": "定义完全可持续"
+    },
+    {
+      "id": "openalex_W7203757373",
+      "title": "Cerium‐Mediated Redox Chemistry in MOF Coatings Enables Ultrastable Aqueous Zn Metal Batteries",
+      "summary": "ABSTRACT Constructing artificial coatings on Zn metal anodes represents a promising approach to suppressing interfacial side reactions and enhancing reversibility for stable aqueous Zn metal batteries. Herein, Ce‐mediated redox chemistry in Ce‐UiO‐66 MOF coating was explored to stabilize the aqueous Zn anode. We found that the Ce‐UiO‐66 coating facilitates multi‐stage Zn 2+ desolvation due to its abundant carboxyl groups and an optimal porous structure. Moreover, the Ce 3+ /Ce 4+ redox‐induced, abundant vacancies provide numerous zincophilic sites for preferential Zn 2+ adsorption and transport. Crucially, the reversible Ce 3+ /Ce 4+ redox behavior enables significant homogenization of electron/Zn 2+ distributions while accelerating interfacial charge transfer kinetics during repeated Zn plating/stripping. Consequently, a Zn anode with an optimal ∼5 µm Ce‐UiO‐66 coating achieves exceptional stability, highlighted by an ultralong cycling life exceeding 6000 h at 2.0 mA cm −2 and 1.0 mAh cm −2 , alongside an ultralow polarization voltage of ∼24 mV. High‐rate stability over 2800 h is also maintained at 5.0 mA cm −2 and 1.0 mAh cm −2 . This work underscores the great potential of redox‐active coatings, specifically leveraging Ce‐mediated redox chemistry, to enable highly stable aqueous Zn metal batteries for practical applications.",
+      "authors": [
+        "Junyu Jiang",
+        "Jichang Sun",
+        "Liansheng Li",
+        "Kewei Hu",
+        "Pengyu Meng",
+        "Tianqi Yang",
+        "Wenjie Jiang",
+        "Qinghua Liang"
+      ],
+      "published": "2026-08-19T00:00:00Z",
+      "updated": "2026-08-19T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/sus2.70092",
+      "primary_category": "SusMat",
+      "journal": "SusMat",
+      "url": "https://doi.org/10.1002/sus2.70092",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-08-23",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7203754232",
       "title": "Chemically programmable metastable solids: processing-history control of structure and reactivity in MXenes",
@@ -12324,71 +12401,6 @@
       "category": "离子插层",
       "fetch_date": "2026-07-02",
       "ai_summary": "利用直写成型制备全碳3D电极，实现碱性及海水电解水的高效稳定催化。"
-    },
-    {
-      "id": "openalex_W7165620426",
-      "title": "Recent Advances and Critical Review on Two-Dimensional Black Phosphorus: Preparation and Optoelectronic Applications",
-      "summary": "Two-dimensional black phosphorus (2D BP) has emerged as one of the most promising two-dimensional semiconductors for next-generation micro and nanoelectronics beyond Moore’s Law. It is distinguished by its unique combination of a layer dependent direct bandgap, broadband photoresponse, and pronounced in-plane anisotropy, addressing key intrinsic limitations that have hindered the widespread application of graphene and conventional transition metal dichalcogenides (TMDCs). This review provides a systematic and comprehensive overview of recent advances in the controllable fabrication of 2D BP and its applications in transistors and photodetectors. We first elucidate its crystal lattice structure and fundamental physical properties, then categorize and summarize synthesis strategies based on production scale ranging from small scale methods (e.g., mechanical exfoliation and solution based exfoliation) to large scale methods (e.g., Chemical Vapor Deposition (CVD) and Pulsed Laser Deposition (PLD)), with a particular focus on recent advances in high-speed field-effect transistors and broadband photodetectors. In summary, the key to achieving large-scale controllable synthesis lies in addressing the challenges of high-temperature oxidation of black phosphorus and the uncontrollable diffusion of phosphorus sources. In the future, industrial applications are expected to be realized through CVD based regulation of phosphorus sources, low-temperature growth by PLD, and deep integration with silicon-based processes.",
-      "authors": [
-        "Jialu Zheng",
-        "Zeying Zhou",
-        "Danghui Wang",
-        "Yan Li",
-        "Zhao Li"
-      ],
-      "published": "2026-06-23T00:00:00Z",
-      "updated": "2026-06-23T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.3390/ma19132691",
-      "primary_category": "Materials",
-      "journal": "Materials",
-      "url": "https://doi.org/10.3390/ma19132691",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "综述二维黑磷制备及光电器件应用进展，重点解决大规模合成挑战。"
-    },
-    {
-      "id": "openalex_W7165655143",
-      "title": "Tailoring interfacial and bulk solvation environments through molecular crowding for high-performance aqueous batteries",
-      "summary": "Abstract Aqueous batteries represent a compelling frontier for safe and sustainable large-scale energy storage. However, the narrow electrochemical stability window and complex interfacial side reactions of water fundamentally limit their energy density and cycle life. In biological cells, the highly crowded intracellular environment governs vital biochemical processes by restricting water mobility. Inspired by this natural mechanism, molecular crowding electrolytes (MCE) have been developed to manipulate the hydrogen-bonding network of aqueous electrolytes. This review provides a systematic overview of aqueous lithium-ion, sodium-ion, zinc-ion, iron-metal, aluminum-metal, and proton batteries. By introducing proper crowding agents, MCE effectively sequesters water molecules into localized coordination environments, thereby suppressing water-driven parasitic reactions without relying on extreme salt concentrations. The adoption of MCE could enable next-generation aqueous batteries with high energy density and prolonged cycling stability.",
-      "authors": [
-        "Jiaqi Ke",
-        "Laisuo Su"
-      ],
-      "published": "2026-06-23T00:00:00Z",
-      "updated": "2026-06-23T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1088/2515-7655/ae80f8",
-      "primary_category": "Journal of Physics Energy",
-      "journal": "Journal of Physics Energy",
-      "url": "https://doi.org/10.1088/2515-7655/ae80f8",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": "受生物分子拥挤启发，开发新型电解质以抑制副反应，提升水系电池性能。"
-    },
-    {
-      "id": "openalex_W7166478510",
-      "title": "On the Mechanical Stability of Nickel-Based Lithium-Ion Battery Cathodes for Electric Vehicles",
-      "summary": "LiNi1-x-yCoxMnyO2 (NCM) cathodes are key materials for high-energy lithium-ion batteries (LIBs) for electric vehicles. However, their practical performance is limited by chemo-mechanical degradation, including anisotropic lattice strain, grain boundary stress, particle cracking, interfacial deterioration, impedance growth, and capacity fading. In this review, we provide a focused critical overview of mechanical degradation phenomena in high-energy cathode materials, with emphasis on their underlying origins, multiscale manifestations, and current mitigation strategies relevant to practical LIBs. This review aims to offer an accessible overview for both specialists and researchers newly entering the field.",
-      "authors": [
-        "Muhammad Hilmy Alfaruqi"
-      ],
-      "published": "2026-06-23T00:00:00Z",
-      "updated": "2026-06-23T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.53623/amms.v2i2.1148",
-      "primary_category": "Advanced Mechanical and Mechatronic Systems",
-      "journal": "Advanced Mechanical and Mechatronic Systems",
-      "url": "https://doi.org/10.53623/amms.v2i2.1148",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-07-02",
-      "ai_summary": ""
     }
   ]
 }
