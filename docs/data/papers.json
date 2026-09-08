@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-07T07:29:03.299278Z",
+  "last_updated": "2026-09-08T07:22:33.149940Z",
   "total_papers": 500,
-  "new_today": 15,
+  "new_today": 2,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,50 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7167579017",
+      "title": "High-valence Mo Doping Inducing Radial Primary Particles for High-Performance Ultra-High-Nickel NCMA Cathodes",
+      "summary": "",
+      "authors": [
+        "Ting Li",
+        "Jinhua Xu",
+        "Guojing Cao",
+        "Xiaoxue Jiang",
+        "Cuiqin Li"
+      ],
+      "published": "2026-09-01T00:00:00Z",
+      "updated": "2026-09-01T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.jallcom.2026.190870",
+      "primary_category": "Journal of Alloys and Compounds",
+      "journal": "Journal of Alloys and Compounds",
+      "url": "https://doi.org/10.1016/j.jallcom.2026.190870",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-08",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7208818706",
+      "title": "Graphene-Metal Nanocomposites for Precise Electrical Modulation of Neural Stem Cells: Mechanisms and Therapeutic Potential",
+      "summary": "Spinal cord injury (SCI) remains one of the most formidable challenges in neurorestoratology, characterized by limited functional recovery due to an inhibitory microenvironment, glial scar formation, and loss of electrophysiological continuity. Although neural tissue engineering has emerged as a promising strategy for reconstructing disrupted neural circuits, conventional scaffolds often fail to deliver precise bioelectrical cues or effectively regulate neural stem cell (NSC) fate. In this review, we critically examine the synergistic potential of graphene-based nanocomposites doped with noble metals, particularly gold (Au) and silver (Ag), as advanced bioactive interfaces for SCI repair. Emphasis is placed on interfacial electrochemistry, where metal nanoparticles act as electronic bridges that enhance charge injection capacity, reduce interfacial impedance, and modulate capacitive coupling at the cell–material interface.We further analyze electro-mechanical mechanisms induced by electrical stimulation, including activation of voltage-gated calcium channels, Ca 2+ influx, and downstream PI3K/Akt/mTOR and β-catenin/Wnt signaling pathways governing neuronal differentiation, survival, neurite outgrowth, and electrophysiological maturation. Emerging evidence suggests that nanotopography and plasmonic features enhance axonal alignment, although their relative contributions remain unresolved.Despite translational challenges such as long-term stability, biodegradability, and the transition toward wireless stimulation, graphene–metal nanocomposites represent a next-generation class of active neural interfaces with strong potential for functional recovery following SCI.",
+      "authors": [
+        "Melika Alizadeh"
+      ],
+      "published": "2026-09-01T00:00:00Z",
+      "updated": "2026-09-01T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.jnrt.2026.100328",
+      "primary_category": "Journal of Neurorestoratology",
+      "journal": "Journal of Neurorestoratology",
+      "url": "https://doi.org/10.1016/j.jnrt.2026.100328",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-09-08",
+      "ai_summary": ""
+    },
     {
       "id": "2609.04977v1",
       "title": "Operando imaging of intercalation memory in MXenes",
@@ -12129,60 +12173,6 @@
       "category": "原子力显微镜与表征",
       "fetch_date": "2026-07-23",
       "ai_summary": "揭示石墨烯/CrSBr异质结界面电荷转移、应变及磁交换耦合机制。"
-    },
-    {
-      "id": "2607.20282v1",
-      "title": "Fabrication status and expected performance of the inner-core X-ray optic for BabyIAXO",
-      "summary": "BabyIAXO, a pathfinder for the International Axion Observatory (IAXO), is designed to demonstrate all key technologies at scale while achieving an improvement in sensitivity over the recent CERN Axion Solar Telescope (CAST) experiment by approximately a factor of five. Such improvement is enabled by the X-ray optics, which allow for maintaining a high signal-to-noise ratio at the detector despite a cross-sectional area of the magnetic bore being over 250 times larger than that of CAST. The optic employs a hybrid design consisting of co-aligned inner core and outer corona optics that share a common optical axis and vacuum vessel but differ in focal length and manufacturing approach. Both are segmented glass optics, with the inner core fabricated from thermally slumped borosilicate glass and the outer corona from cold-slumped Corning Willow glass. To fabricate the inner-core optic, leveraging techniques developed for NuSTAR and HEFT optics, we reoptimized and streamlined the thermal-forming procedure. The quality of free-standing glass substrates was characterized by laser metrology, X-ray reflectometry, and atomic force microscopy. We developed a cutting technique that produces smooth edges at the micron scale. We used flat stacks of glass-epoxy-graphite layers to evaluate the performance of the epoxy bondline. The optic is expected to achieve an on-axis point spread function (PSF) with a half-power diameter (HPD) of < 90\", enhancing the signal-to-noise ratio by more than 55 times.",
-      "authors": [
-        "Jooyun Woo",
-        "Yue Yu",
-        "Ipek Altunyurt",
-        "Todd Decker",
-        "Desiree Della Monica Ferreira",
-        "Peter Lindquist Henriksen",
-        "Eftychia Kotsiou",
-        "Sonny Massahi",
-        "Kerstin Perez",
-        "Anacorina Romero",
-        "Jaime Ruz",
-        "Vyshnavi Sabbi",
-        "Marcela Stern",
-        "Julia Katharina Vogel"
-      ],
-      "published": "2026-07-22T15:29:43Z",
-      "updated": "2026-07-22T15:29:43Z",
-      "pdf_url": "https://arxiv.org/pdf/2607.20282v1",
-      "arxiv_url": "http://arxiv.org/abs/2607.20282v1",
-      "doi": "",
-      "primary_category": "physics.ins-det",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
-      "fetch_date": "2026-07-23",
-      "ai_summary": "BabyIAXO内芯X射线光学器件已优化制造，预期半功率直径小于90角秒。"
-    },
-    {
-      "id": "2607.20102v1",
-      "title": "Frequency-Division Multiplexing in Magnonic Waveguides",
-      "summary": "Frequency-division multiplexing is a key functionality for wave-based information processing, enabling multiple information channels to coexist within the same physical medium. Here, we experimentally investigate spin-wave multiplexing in a CoFeB waveguide using all-electrical excitation and detection. Two independently generated microwave signals are simultaneously coupled into the same spin-wave waveguide through inductive antennas and characterized using broadband vector network analyzer measurements. The transmission spectra obtained under single-channel and multiplexed operation exhibit excellent agreement, demonstrating that spin waves with different frequencies and wavelengths propagate simultaneously without measurable interaction in the linear regime. The observation is confirmed using both dual-sweep and sweep-plus-single-tone excitation schemes. A theoretical analysis based on linear superposition and phase-sensitive detection explains the absence of observable inter-channel interference for independent microwave sources. Micromagnetic simulations further confirm that the amplitudes and wavevectors of the individual spin-wave modes remain unchanged during co-propagation, demonstrating the absence of interaction over the entire propagation distance. The results provide direct experimental evidence that independent spin-wave channels can coexist in a single waveguide and support the implementation of frequency-division multiplexing in future magnonic computing and microwave signal-processing architectures.",
-      "authors": [
-        "Alina-Cristina Bunea",
-        "Laurentiu Stoleriu",
-        "Giacomo Talmelli",
-        "Dan Neculoiu",
-        "Christoph Adelmann",
-        "Florin Ciubotaru"
-      ],
-      "published": "2026-07-22T12:56:57Z",
-      "updated": "2026-07-22T12:56:57Z",
-      "pdf_url": "https://arxiv.org/pdf/2607.20102v1",
-      "arxiv_url": "http://arxiv.org/abs/2607.20102v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
-      "fetch_date": "2026-07-23",
-      "ai_summary": ""
     }
   ]
 }
