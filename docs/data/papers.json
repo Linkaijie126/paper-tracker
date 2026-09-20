@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-19T07:29:08.884075Z",
+  "last_updated": "2026-09-20T07:52:37.997731Z",
   "total_papers": 500,
-  "new_today": 6,
+  "new_today": 1,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,33 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7212233263",
+      "title": "In-situ electrodeposited MnO2/Mn3O4 heterostructured cathode for high-performance aqueous zinc-ion batteries",
+      "summary": "ABSTRACT Manganese-based oxides are recognized as promising cathode materials for aqueous zinc-ion batteries (AZIBs), owing to their high operating voltage, desirable specific capacity, and abundant elemental reserves. However, sluggish electrochemical reaction kinetics and severe structural degradation of single-phase manganese oxides during long-term charge-discharge cycles significantly impair their cycling stability and rate capability, impeding their large-scale industrial application. In this work, a MnO 2 /Mn 3 O 4 heterostructured composite cathode was successfully synthesized via a facile in-situ electrodeposition method. The unique composition and heterostructure endow the MnO 2 /Mn 3 O 4 composite with abundant active sites, enhanced electrical conductivity, and excellent structural stability. Benefiting from these advantages, the MnO 2 /Mn 3 O 4 composite cathode delivers a high initial specific discharge capacity of 384 mAh g −1 at 0.1 A g −1 , outstanding rate performance with a reversible capacity of 197 mAh g −1 at 2 A g −1 , and ultra-long cycling stability with 95.4% capacity retention after 5000 cycles, which is substantially superior to that of pure MnO 2 and pure Mn 3 O 4 control samples. This work demonstrates a facile and efficient strategy for the design and fabrication of high-performance multiphase manganese-based composite cathodes for next-generation AZIBs.",
+      "authors": [
+        "Zhen Sun",
+        "Wenyu Song",
+        "Yaoda Mei",
+        "Jietao Guan",
+        "Junran Wang",
+        "Weiwei Luo",
+        "Haixu Wang",
+        "Xiang Cai"
+      ],
+      "published": "2026-09-11T00:00:00Z",
+      "updated": "2026-09-11T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.ijoes.2026.101509",
+      "primary_category": "International Journal of Electrochemical Science",
+      "journal": "International Journal of Electrochemical Science",
+      "url": "https://doi.org/10.1016/j.ijoes.2026.101509",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-20",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7213549095",
       "title": "A 1D Co-MOF with Electronic Gating in Ligands for the High-Voltage Cathode of Sodium-Ion Batteries",
@@ -12147,41 +12174,6 @@
       "primary_category": "cond-mat.mtrl-sci",
       "source": "arxiv",
       "category": "纳米力学",
-      "fetch_date": "2026-08-04",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.02086v1",
-      "title": "Adaptive Spectroscopy of Fast Two-Level-System Dynamics in Superconducting Qubits",
-      "summary": "Parasitic two-level-system (TLS) defects are a major source of energy relaxation and temporal instability in superconducting quantum processors. Our sub-second adaptive spectroscopy reveals telegraphic switching of TLSs with a characteristic timescale of a few seconds and spectral diffusion with diffusivity $D \\approx 0.9~\\mathrm{MHz}^2/\\mathrm{s}$. These timescales are about $3 \\times 10^2$ times faster than what is observed in conventional nonadaptive spectroscopy, which typically requires hours of measurement time. We resolve such fast dynamics on a field-programmable gate array (FPGA)-based controller that enables measurement of frequency- and time-resolved relaxations with sub-second temporal resolution in flux-tunable superconducting qubits. We observe similar defect dynamics across multiple qubits in independently fabricated devices measured in different laboratories. We correlate TLS-induced fluctuations with gate-level errors using randomized benchmarking. Our results reveal a previously inaccessible regime of frequency-resolved TLS dynamics and redefine the timescales relevant to TLS-aware characterization and calibration of superconducting quantum processors.",
-      "authors": [
-        "Fabrizio Berritta",
-        "David Pahl",
-        "Lukas Pahl",
-        "William P. Banner",
-        "Gabriel Cutter",
-        "Jan A. Krzywda",
-        "Spencer Weeden",
-        "Shravan Patel",
-        "Paul Buttles",
-        "Stanislav Eilhart",
-        "Michael Gingras",
-        "Bethany M. Niedzielski",
-        "Robert McDermott",
-        "Mollie E. Schwartz",
-        "Kyle Serniak",
-        "Max Hays",
-        "Jeffrey A. Grover",
-        "William D. Oliver"
-      ],
-      "published": "2026-08-03T11:44:42Z",
-      "updated": "2026-08-03T11:44:42Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.02086v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.02086v1",
-      "doi": "",
-      "primary_category": "quant-ph",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
       "fetch_date": "2026-08-04",
       "ai_summary": ""
     }
