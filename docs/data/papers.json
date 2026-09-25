@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-24T07:44:57.557641Z",
+  "last_updated": "2026-09-25T08:05:59.527882Z",
   "total_papers": 500,
-  "new_today": 0,
+  "new_today": 2,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,56 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7213444061",
+      "title": "Ozone induced surface functionalization of hard carbon for sodium-ion batteries: Mechanism, composition, and electrochemical impact",
+      "summary": "The potential of hard carbon as an anode material for sodium-ion batteries is well-recognized, yet its electrochemical performance remains strongly influenced by incompletely understood surface chemistry. Oxygen functional groups (OFGs) have been reported to exert both beneficial and detrimental effects on solid electrolyte interphase (SEI) formation, initial coulombic efficiency (ICE), and Na⁺ transport, but their specific roles are often obscured by concurrent chemical and structural changes induced by conventional oxidation treatments. Here, ozone is investigated as a controllable gas‑phase oxidant for surface functionalization of hard carbon. By varying the treatment temperature, we distinguish facile functionalization at room temperature, which predominantly targets edge and defect sites, from over‑oxidation at 60–100 °C, which induces pronounced structural degradation and generation of low-molecular highly-oxidized compounds. On this basis, we propose a mechanistically inspired, ozonolysis‑type framework to describe ozone‑induced hard carbon functionalization and structural degradation. Electrochemically, moderate ozone functionalization improves interfacial kinetics and SEI formation without sacrificing reversible capacity, whereas excessive oxidation increases polarization and reduces the ICE. The results of this work refute the common assumption that a high surface oxygen content inherently leads to poor ICE. Instead, both ICE and reversible capacity are governed primarily by the accessibility of the internal porosity.",
+      "authors": [
+        "Felix Bauer",
+        "Marius Ast",
+        "Alperen Kahraman",
+        "Frieder Scheiba"
+      ],
+      "published": "2026-09-17T00:00:00Z",
+      "updated": "2026-09-17T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.cartre.2026.100698",
+      "primary_category": "Carbon Trends",
+      "journal": "Carbon Trends",
+      "url": "https://doi.org/10.1016/j.cartre.2026.100698",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-25",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7213335504",
+      "title": "Highly Efficient Vapor‐Phase Dehydration of Bio‐Derived Sorbitol Over a Sulfur‐Intercalated Two‐Dimensional Vanadium Phosphate Catalyst",
+      "summary": "Biorefinery technologies that convert sorbitol into platform chemicals like isosorbide without the use of inorganic acids are essential for sustainability and environmentally friendly green chemicals. Here, we investigate mineral acid‐free vapor‐phase dehydration of sorbitol over a sulfur‐intercalated vanadium phosphate (VPO) catalyst. The roles of Brønsted and Lewis acid sites were studied to understand their effect on sorbitol dehydration and adsorption energy. Intercalating sulfur enhances the relative concentration of Brønsted acid sites on the lamellar VPO surface. Density functional theory results indicate that sorbitol adsorption is thermodynamically favorable on VPO catalysts. However, sulfur‐intercalated VPO catalysts exhibit a reduced adsorption energy ( E ad ) of −0.64 eV, which is approximately 1.5 times lower than that of regular VPO catalysts, as corroborated by kinetic analysis. Notably, the resulting improvement in catalytic performance results in ≥99% bio‐derived sorbitol conversion with ≥94% isosorbide selectivity, limiting other anhydrohexitol intermediate.",
+      "authors": [
+        "Neha Dhiman",
+        "Arvind Kumar",
+        "Dolan Acharya",
+        "Jeyakumar Karthikeyan",
+        "Jyotishman Kaishyop",
+        "Omvir Singh",
+        "Sudhakara Reddy Yenumala",
+        "Bipul Kumar Sarkar"
+      ],
+      "published": "2026-09-15T00:00:00Z",
+      "updated": "2026-09-15T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/cssc.71052",
+      "primary_category": "ChemSusChem",
+      "journal": "ChemSusChem",
+      "url": "https://doi.org/10.1002/cssc.71052",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-25",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7213548778",
       "title": "Atomic‐Scale Origin and Reconstruction Pathways of Block Defects in Nb 16 W 5 O 55 Wadsley–Roth Shear Oxides",
@@ -12119,57 +12169,6 @@
       "primary_category": "cond-mat.supr-con",
       "source": "arxiv",
       "category": "二维材料热导",
-      "fetch_date": "2026-08-04",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.00699v1",
-      "title": "Ultrahigh Intrinsic Hole Mobilities in $M$N$_2$ ($M$= Mo and W) at Room Temperature",
-      "summary": "High-mobility $p$-type semiconductors are essential for advanced electronic devices but remain scarce. Here, using a hierarchical screening framework that combines first-principles calculations with Boltzmann transport theory, we identify $M$N$_2$ ($M$= Mo and W) family as polar semiconductors with exceptionally high intrinsic hole mobilities. In particular, 1H-WN$_2$ exhibits a room-temperature hole mobility exceeding $10^{4}$~$\\mathrm{cm^2\\,V^{-1}\\,s^{-1}}$. This exceptional transport performance arises from the synergistic suppression of polar-optical-phonon and acoustic-phonon scattering, together with a reduced intervalley-scattering phase space induced by spin--valley locking. These effects arise from anomalously small Born effective charges, strong covalent N--N bonds, and orbital hybridization between N-$2p_x$/$2p_y$ and W-$5d_{xy}$/$5d_{x^2-y^2}$ in the N$_2$-dimer-based structure. Our results establish MoN$_2$ and WN$_2$ as a promising class of high-mobility polar semiconductors and introduce a crystal-structure-based strategy for concurrently suppressing multiple electron--phonon scattering channels, thereby revising design principles for high-mobility materials.",
-      "authors": [
-        "Zhongjuan Han",
-        "Rong-Tian Pang",
-        "Wu Xiong",
-        "Zhonghao Xia",
-        "Jin-Jian Zhou",
-        "Jiangang He"
-      ],
-      "published": "2026-08-01T14:57:26Z",
-      "updated": "2026-08-01T14:57:26Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.00699v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.00699v1",
-      "doi": "",
-      "primary_category": "cond-mat.mtrl-sci",
-      "source": "arxiv",
-      "category": "二维材料热导",
-      "fetch_date": "2026-08-04",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.02040v1",
-      "title": "Resolving High-Energy States of Interlayer Excitons in MoSe$_2$/WSe$_2$ Heterostructures",
-      "summary": "High-energy states of interlayer excitons (IXs) in van der Waals heterostructures remain largely unexplored despite their importance for understanding many-body interactions and nonlinear optical phenomena. Here, we use photoluminescence excitation (PLE) spectroscopy to resolve a Rydberg-like series of excited IX states in MoSe$_2$/WSe$_2$ heterostructures. We observe multiple PLE resonances below the intralayer exciton energies, which we assign to the 2s-, 3s-, and 4s-like states of the IXs. These resonances are consistently observed across heterostructures with different twist angles, indicating that the high-energy state spectrum is only weakly affected by the twist angle. Wannier-exciton calculations incorporating screened Coulomb interactions reproduce the overall energy scale and qualitative trends of the measured Rydberg-like series, supporting the assignment of the observed resonances. Our findings demonstrate that PLE provides direct experimental access to the previously unexplored high-energy IX states in van der Waals heterostructures.",
-      "authors": [
-        "Chirag Chandrakant Palekar",
-        "Paulo E. Faria Junior",
-        "Tobias Manthei",
-        "Maximilian Nagel",
-        "Bhabani Sankar Sahoo",
-        "Shachi Machchhar",
-        "Imad Limame",
-        "Martin Podhorský",
-        "Jaroslav Fabian",
-        "Bárbara Rosa",
-        "Stephan Reitzenstein"
-      ],
-      "published": "2026-08-03T10:35:59Z",
-      "updated": "2026-08-03T10:35:59Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.02040v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.02040v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "纳米力学",
       "fetch_date": "2026-08-04",
       "ai_summary": ""
     }
