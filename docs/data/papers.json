@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-27T08:28:38.014372Z",
+  "last_updated": "2026-09-28T08:53:17.668913Z",
   "total_papers": 500,
-  "new_today": 9,
+  "new_today": 5,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,123 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7214297293",
+      "title": "Waste Sawdust‐Derived Hard Carbon Anodes With Engineered Interlayer Spacing for Sodium‐Ion Batteries Exhibiting High Initial Coulombic Efficiency",
+      "summary": "ABSTRACT In sodium‐ion battery systems, hard carbon (HC) is regarded as one of the most promising anode materials. Nevertheless, its limited initial Coulombic efficiency (ICE) or high cost has impeded its widespread application. This study introduces a strategy for synthesizing ultra‐high initial efficiency HC using cost‐effective biomass precursors, specifically waste sawdust. By integrating theoretical calculations, the heating rate is meticulously controlled to optimize the interlayer spacing of the pseudo‐graphite layers, while also appropriately adjusting the layer growth length. This facilitates the folding and bending of layers to form more closed pores. The microstructure of the resulting HC is responsible for the impressive ICE of 89.01% and high specific capacity of 329.31 mAh g −1 (predominantly contributed by the plateau region) without any conductive additives. Furthermore, the full cell assembled with Na 3 V 2 (PO 4 ) 3 exhibits remarkable cycling stability. This work underscores the potential of biomass‐derived HC from wood‐based precursors, offering significant reference value for the microstructural regulation and commercial application of HC anodes.",
+      "authors": [
+        "Jie Di",
+        "Pengcheng Mao",
+        "Xiang Li",
+        "Yuqi Liu",
+        "Jingyi Luan",
+        "Wenbin Hu",
+        "Cheng Ming Zhong"
+      ],
+      "published": "2026-09-25T00:00:00Z",
+      "updated": "2026-09-25T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/cey2.70307",
+      "primary_category": "Carbon Energy",
+      "journal": "Carbon Energy",
+      "url": "https://doi.org/10.1002/cey2.70307",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-28",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7214203663",
+      "title": "Analytical pulsing protocol-based parameter identification and validation of the Doyle–Fuller–Newman battery model",
+      "summary": "Physics-based models (PBMs) such as the Doyle-Fuller-Newman (DFN) model offer high-fidelity predictions of lithium-ion battery behaviour but are often hindered by complex parameterisation requirements. This study assesses an Analytical Pulsing Protocol (APP) based workflow for DFN parameter identification using the recently proposed APP combined with minimal experimental input. APP facilitates the extraction of thermodynamic, kinetic, and transport characteristics from full-cell measurements and is used here for both parameter identification and as a structured framework for evaluating model fidelity. To the best of our knowledge, our contribution provides the first simulations of APP pulses with a physics-based model. Geometric data and scanning electron microscopy (SEM) imaging complement literature-based parameters, while fixing well-characterised values reduces optimisation dimensionality. Particle swarm optimisation (PSO) is used to optimise half-cell functions, while Bayesian optimisation with Gaussian process surrogates refines the most sensitive kinetic parameters identified through sensitivity analysis. The resulting parameter set demonstrates partial agreement with the APP pulse data and independent constant-current discharge tests, despite limitations in equilibrium assumptions and mass-transfer representation. Beyond its role in parameterisation, APP allows systematic comparison of experimental and simulated behaviour across the full state-of-charge (SOC) range, providing insight into thermodynamic, kinetic, and mass-transport limitations. This highlights APP as a potentially valuable and practical evaluation tool for assessing DFN parameter sets and diagnosing mismatches between model and experiment. The proposed methodology supports accelerated battery modelling and digitalisation efforts, reducing barriers to the adoption of physics-based models in both research and industrial applications.",
+      "authors": [
+        "Eirik Odinsen",
+        "Eibar Joel Flores Cedeño",
+        "Odne S. Burheim",
+        "Jacob Joseph Lamb"
+      ],
+      "published": "2026-09-24T00:00:00Z",
+      "updated": "2026-09-24T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.ijoes.2026.101516",
+      "primary_category": "International Journal of Electrochemical Science",
+      "journal": "International Journal of Electrochemical Science",
+      "url": "https://doi.org/10.1016/j.ijoes.2026.101516",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-28",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7214379587",
+      "title": "A Systematic Comparison of 10 Known Electrolyte Additives for Silicon‐Based Anodes in Lithium‐Ion Batteries in One Setup",
+      "summary": "Electrolyte additives are widely used to improve the cycling stability of lithium‐ion batteries (LIBs) with silicon‐based anodes, yet their performance is often evaluated under nonrepresentative conditions. Here, 10 literature‐known additives were systematically investigated in identical Si/C‖LiNi 0.6 Mn 0.2 Co 0.2 O 2 (NMC622) coin cells using LP57 (1.0 M lithium hexafluorophosphate in ethylene carbonate/ethyl methyl carbonate 3:7) as baseline electrolyte. This approach enables direct and application‐relevant comparison of cycle life, interphase resistance, and Coulombic efficiency (CE). Fluoroethylene carbonate shows the most pronounced improvement, more than doubling the state‐of‐health at 80% capacity retention (SoH80), while maintaining low overpotentials and stable CE, indicating formation of a robust solid electrolyte interphase (SEI). Vinylene carbonate, 1,3,2‐dioxathiolane‐2,2‐dioxide, and succinic anhydride provide moderate improvements, whereas ethoxysilanes mainly stabilize CE without preventing long‐term fade. Other additives show no benefit. Differential capacity analysis (dQ/dV) reveals that early additive decomposition, particularly ring‐opening reactions of cyclic compounds, correlates with improved performance. Postmortem analysis indicates surface and SEI modifications, which alone do not ensure stability. These results highlight the necessity of full‐cell testing for realistic evaluation of LIB electrolyte additives.",
+      "authors": [
+        "Noah Schmidt‐Meinzer",
+        "Lukas Alexander Dold",
+        "Julia Haag",
+        "Samuel Preyer",
+        "Ingo Krossing"
+      ],
+      "published": "2026-09-24T00:00:00Z",
+      "updated": "2026-09-24T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/batt.70492",
+      "primary_category": "Batteries & Supercaps",
+      "journal": "Batteries & Supercaps",
+      "url": "https://doi.org/10.1002/batt.70492",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-09-28",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7214364472",
+      "title": "Electrospun PAAm : Bi 2 O 3 Nanofiber Composites With Tailored Structural and Optical Features for Antibacterial Applications: Synthesis, Characterization, and Mechanistic Insights",
+      "summary": "ABSTRACT The study successfully incorporated bismuth oxide nanoparticles (Bi 2 O 3 ) into electrospun polyacrylamide fibers, yielding a stable nanocomposite. XRD confirmed the monoclinic phase (α‐Bi 2 O 3 ) without secondary phases, with peak intensity increasing with loading. FESEM revealed a near‐homogeneous distribution of particles (60–80 nm) and increased fiber surface roughness. FTIR confirmed shifts in amide bands and BiO bands within 500–600 cm −1 , indicating coordinate interactions and structural stabilization. The energy gap decreased from 4.00 eV for pristine fibers to 3.86 eV at the highest loading, which may favor improved light absorption and charge‐transfer processes. However, these optical results do not provide direct experimental evidence of ROS generation. Biologically, no activity was observed at low concentrations, while 0.09 g/mL produced inhibition zones of approximately 15–18 mm against both Gram‐positive and Gram‐negative bacteria, indicating a loading‐dependent antibacterial response and a critical loading threshold. The response may be influenced by Bi 2 O 3 distribution and accessibility; however, its contribution was not quantitatively separated from increased loading. ROS‐related processes may represent one possible antibacterial mechanism, but their specific contribution was not directly established. These results demonstrate antibacterial potential and support future biosterilization and coating applications, while the specific mechanism requires further investigation.",
+      "authors": [
+        "Ahmed M. Ajam",
+        "Khalid Haneen Abass"
+      ],
+      "published": "2026-09-25T00:00:00Z",
+      "updated": "2026-09-25T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/app.71553",
+      "primary_category": "Journal of Applied Polymer Science",
+      "journal": "Journal of Applied Polymer Science",
+      "url": "https://doi.org/10.1002/app.71553",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-09-28",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7214398413",
+      "title": "Van der Waals Integration of Tellurium Nanowires With Graphene Oxide for Performance‐Enhanced Ion‐Sensitive Field‐Effect Transistors",
+      "summary": "Nanowire bioelectronic sensors offer extraordinary sensitivity and real-time transduction, with silicon being the primary material for device realization. For all nanowire-based ion-sensitive field-effect transistors (ISFETs), direct electrolyte contact or passivation by amorphous dielectrics often introduces interfacial traps leading to instabilities, reduced capacitive control, and poor switching. In this work, we fabricated performance-enhanced ISFETs from ultrathin, highly crystalline tellurium nanowires (TeNW), which are known for their unique, quasi one-dimensional (1D) van der Waals structure. The TeNW networks were passivated with ultra-thin films of insulating graphene oxide (GO). This van der Waals integration enabled high-performance ISFET arrays, which exhibit strongly enhanced p-type field-effect characteristics, clearly outperforming TeNW ISFETs with direct electrolyte contact and those passivated by amorphous silicon dioxide. We account for this performance enhancement by a van der Waals interaction between the 1D TeNW and 2D GO. The resulting TeNW/GO-ISFETs demonstrate stable operation in phosphate-buffered saline, while exhibiting apparent pH sensitivities of up to 290 mV/pH, significantly exceeding the Nernstian limit as an effect of the van der Waals interaction. Our findings demonstrate that this van der Waals integration is a viable strategy for performance-enhanced tellurium ISFETs, paving the way for next-generation bioelectronics in healthcare diagnostics and environmental monitoring.",
+      "authors": [
+        "Heping Cui",
+        "Kai Zheng",
+        "Joachim Knoch",
+        "Sven Ingebrandt"
+      ],
+      "published": "2026-09-25T00:00:00Z",
+      "updated": "2026-09-25T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/smll.75853",
+      "primary_category": "Small",
+      "journal": "Small",
+      "url": "https://doi.org/10.1002/smll.75853",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-09-28",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7214167001",
       "title": "Synergistic internal-external disorder to activate electrochemically inert maricite NaFePO4",
@@ -12090,124 +12207,6 @@
       "category": "原子力显微镜与表征",
       "fetch_date": "2026-08-07",
       "ai_summary": ""
-    },
-    {
-      "id": "openalex_W7172252487",
-      "title": "Ti3C2 MXene-Based Composites for Hydrogen and Ammonia Gas Sensing: A Review",
-      "summary": "The unique contributions of 2D Ti3C2 MXenes surface, electrical, and chemical features play a crucial role in determining toxic and flammable gas-sensing behavior. Specifically, its high electrical conductivity (metallic nature), layered nanosheet structure (nanosheets), and surface termination groups (−O, −F, and −OH) collectively contribute to excellent hydrogen (H2) and ammonia (NH3) gas-sensing behavior. This review systematically explores the impact of pristine and modified Ti3C2 MXene, including its interfaces with various metals and metal oxides for enhancing H2 and NH3 detection. Furthermore, the significance of room temperature operation and flexible gas sensing mechanisms is explored. Notably, integration of Ti3C2 MXene and sulfur nanosheets demonstrates rapid response and recovery times with detection limits at ppt level. Ti3C2 MXene-based interfaces also exhibit excellent long-term stability under various relative humidity conditions. The selective surface termination groups (−OH and −O) facilitate the formation of hydrogen bonds with NH3 molecules for enhancing gas adsorption and sensing selectivity. In addition, the expansion of the interlayer spacing plays a vital role in improving the gas-sensing performance. Partial oxidation of Ti3C2 MXene into TiO2 increases the interlayer distance, promoting faster diffusion of gas molecules and quicker sensor response. Overall, the intrinsic properties of Ti3C2 MXene and its composites significantly achieve high-performance room-temperature H2 and NH3 gas-sensing performance.",
-      "authors": [
-        "Adem Sreedhar",
-        "Jin‐Seo Noh"
-      ],
-      "published": "2026-08-03T00:00:00Z",
-      "updated": "2026-08-03T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.3390/nano16150955",
-      "primary_category": "Nanomaterials",
-      "journal": "Nanomaterials",
-      "url": "https://doi.org/10.3390/nano16150955",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-08-06",
-      "ai_summary": ""
-    },
-    {
-      "id": "openalex_W7172336591",
-      "title": "Inhomogeneous Particle Lithiation as a Driver of Degradation in Silicon-Containing Lithium-Ion Cells: Insights from Simulation",
-      "summary": "Abstract Silicon-containing anodes in lithium-ion batteries offer high specific capacities but suffer from rapid capacity fading mainly due to mechanical degradation. This study investigates the degradation mechanisms in silicon-containing composite anodes, using the LG Chem INR21700-M50T cell as a reference. A coupled electrochemical-mechanical multi-phase simulation model was developed to simulate phase-specific mechanical stresses during operation, focusing on silicon oxide particle stress evolution. An electrochemical parameter set was developed and validated against experimental data. The simulation results demonstrate that mechanical failure is primarily driven by inhomogeneous particle lithiation rather than absolute volume expansion. Reducing local current densities within the silicon phase effectively mitigates mechanical stresses by promoting more homogeneous lithiation. Parameter studies elucidate the influence of the C-rate, particle radius, and silicon volume fraction on the mechanical stresses. Based on these insights, a control algorithm was developed to regulate the applied current relative to the induced mechanical stresses, providing a strategy for lifetime extension. This algorithm was further utilized to assess diverse electrode configurations - characterized by varying silicon oxide particle radii and volume fractions - to quantify their impact on achievable power output. Consequently, this study provides new guidelines for the design and operational management of high-capacity silicon-containing composite electrodes.",
-      "authors": [
-        "Nicolas Stapf",
-        "Nicolas Schneider",
-        "Meichen Zhan",
-        "Kai Peter Birke",
-        "Alexander Fill"
-      ],
-      "published": "2026-08-03T00:00:00Z",
-      "updated": "2026-08-03T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1149/1945-7111/ae9404",
-      "primary_category": "Journal of The Electrochemical Society",
-      "journal": "Journal of The Electrochemical Society",
-      "url": "https://doi.org/10.1149/1945-7111/ae9404",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-08-06",
-      "ai_summary": ""
-    },
-    {
-      "id": "openalex_W7172334241",
-      "title": "Recent developments and future challenges of graphene reinforced carbon fiber composites for aerospace automotive and energy applications",
-      "summary": "This paper reviews the latest advances in graphene-reinforced carbon fiber composites (GRCFCs), focusing on their mechanical, thermal, electrical and interfacial properties. Various graphene preparation methods are discussed, including chemical vapour deposition, mechanical and chemical exfoliation, reduction of graphene oxide (GO), with critical analysis of how each method influences graphene quality and subsequent composite performance. GRCFC fabrication techniques including chemical grafting, electrophoretic deposition and wet spinning, are then discussed for their impact on composite properties. Furthermore, the role of matrix selection, dispersion strategies, and associated challenges are explored. This review highlights the enhancement in tensile strength, Young’s modulus, and overall multifunctional performance arising from improved interfacial bonding and microstructural design, particularly with the incorporation of polyacrylonitrile (PAN)-based systems. A comparative analysis of structure-property relationships is presented to elucidate the synergistic effects of graphene within carbon fiber matrices. In addition, key applications of GRCFCs in aerospace, automotive and energy sectors are outlined, emphasizing their role in mass-efficient structural components, fuel efficiency, and energy storage systems. The potential of flash Joule heating as an emerging recycling strategy is also discussed, demonstrating its capability to convert waste composites into turbostratic flash graphene with catalytic applications. At the end, this paper provides an in-depth analysis of the current challenges, including dispersion uniformity, interfacial compatibility and manufacturing complexity along with future perspectives for the scalable development and industrial adoption of GRCFCs. Graphical abstract",
-      "authors": [
-        "G R Chethan",
-        "Guddappa Halligudra",
-        "Thejas Gowda B.",
-        "Shivaprasad N.",
-        "Shruthi K. S.",
-        "Kiran Kumar P.",
-        "C.P. Chitrabanu",
-        "Raghavendra R.",
-        "Gopala J.",
-        "Amulya G."
-      ],
-      "published": "2026-08-03T00:00:00Z",
-      "updated": "2026-08-03T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.1007/s44245-026-00332-6",
-      "primary_category": "Discover Mechanical Engineering",
-      "journal": "Discover Mechanical Engineering",
-      "url": "https://doi.org/10.1007/s44245-026-00332-6",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-08-06",
-      "ai_summary": "综述石墨烯增强碳纤维复合材料的制备、性能增强机制及航空航天等领域应用前景。"
-    },
-    {
-      "id": "openalex_W7172307026",
-      "title": "A Review of Design Strategies and Material Challenges for Magnesium-Based Rechargeable Seawater Batteries: Insights from Sodium-RSB Systems",
-      "summary": "Rechargeable seawater batteries (RSBs) are a new class of seawater-based energy storage technology. In this system, the two electrolytes—the non-aqueous anolyte and seawater as the catholyte—have distinct compositions. As an eco-friendly option, the technology is promising, with the potential to replace traditional rechargeable batteries and reduce harmful environmental impacts. It can also be used in locales without access to power. There are different classes of RSBs, including sodium-based (Na-RSBs). At present, Na-RSBs systems have attracted much more attention due to the availability of solvents derived from abundant sodium sources in seawater and because of their superior material costs and safety compared to lithium (Li)-based batteries. Nonetheless, Na-RSBs are inherently restricted by the relatively low theoretical capacity and electrochemical potential of sodium. As a result, magnesium-based rechargeable seawater batteries (Mg-RSBs) have emerged as a promising alternative. Magnesium is attractive because it offers a higher theoretical volumetric capacity (~3833 mAh cm⁻³) and a better cost-performance ratio than Li-ion batteries and Na-RSB systems. Given these merits, we summarize the potential of magnesium as a candidate alternative to sodium in RSB applications. To develop their potential, some strategies (alloying, surface modification, bifunctional catalyst design, and solid–liquid hybrid electrolyte construction) are proposed. The perspective concludes with an outlook that emphasizes the importance of accounting for integrated electrolyte–separator design, interface manipulation, and corrosion-mitigation strategies to realize the potential of Mg-RSBs as a high-durability, long-life, and economical battery system, especially in off-grid applications.",
-      "authors": [
-        "Rezza Ruzuqi",
-        "Agus Sigit Pramono",
-        "Lukman Noerochim"
-      ],
-      "published": "2026-08-01T00:00:00Z",
-      "updated": "2026-08-01T00:00:00Z",
-      "pdf_url": "",
-      "arxiv_url": "",
-      "doi": "10.47352/jmans.2774-3047.473",
-      "primary_category": "Journal of Multidisciplinary Applied Natural Science",
-      "journal": "Journal of Multidisciplinary Applied Natural Science",
-      "url": "https://doi.org/10.47352/jmans.2774-3047.473",
-      "source": "openalex",
-      "category": "离子插层",
-      "fetch_date": "2026-08-06",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.04219v1",
-      "title": "First-principles predictions of carrier mobility with record accuracy using GW perturbation theory",
-      "summary": "Accurate prediction of carrier mobility is critical for the discovery and design of next-generation electronic materials. Despite sustained progress, state-of-the-art ab initio methods remain limited by the approximate treatment of electron-phonon interactions at the density functional theory level. Here, we demonstrate that incorporating many-body GW corrections to both the electronic band structure and electron--phonon couplings when solving the ab initio Boltzmann transport equation yields a mean absolute relative error of just 11% for electron mobilities across benchmark semiconductors, including Si, GaAs, GaP, diamond, and SiC. The common practice of neglecting GW corrections to the electron--phonon interaction can lead to mobility errors exceeding 50%. The present findings highlight the importance of many-body GW self-energy effects in carrier transport simulations, and provides fundamental insights into how many-body electron--phonon interactions govern charge transport in crystalline solids.",
-      "authors": [
-        "Nick Pant",
-        "Sabyasachi Tiwari",
-        "Steven G. Louie",
-        "Zhenglu Li",
-        "Feliciano Giustino"
-      ],
-      "published": "2026-08-04T20:46:00Z",
-      "updated": "2026-08-04T20:46:00Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.04219v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.04219v1",
-      "doi": "10.1103/83vn-7zyw",
-      "primary_category": "cond-mat.mtrl-sci",
-      "source": "arxiv",
-      "category": "二维材料热导",
-      "fetch_date": "2026-08-06",
-      "ai_summary": "GW微扰理论同时修正能带和电子-声子耦合，使迁移率预测误差降至11%。"
     }
   ]
 }
