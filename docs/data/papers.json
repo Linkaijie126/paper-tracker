@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-02T08:51:07.135542Z",
+  "last_updated": "2026-10-03T08:27:54.993595Z",
   "total_papers": 500,
-  "new_today": 11,
+  "new_today": 1,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,35 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7214616190",
+      "title": "Laser-reduced graphene oxide as electrode for ITO-free perovskite solar cells and supercapacitors",
+      "summary": "Laser-reduced graphene oxide (LrGO) is a promising material for fabricating indium tin oxide (ITO)-free perovskite solar cells (PSCs) and supercapacitors (SCs). In this work, GO films were deposited by spray coating and then reduced and patterned by laser processing to form conductive LrGO electrodes for PSCs and micro-SCs. The optimized LrGO films exhibited transmittance of 38% and sheet resistance of approximately 400 Ω∙sq. −1 . ITO-free PSCs employing LrGO as the transparent conductive electrode achieved a power conversion efficiency (PCE) of 4.78% under 1 sun illumination. Furthermore, under indoor light conditions of 1000 lx, the LrGO-based PSCs achieved a PCE of 10.49%. Optical simulations revealed that the main limitation of LrGO-based PSCs was the parasitic absorption of the thick LrGO layer. Additionally, LrGO-based micro-SCs were fabricated by direct laser scribing. The micro-SCs achieved areal capacitance of 4.3 mF∙cm −2 at a scan rate of 5 mV∙s −1 , comparable to previously reported rGO-based micro-SCs. The stable cyclic voltammetry and galvanostatic charge-discharge profiles at various scan rates and current densities indicated good electrochemical stability and effective ion transport. This work demonstrates the potential of LrGO as a low-cost, solution-processable material for fabricating ITO-free PSCs and SCs on the same substrate, enabling self-powering devices for indoor applications.",
+      "authors": [
+        "Dimitris Tsikritzis",
+        "Stella Maragkaki",
+        "Marinos Tountas",
+        "Nikos Kavousanos",
+        "Andreas Michael",
+        "George Tsibidis",
+        "Maria Pervolaraki",
+        "Dimitra Vernardou",
+        "Emmanuel Stratakis",
+        "Emmanuel Kymakis"
+      ],
+      "published": "2026-09-28T00:00:00Z",
+      "updated": "2026-09-28T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.jphotochem.2026.117747",
+      "primary_category": "Journal of Photochemistry and Photobiology A Chemistry",
+      "journal": "Journal of Photochemistry and Photobiology A Chemistry",
+      "url": "https://doi.org/10.1016/j.jphotochem.2026.117747",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-10-03",
+      "ai_summary": ""
+    },
     {
       "id": "2610.00877v1",
       "title": "Complex Magnetic Phases and Unconventional Skyrmion Thermodynamics in Magnetically Intercalated Cr$_{1+x}$Te$_2$Compounds",
@@ -12209,35 +12238,6 @@
       "primary_category": "cond-mat.mtrl-sci",
       "source": "arxiv",
       "category": "纳米力学",
-      "fetch_date": "2026-08-19",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.17789v1",
-      "title": "Observation of magnetic quantum phase crossovers in a semiconductor spin ladder",
-      "summary": "Understanding collective phases of strongly correlated quantum magnets relies on theoretically tractable model systems with precise microscopic control. Antiferromagnetic spin ladders provide such a setting, hosting field-tunable gapped and gapless phases at half filling and unconventional pairing tendencies upon doping. Here, we realize a programmable Heisenberg spin ladder in a half-filled germanium quantum dot array featuring site-resolved, continuously tunable exchange interactions. Under a fixed magnetic field, we vary the rung and leg coupling to map the rung-singlet, canted antiferromagnetic, and fully polarized phases. Hamiltonian-learning protocols combining equilibrium and dynamical measurements quantitatively characterize the ladder, incorporating spin-orbit interactions to reproduce the observed crossover behavior. Measurements of higher-order spin correlators -- including four-point correlations inaccessible to conventional bulk probes -- reveal signatures of the underlying phase structure despite the finite size. Our results establish germanium quantum dot arrays as a controllable platform for quantum magnetism, opening routes to investigate unconventional superconductivity in doped ladders.",
-      "authors": [
-        "Elizaveta Morozova",
-        "Xin Zhang",
-        "Utso Bhattacharya",
-        "Pablo Cova Fariña",
-        "Daniel Jirovec",
-        "Alexander Nico-Katz",
-        "Stefan D. Oosterhout",
-        "Sougato Bose",
-        "Giordano Scappucci",
-        "Menno Veldhorst",
-        "Eugene Demler",
-        "Lieven M. K. Vandersypen"
-      ],
-      "published": "2026-08-18T13:50:44Z",
-      "updated": "2026-08-18T13:50:44Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.17789v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.17789v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
       "fetch_date": "2026-08-19",
       "ai_summary": ""
     }
