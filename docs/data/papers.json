@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-12T09:36:55.857796Z",
+  "last_updated": "2026-10-13T09:39:37.117567Z",
   "total_papers": 500,
-  "new_today": 10,
+  "new_today": 4,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,109 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7221326824",
+      "title": "Confined Phase Transition Infiltration Coupled With In Situ Pore Sealing: Constructing Hard Carbon Rich in Closed Pore for Plateau‐Capacity‐Dominated Sodium Storage",
+      "summary": "Biomass‐derived hard carbon (HC) is a promising candidate for anode materials in sodium‐ion batteries (SIBs). However, abundant open pores generated during activation process often lead to severe proliferation of the solid electrolyte interphase (SEI) and irreversible Na + consumption, severely compromising the initial Coulombic efficiency (ICE) and low‐voltage plateau capacity. This work proposes a synergistic strategy of confined phase transition infiltration and in situ pore sealing, using waste green tea as a precursor to construct a HC anode dominated by plateau capacity. Low dose of ZnCl 2 induces controllable hydrolysis and aromatization of cellulose and generate nanoscale open pores. These pores act as confined microreactors, inducing an in situ chemical vapor deposition like carbon growth that effectively “stitching” the open voids into solvent sieving closed pores. Consequently, it delivers a remarkable ICE of 79.1%, a high reversible capacity of 342.3 mAh g −1 at 0.1 A g −1 , and robust cycling stability (86.2% retention after 1000 cycles at 1.0 A g −1 ). In‐/ex situ analysis reveals that its reversible sodium storage mechanism encompasses a triple synergy of defect adsorption, interlayer intercalation, and closed pore filling with quasi metallic sodium clusters. The confined pore sealing engineering strategy provides a robust paradigm for designing high‐performance HC anodes.",
+      "authors": [
+        "Wenbo Hou",
+        "Xiaoxian Xu",
+        "Lili Ma",
+        "Wancheng Li",
+        "Hui Peng",
+        "Guofu Ma",
+        "Lei Zhu",
+        "Yuxi Xu"
+      ],
+      "published": "2026-10-10T00:00:00Z",
+      "updated": "2026-10-10T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/cssc.71134",
+      "primary_category": "ChemSusChem",
+      "journal": "ChemSusChem",
+      "url": "https://doi.org/10.1002/cssc.71134",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-10-13",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7221354097",
+      "title": "Brewing better batteries: transforming brewed coffee powder into lithium-ion anodes",
+      "summary": "Renewable and sustainable biomass materials were increasingly explored for diverse emerging applications. Waste from brewed coffee powder was utilized as a sustainable carbon precursor to synthesize a porous biochar-based anode material for lithium-ion batteries. A rapid route was developed to transform brewed coffee powder waste into hierarchical micro–mesoporous activated carbon. The material was prepared by impregnation with 6 M potassium hydroxide, followed by a short 30 min hot-tube thermal evaporation activation treatment at 600–800 °C. The activation temperature was varied to tune the porosity and defect structure of the resulting carbon materials and to evaluate their suitability as anode materials for lithium-ion batteries. The structural and physicochemical properties of the resulting porous carbon materials were characterized using field-emission scanning electron microscopy, X-ray diffraction, Fourier-transform infrared spectroscopy, Raman spectroscopy, and Brunauer–Emmett–Teller surface area analysis. Among the samples prepared at activation temperatures of 600, 700 and 800 °C, the electrode activated at 700 °C exhibited the most favourable overall electrochemical performance. At 700 °C, the activated carbon achieved a high specific surface area of 1274.92 m 2 g −1 , with micropores contributing 72.28% of the total pore volume, which provided a porous structure favourable for electrolyte access and lithium-ion transport. It delivered an initial discharge capacity of 638.83 mAh g −1 at a current density of 100 mA g −1 , with a first-cycle coulombic efficiency of 65.87%, indicating substantial reversible lithium-ion storage capability. Electrochemical impedance spectroscopy revealed a charge-transfer resistance of 31.3 Ω, indicating favourable interfacial charge-transfer behaviour. The combination of a high micropore fraction and interconnected mesopores contributed to lithium-ion storage and transport within the porous carbon structure. The findings demonstrated the feasibility of valorizing brewed coffee waste into porous carbon anode materials with promising electrochemical performance for lithium-ion batteries.",
+      "authors": [
+        "Azira Khairudin",
+        "Syahida Suhaimi",
+        "Muhammad Zamir Othman",
+        "Muhammad Norhaffis Mustafa",
+        "Nur Athirah Mohd Taib",
+        "Syamsul Kamar Muhamad Wahab",
+        "M. I. N. Isa"
+      ],
+      "published": "2026-10-10T00:00:00Z",
+      "updated": "2026-10-10T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1007/s10800-026-02615-y",
+      "primary_category": "Journal of Applied Electrochemistry",
+      "journal": "Journal of Applied Electrochemistry",
+      "url": "https://doi.org/10.1007/s10800-026-02615-y",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-10-13",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7221335797",
+      "title": "First Principles Study of Spin-Dependent Seebeck Effect and Thermoelectric Properties in Edge Passivated Zigzag Antimonene-Phosphorene Binary Nanoribbons",
+      "summary": "Thermally driven spin current generation has become a key focus in developing low-power spintronic technologies. Here, we report a first-principles investigation of spin-dependent thermoelectric transport in oxygen- and sulfur-passivated zigzag antimonene–phosphorene (SbP) nanoribbons. Unlike prior work focused on pristine or single-edge functionalized structures, we introduce both single and dual passivation schemes—symmetric and asymmetric—to systematically probe edge-controlled spin caloritronic behavior. Benchmarking against pristine antimonene and phosphorene nanoribbons reveals that edge passivation significantly modifies spin transmission near the Fermi level, inducing magnetic metallic behavior and enhancing spin thermoelectric performance. Notably, O–SbP–O, H–SbP–S, and H–SbP–2S configurations exhibit strong spin-dependent Seebeck effects, high spin-filtering efficiencies, and pure spin current generation. Dual-sulfur passivation yields thermally induced spin currents of 100–250 nA, substantially outperforming single-edge cases, with spin Seebeck coefficients exceeding previously reported values. These findings elucidate the mechanisms of edge-engineered spin thermoelectricity in binary SbP nanoribbons and demonstrate that strategic passivation can surpass pristine designs, offering a pathway for atomic-scale optimization of next-generation spin caloritronic devices.",
+      "authors": [
+        "Tayyebe Allahverdikhani",
+        "Jamal Barvestani"
+      ],
+      "published": "2026-10-01T00:00:00Z",
+      "updated": "2026-10-01T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1016/j.chphi.2026.101192",
+      "primary_category": "Chemical Physics Impact",
+      "journal": "Chemical Physics Impact",
+      "url": "https://doi.org/10.1016/j.chphi.2026.101192",
+      "source": "openalex",
+      "category": "二维材料热导",
+      "fetch_date": "2026-10-13",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7221468999",
+      "title": "A Comprehensive Review on Recent Advances in Chitosan and Graphene Oxide Nanocomposites for Environmental, Biomedical and Smart Material Applications",
+      "summary": "Chitosan–graphene oxide (CS–GO) nanocomposites combine the biodegradability, biocompatibility, cationic character, and film-forming ability of chitosan with the high surface area, oxygen-rich functionality, mechanical reinforcement, and tunable physicochemical properties of graphene oxide, enabling applications in environmental remediation, biomedical engineering, food packaging, sensing, and smart materials. This review critically examines recent advances in CS–GO preparation, interfacial chemistry, characterization, structure–property relationships, sustainability, scale-up, and application performance, with particular emphasis on chitosan molecular weight and degree of deacetylation, GO oxidation level and loading, dispersion, cross-linking, and processing conditions. Hydrogen bonding, electrostatic attraction, covalent coupling, coordination, and π–π interactions govern CS–GO assembly and strongly influence mechanical, adsorption, biological, barrier, electrical, and multifunctional behavior. Environmental remediation and biomedical applications currently have the strongest evidence base, while emerging uses include microplastic capture, desalination, sensing, supercapacitors, proton-exchange membranes, and hydrogen-generation catalysis. Key challenges include inconsistent characterization, limited real-matrix validation, regeneration cost, nanoparticle migration, long-term toxicity, life-cycle impacts, and scalable green manufacturing. Future translation requires standardized characterization, application-specific safety assessment, real-world validation, life-cycle evaluation, and reproducible large-scale fabrication.",
+      "authors": [
+        "Manuri Brahmayya",
+        "Addagarla Kishore",
+        "Kali Sudha Rani",
+        "Jeevan Kumar Jalasutram",
+        "Sekhar Babu Vadlapati",
+        "V. Muralikrishna Madasu",
+        "K. Jagadeesh",
+        "K. Ganesh Kadiyal",
+        "D. B. N. Suresh Varma",
+        "M. Vijay"
+      ],
+      "published": "2026-09-30T00:00:00Z",
+      "updated": "2026-09-30T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.13074/jent.2026.09.2632316",
+      "primary_category": "Journal of Environmental Nanotechnology",
+      "journal": "Journal of Environmental Nanotechnology",
+      "url": "https://doi.org/10.13074/jent.2026.09.2632316",
+      "source": "openalex",
+      "category": "材料制备",
+      "fetch_date": "2026-10-13",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7221084443",
       "title": "A Comprehensive Review and Future Prospects of Aluminum–Sulfur Batteries: From Material Design to Practical Challenges",
@@ -12113,98 +12216,6 @@
       "category": "二维材料热导",
       "fetch_date": "2026-09-01",
       "ai_summary": ""
-    },
-    {
-      "id": "2608.30552v1",
-      "title": "Heterogeneous ferroelectricity and conductivity of oxidized BaTiO$_3$ crystals: the role of nanoscale phase segregation in the surface region",
-      "summary": "We investigate the effect of thermal oxidation on BaTiO$_3$ single crystals. Our results reveal that, even at moderate temperatures of up to 1000 °C, complex segregation mechanisms occur involving the movement of Ba-rich compounds to the upper surface, where they form inhomogeneously distributed BaO nanocrystals. As a result, deeper regions of the surface layer become depleted in Ba and become TiO$_2$-rich. A sandwich-like structure evolves in the surface layer, exhibiting a measurable electromotive force and self-polarization. This, in turn, screens the polarization and diminishes the global ferroelectric response. The conductivity is also strongly influenced by the irreversible segregation effects in the surface region. An as-received crystal can be transformed into a metallic state, while oxidation induces semiconducting properties and prevents a return to the metallic state upon subsequent reduction. Nanoscale analysis demonstrates that the conductivity is channeled to filaments forming along dislocations, whose local chemical composition changes upon reduction and oxidation even at moderate temperatures due to preferential Ba and O pipe diffusion thus determining the electric behavior of the whole sample.",
-      "authors": [
-        "Christian Rodenbücher",
-        "Gustav Bihlmayer",
-        "Susan Trolier-McKinstry",
-        "Jacek Szade",
-        "Franciszek Krok",
-        "Kristof Szot"
-      ],
-      "published": "2026-08-31T10:29:38Z",
-      "updated": "2026-08-31T10:29:38Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.30552v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.30552v1",
-      "doi": "",
-      "primary_category": "cond-mat.mtrl-sci",
-      "source": "arxiv",
-      "category": "二维材料热导",
-      "fetch_date": "2026-09-01",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.29778v1",
-      "title": "Phonon-Localization-Driven Decoupling of Dual-Channel Transport for Record-Low Intrinsic Lattice Thermal Conductivity",
-      "summary": "A fundamental bottleneck in pushing the intrinsic lattice thermal conductivity of inorganic crystalline solids to its lowest limit arises from the inherent competition between the particle-like propagation (\\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\)) and wave-like tunneling (\\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\)) channels. Herein, we demonstrate that phonon localization provides a robust pathway to decouple the dual-channel transport, achieving record-low \\(κ_{\\mathrm{L}}\\) in quasi-1D ternary helical crystals. Despite the structural complexity leading to densely populated phonon branches and thus inducing abundant coherent phonons, the weak interchain interactions and heavy elements compress numerous branches into highly localized, nearly dispersionless flat bands. Such strong localization simultaneously suppresses both the diagonal and off-diagonal components of the group velocity, thereby synergistically suppressing \\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\) and \\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\). Taking InSeI as an example, the interchain room-temperature \\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\) and \\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\) are 0.145 and 0.053 W/mK, respectively, yielding an ultralow total \\(κ_{\\mathrm{L}}\\) of 0.198 W/mK. Weaker interchain interactions further drive the room-temperature \\(κ_{\\mathrm{L}}\\) of GaSeI and AlSeI to record lows of 0.086 and 0.089 W/mK, respectively; these values even drop to 0.058 and 0.059 W/mK at 900 K. These findings provide useful insights into exploring the thermal conductivity limit in crystals.",
-      "authors": [
-        "Zhunyun Tang",
-        "Xiaoxia Wang",
-        "Jin Li",
-        "Chaoyu He",
-        "Chao Tang",
-        "Mingxing Chen",
-        "Tao Ouyang"
-      ],
-      "published": "2026-08-30T13:13:36Z",
-      "updated": "2026-08-30T13:13:36Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.29778v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.29778v1",
-      "doi": "",
-      "primary_category": "cond-mat.mtrl-sci",
-      "source": "arxiv",
-      "category": "二维材料热导",
-      "fetch_date": "2026-09-01",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.30691v1",
-      "title": "Coexistence of polariton bound states in the continuum and 2D radiative excitons",
-      "summary": "Bound states in the continuum (BICs) enable optical modes with ideally infinite radiative lifetimes despite lying within the radiation continuum. Radiation-matter interaction in periodically patterned planar waveguides embedding two-dimensional (2D) optically active excitations can be described quantum mechanically by diagonalizing a non-Hermitian operator, known as the Hopfield matrix, which can be generalized to incorporate independent photonic and excitonic losses into the polaritonic states. However, since 2D excitons undergo intrinsic wavevector-dependent radiative decay within the light cone, whether the Hopfield formalism can consistently account for this process while preserving polariton BICs has remained an open question. Here we show that a non-Hermitian Hopfield formalism incorporating excitonic radiative losses correctly captures the existence of genuine $k=0$ polariton BICs with diverging radiative lifetimes. The theory provides a unified microscopic framework for radiative excitons and polariton BICs, and an efficient predictive tool for designing photonic-crystal platforms coupled to quantum wells, transition-metal dichalcogenides, and other 2D excitonic materials.",
-      "authors": [
-        "Simone Zanotti",
-        "Marco Liscidini",
-        "Dario Gerace",
-        "Lucio C. Andreani"
-      ],
-      "published": "2026-08-31T12:28:55Z",
-      "updated": "2026-08-31T12:28:55Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.30691v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.30691v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "纳米力学",
-      "fetch_date": "2026-09-01",
-      "ai_summary": ""
-    },
-    {
-      "id": "2608.29724v1",
-      "title": "Harnessing the skyrmion Hall effect for low-power skyrmion transport in a tubular synthetic antiferromagnet",
-      "summary": "We show that optimal control can turn the skyrmion Hall effect from a source of typically unwanted transverse motion into a mechanism for reducing Ohmic losses in skyrmion transport. We consider a pair of antiferromagnetically coupled skyrmions confined to a tubular geometry, where their relative transverse displacement becomes a periodic internal coordinate. The skyrmion Hall effect drives this coordinate, while finite interlayer coupling makes the resulting relation between applied current and longitudinal velocity nonlinear, allowing different current protocols to produce the same prescribed average velocity. We determine which of these protocols minimizes Joule heating. Depending on the interlayer coupling and spin-transfer-torque parameters, the optimal current is either constant, with the skyrmion pair maintaining a fixed relative position, or time dependent, with the pair undergoing periodic relative motion around the tube. In either case, the additional internal degree of freedom created by the skyrmion Hall effect and interlayer coupling enables skyrmion transport at a lower power than in the uncoupled limit.",
-      "authors": [
-        "Ivan P. Miranda",
-        "Grzegorz J. Kwiatkowski",
-        "Jacob J. Mankenberg",
-        "Cecilia M. Holmqvist",
-        "Igor S. Lobanov",
-        "Valery M. Uzdin",
-        "Pavel F. Bessarab"
-      ],
-      "published": "2026-08-30T11:17:09Z",
-      "updated": "2026-08-30T11:17:09Z",
-      "pdf_url": "https://arxiv.org/pdf/2608.29724v1",
-      "arxiv_url": "http://arxiv.org/abs/2608.29724v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "纳米力学",
-      "fetch_date": "2026-09-01",
-      "ai_summary": "利用斯格明子霍尔效应实现低功耗斯格明子传输。"
     }
   ]
 }
