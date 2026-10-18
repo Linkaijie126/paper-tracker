@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-17T07:07:46.953177Z",
+  "last_updated": "2026-10-18T07:22:07.746232Z",
   "total_papers": 500,
-  "new_today": 4,
+  "new_today": 3,
   "categories": [
     "离子插层",
     "二维材料热导",
@@ -10,6 +10,78 @@
     "原子力显微镜与表征"
   ],
   "papers": [
+    {
+      "id": "openalex_W7222184685",
+      "title": "Chemical Delithiation of Ni-Rich NCM Materials: Quantification and Minimization of the Concomitant Proton Intercalation",
+      "summary": "The development of advanced lithium-ion batteries requires a detailed understanding of cathode active material (CAM) properties. Chemical delithiation of CAMs enables the ex situ preparation of delithiated powders at varying degrees of delithiation, which are more amenable to detailed structural and spectroscopic analyses than materials prepared by electrochemical delithiation of electrodes. This study addresses a major drawback of chemical delithiation, namely concomitant insertion of protons. It aims to determine its origin and to modify the NO 2 BF 4 -based method such that proton insertion is minimized. Using NCM811 as a model material, the elimination of water impurities from the ambient atmosphere and the NO 2 BF 4 strongly improves agreement between targeted and measured lithium contents and lowers proton insertion. The proton content after chemical delithiation is determined via prompt gamma activation analysis (PGAA) and a novel method based on thermogravimetric analysis coupled with mass spectrometry (TGA-MS). The structure of chemically delithiated NCM811 materials is examined with X-ray diffraction (XRD) and high-resolution scanning transmission electron microscopy (HR-STEM), including their structural evolution upon annealing, which induces oxygen release and separation into rock-salt and fully lithiated NCM811 bulk structures. Charge/discharge cycling and differential capacity analysis of strongly delithiated NCM811 show that extensive chemical delithiation can degrade particle surfaces.",
+      "authors": [
+        "Corbinian Grön",
+        "Simon Qian",
+        "Maxime Boniface",
+        "László Szentmiklósi",
+        "Boglárka Maróti",
+        "Ildikó Harsányi",
+        "Thomas Lunkenbein",
+        "Hubert Andreas Gasteiger"
+      ],
+      "published": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1149/1945-7111/aea9d3",
+      "primary_category": "Journal of The Electrochemical Society",
+      "journal": "Journal of The Electrochemical Society",
+      "url": "https://doi.org/10.1149/1945-7111/aea9d3",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-10-18",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7222272850",
+      "title": "Liquid Crystal as Solid Electrolytes: Selected Developments and Perspectives",
+      "summary": "The liquid crystalline state arises from orientation-dependent, non-covalent interactions among molecules in condensed phases, producing materials that combine structural order with molecular mobility. Because this ordered arrangement depends on a delicate balance of intermolecular forces, liquid crystals (LCs) are highly responsive to external stimuli, making them attractive for sensing and electrochemical applications. This review critically examines recent advances in liquid crystal-based solid electrolytes, with emphasis on materials design strategies, ionic transport mechanisms, and electrochemical performance. The discussion is organized into key thematic sections covering (i) fundamental intermolecular interactions governing liquid crystalline behavior, (ii) classes of ionic liquid-crystalline systems, including zwitterionic and mesoionic mesogens, and (iii) liquid crystalline materials composed of organic cations paired with organic or inorganic anions interacting through electrostatic and other non-covalent forces. Representative studies from recent literature are analyzed to highlight structure–property relationships and performance trends in solid-state devices such as lithium batteries, fuel cells, and dye-sensitized solar cells. By integrating material design principles with functional performance analysis, this review provides a focused perspective on the potential and limitations of liquid crystalline solid electrolytes for next-generation all-solid-state technologies.",
+      "authors": [
+        "Manasa Chandramouli",
+        "Vrushabendra Basavanna",
+        "Srikantamurthy Ningaiah"
+      ],
+      "published": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.33263/briac165.130",
+      "primary_category": "Biointerface Research in Applied Chemistry",
+      "journal": "Biointerface Research in Applied Chemistry",
+      "url": "https://doi.org/10.33263/briac165.130",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-10-18",
+      "ai_summary": ""
+    },
+    {
+      "id": "openalex_W7222601938",
+      "title": "Interlayer‐Engineered 1T‐MoSe 2 Enabling Reversible Mn 2+ /H + Hybrid Storage for Aqueous Manganese Batteries",
+      "summary": "ABSTRACT Aqueous manganese batteries are emerging as safe, low‐cost options for large‐scale energy storage but are limited by sluggish Mn 2+ diffusion and poor reversibility. Here, we report an interlayer‐engineered 1T‐phase MoSe 2 cathode enabling fast, reversible hybrid storage of Mn 2+ and H + ions. Controlled chemical exfoliation induces a metallic phase transition and expands the interlayer spacing, creating a favorable environment for multivalent ion transport. The exfoliated MoSe 2 delivers 153.4 mAh g −1 at 0.1 A g −1 and retains 92.5% capacity after 1800 cycles. Kinetic analysis shows a reduced ion migration barrier compared with bulk MoSe 2 , highlighting the role of phase engineering and interlayer expansion. Spectroscopic and electrochemical analyses reveal a reversible Mn 2+ /H + co‐intercalation mechanism. A full cell paired with a Mn metal anode delivers 165.3 mAh g −1 and retains 89.9% of its capacity after 2000 cycles, demonstrating the practical feasibility of a rechargeable aqueous Mn‐metal battery. This work establishes phase‐engineered layered dichalcogenides as a platform for aqueous multivalent batteries and provides design principles to overcome kinetic limitations.",
+      "authors": [
+        "Hyeju Kwon",
+        "Hyeongseok Lee",
+        "Chung‐Yul Yoo",
+        "Munseok S. Chae"
+      ],
+      "published": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T00:00:00Z",
+      "pdf_url": "",
+      "arxiv_url": "",
+      "doi": "10.1002/smtd.71121",
+      "primary_category": "Small Methods",
+      "journal": "Small Methods",
+      "url": "https://doi.org/10.1002/smtd.71121",
+      "source": "openalex",
+      "category": "离子插层",
+      "fetch_date": "2026-10-18",
+      "ai_summary": ""
+    },
     {
       "id": "openalex_W7221758274",
       "title": "Fluorinated Aromatic Diluent Enabling Stable and Non–flammable Phosphate Electrolytes for Sodium Metal Batteries",
@@ -12164,82 +12236,6 @@
       "primary_category": "cond-mat.mtrl-sci",
       "source": "arxiv",
       "category": "纳米力学",
-      "fetch_date": "2026-09-07",
-      "ai_summary": ""
-    },
-    {
-      "id": "2609.02530v2",
-      "title": "All-dry processing of 3C-SiC nanomechanical string resonators for extreme aspect ratios and high intrinsic quality factor",
-      "summary": "Conventional fabrication of suspended nanomechanical resonators typically relies on wet-chemical process steps and critical point drying, which can compromise sample yield and cleanliness. Here, we present an all-dry fabrication process for strongly stressed 3C-SiC nanomechanical string resonators that entirely avoids wet-chemical etching and cleaning. Using a negative-tone electron-beam resist as an etch mask and a three-step reactive-ion etching process for both structuring and release, we achieve high fabrication yield, clean suspended structures, and extreme aspect ratios of 8.500. We perform full mechanical characterization of the resulting doubly-clamped nanostring resonators, and establish a benchmark intrinsic quality factor for dissipation-diluted 3C-SiC of Qintr = 4.200.",
-      "authors": [
-        "Felix David",
-        "Philipp Bredol",
-        "Yannick S. Klaß",
-        "Eva M. Weig"
-      ],
-      "published": "2026-09-02T12:40:37Z",
-      "updated": "2026-09-04T09:56:32Z",
-      "pdf_url": "https://arxiv.org/pdf/2609.02530v2",
-      "arxiv_url": "http://arxiv.org/abs/2609.02530v2",
-      "doi": "",
-      "primary_category": "cond-mat.mtrl-sci",
-      "source": "arxiv",
-      "category": "纳米力学",
-      "fetch_date": "2026-09-07",
-      "ai_summary": ""
-    },
-    {
-      "id": "2609.05188v1",
-      "title": "Electrostatic splitting of an Edge Magnetoplasmon Resonator",
-      "summary": "Edge-magnetoplasmon resonators have been proposed as a powerful tool to detect anyons by introducing a quantum point contact into an isolated quantum Hall system probed via radiofrequency radiation. In this paper, we study the effect of a quantum point contact embedded within an edge-magnetoplasmon resonator and how its polarization influences the propagating magnetoplasmonic mode. Combining dc and rf measurements, we unambiguously evidence the signature of both integer ($ν= 1$ and $2$) and fractional quantum Hall states ($ν= 4/3$ and $2/3$) within the radiofrequency transmission signal. Using electrostatic gating, we determine the physical parameters characterizing the electrostatic edge of an AlGaAs/GaAs based two-dimensional electron gas. We extract the dependence of the cavity perimeter with the gate voltage of the quantum point contact and fully characterize the path followed by edge magnetoplasmons in this system. Finally, we provide a geometric model in good agreement with experimental results.",
-      "authors": [
-        "Sloän Kouamé",
-        "Elric Frigerio",
-        "Giacomo Rebora",
-        "Suvankar Purkait",
-        "Yong Jin",
-        "Ulf Gennser",
-        "Antonella Cavanna",
-        "Jean-Marc Berroir",
-        "Emmanuel Baudin",
-        "Pascal Degiovanni",
-        "François D. Parmentier",
-        "Gwendal Fève",
-        "Gerbold C. Ménard"
-      ],
-      "published": "2026-09-04T14:24:11Z",
-      "updated": "2026-09-04T14:24:11Z",
-      "pdf_url": "https://arxiv.org/pdf/2609.05188v1",
-      "arxiv_url": "http://arxiv.org/abs/2609.05188v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
-      "fetch_date": "2026-09-07",
-      "ai_summary": ""
-    },
-    {
-      "id": "2609.04854v1",
-      "title": "Excitation caging in a vertex-frustrated quasiperiodic Einstein artificial spin ice",
-      "summary": "Naturally occurring bulk quasicrystals are rare, and magnetic instances are rarer still, with chemical constraints typically permitting the synthesis of approximants rather than true quasicrystalline magnets. Here, we present an artificial spin ice based on a recently discovered Einstein lattice, the Hat tiling, which is built from the first known shape - the hat - that tiles the plane only aperiodically. The Einstein artificial spin ice has long-range structural order with no translational symmetry, and low-connectivity vertices with well-defined local ground states and excitations. Together, these properties provide a model two-dimensional quasicrystalline magnet, with magnetic correlations that we probe with magnetic force microscopy and parallel-tempered Monte Carlo simulations. We identify a two-stage partial ordering process, driven by the competition between two possible positions for magnetic excitations. This competition is resolved in the ground-state manifold, where exactly one magnetic excitation is caged on each antihat, yet the manifold remains macroscopically degenerate. This yields an unusual type of medium-range order, where the underlying quasiperiodic long-range order is randomly modulated by a strictly constrained disorder. Our findings establish the Einstein artificial spin ice as a blueprint for understanding quasicrystalline magnetism, demonstrating how quasiperiodic monotile geometries can be exploited to engineer unconventional magnetic phases with no direct equivalent in periodic systems.",
-      "authors": [
-        "T. Wang",
-        "F. Museur",
-        "G. M. Macauley",
-        "J. Colbois",
-        "L. Berchialla",
-        "F. Flicker",
-        "P. M. Derlet",
-        "L. J. Heyderman"
-      ],
-      "published": "2026-09-04T08:10:30Z",
-      "updated": "2026-09-04T08:10:30Z",
-      "pdf_url": "https://arxiv.org/pdf/2609.04854v1",
-      "arxiv_url": "http://arxiv.org/abs/2609.04854v1",
-      "doi": "",
-      "primary_category": "cond-mat.mes-hall",
-      "source": "arxiv",
-      "category": "原子力显微镜与表征",
       "fetch_date": "2026-09-07",
       "ai_summary": ""
     }
